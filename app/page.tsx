@@ -1,65 +1,113 @@
-import Image from "next/image";
+import {
+  ShieldCheck,
+  Server,
+  Network,
+  Terminal,
+  GlobeLock,
+  Zap,
+  Building2,
+} from "lucide-react";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <section className="space-y-16">
+
+      {/* HERO SECTION */}
+      <div className="space-y-6">
+        <p className="text-xs uppercase tracking-[0.3em] text-emerald-400">/home</p>
+
+        <div className="space-y-2">
+          <h1 className="text-4xl md:text-5xl font-bold text-white flex items-center gap-3">
+            <ShieldCheck className="text-emerald-400" size={32} />
+            SECURE SYSTEMS.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <h1 className="text-4xl md:text-5xl font-bold text-white flex items-center gap-3">
+            <Network className="text-emerald-400" size={32} />
+            REMOTE EXECUTION.
+          </h1>
+
+          <h1 className="text-4xl md:text-5xl font-bold text-white flex items-center gap-3">
+            <Zap className="text-emerald-400" size={32} />
+            BUILT FOR IMPACT.
+          </h1>
+        </div>
+
+        <p className="text-base md:text-lg text-gray-400 max-w-3xl leading-relaxed pl-1">
+          I design, secure, and optimize network infrastructures with Cisco, Fortinet,
+          Zscaler, and Linux at the core.  
+          VPN engineering, firewall hardening, automation, and secure remote operations
+          are my daily craft.
+        </p>
+      </div>
+
+      {/* PROFESSIONAL SUMMARY WITH ICONS */}
+      <div className="space-y-6 max-w-none leading-normal text-gray-300">
+
+        <div className="flex items-start gap-4">
+          <Terminal className="text-emerald-400 mt-1 "  size={22} />
+          <p>
+            Every environment is a puzzle — solved with clean logic, disciplined
+            execution, and deep understanding of large-scale systems.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="flex items-start gap-4">
+          <Building2 className="text-emerald-400 mt-1 "  size={22} />
+          <p>
+            Current mission: <span className="text-emerald-400 font-medium">Ahold Delhaize</span>.
+            Enterprise-grade hybrid infrastructure, high uptime requirements, and full-remote delivery.
+          </p>
         </div>
-      </main>
+
+        <div className="flex items-start gap-4">
+          <GlobeLock className="text-emerald-400 mt-1 "  size={22} />
+          <p>
+            Full remote, multilingual, security-driven.  
+          </p>
+        </div>
+
+        <div className="flex items-start gap-4">
+          <ShieldCheck className="text-emerald-400 mt-1 "  size={22} />
+          <p>
+            Systems hardened. Networks fortified. Execution guaranteed.
+          </p>
+        </div>
+
+      </div>
+
+{/* CAPABILITIES ROW */}
+<div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6">
+
+  {/* Item */}
+  {[
+    { icon: Server, label: "Infra" },
+    { icon: ShieldCheck, label: "Security" },
+    { icon: Network, label: "VPN" },
+    { icon: Terminal, label: "Linux" },
+  ].map(({ icon: Icon, label }) => (
+    <div
+      key={label}
+      className="
+        flex flex-col items-center gap-2 p-4 
+        rounded-xl border border-white/10
+        bg-white/5 backdrop-blur-md
+        shadow-[0_0_20px_-5px_rgba(16,185,129,0.15)]
+        transition-all duration-300
+        hover:scale-105 cursor-pointer hover:border-emerald-400/40
+        hover:shadow-[0_0_25px_-2px_rgba(16,185,129,0.35)]
+      "
+    >
+      <Icon className="text-emerald-400" size={28} />
+      <p className="text-xs uppercase tracking-wide text-gray-300">
+        {label}
+      </p>
     </div>
+  ))}
+
+</div>
+
+
+    </section>
   );
 }
