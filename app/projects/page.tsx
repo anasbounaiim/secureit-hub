@@ -2,123 +2,239 @@ import { FolderGit2, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Enterprise-Grade Homelab Architecture",
+    title: "Enterprise-grade homelab architecture",
     period: "Ongoing",
     stack: ["Cisco", "Fortinet", "VPN", "Linux", "Monitoring"],
-    description:
-      "Designing a multi-site homelab replicating enterprise environments: segmented networks, IPSec tunnels, centralized logging (Syslog), SNMP monitoring, and policy-driven firewalling. A full playground for testing real-world production scenarios.",
-    link: "https://github.com/SecureIT-Hub",
+    description: [
+      "Designing a multi-site homelab inspired by enterprise environments.",
+      "Segmented networks, IPSec tunnels, centralized logging, SNMP monitoring and policy-driven firewalling.",
+      "A full playground to test real production behavior.",
+    ],
   },
   {
-    title: "Network Automation Toolkit",
+    title: "Network automation toolkit",
     period: "Ongoing",
     stack: ["Python", "Automation", "CLI", "Scripting"],
-    description:
-      "A collection of Python-based automations for daily network operations: config backups, compliance checks, device inventory parsing, and CLI-driven bulk tasks. Built for efficiency, clarity, and reproducibility.",
-    link: "https://github.com/SecureIT-Hub",
+    description: [
+      "Python automations for daily network operations: configuration backups, compliance checks, inventory parsing and CLI-based bulk tasks.",
+      "Built for clarity, repeatability and speed.",
+    ],
   },
   {
-    title: "Secure Remote Access Hardening Lab",
+    title: "Secure remote access hardening lab",
     period: "Lab",
-    stack: ["Zscaler", "VPN", "Firewall", "Access Control"],
-    description:
-      "Research lab dedicated to testing and comparing remote access architectures, Zscaler ZPA/ZIA behavior, VPN policy tuning, and user experience trade-offs. Includes documentation of security posture and enforcement logic.",
-    link: "https://github.com/SecureIT-Hub",
+    stack: ["Zscaler", "VPN", "Firewall", "Access control"],
+    description: [
+      "Research environment focused on testing and comparing remote-access architectures such as Zscaler ZPA and ZIA, IPSec and SSL VPNs.",
+      "Analysis of policy behavior and optimisation of user experience while maintaining strong security posture.",
+    ],
   },
   {
-    title: "Incident Response & Log Analysis Playground",
+    title: "Incident response and log analysis playground",
     period: "Lab",
-    stack: ["Linux", "Syslog", "Traffic Capture", "Automation"],
-    description:
-      "Environment to analyze logs, replay traffic captures, simulate incidents, and validate response workflows. Focus on visibility, forensic steps, and structured troubleshooting.",
-    link: "https://github.com/SecureIT-Hub",
+    stack: ["Linux", "Syslog", "Traffic capture", "Automation"],
+    description: [
+      "Environment to analyze logs, replay captures, simulate incidents and validate diagnostic workflows.",
+      "Objective: visibility, forensic discipline and structured troubleshooting.",
+    ],
   },
   {
-    title: "Firewall Policy Optimization Study",
+    title: "Firewall policy optimization study",
     period: "Lab",
     stack: ["Fortinet", "AlgoSec", "Segmentation"],
-    description:
-      "Hands-on study focused on cleaning firewall rulebases, reducing shadowed rules, optimizing NAT policies, and improving segmentation using AlgoSec-style methodology.",
-    link: "https://github.com/SecureIT-Hub",
+    description: [
+      "Study focused on cleaning firewall rulebases, reducing shadowed rules, optimizing NAT and improving segmentation using AlgoSec-style methodology.",
+    ],
   },
 ];
 
 export default function ProjectsPage() {
   return (
-    <section className="space-y-8">
-      {/* Header */}
+    <section className="space-y-10 md:space-y-12">
+      {/* PATH + TITLE */}
       <header className="space-y-3">
-        <p className="text-xs uppercase tracking-[0.3em] text-emerald-400">
-          /projects
-        </p>
+        <div className="relative inline-block">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80">
+            /projects
+          </p>
+          <div className="absolute -bottom-1 left-0 w-24 h-[1px] bg-gradient-to-r from-emerald-400/70 to-transparent" />
+        </div>
 
         <h1 className="text-3xl md:text-4xl font-semibold text-white flex items-center gap-2">
           <FolderGit2 className="text-emerald-400" size={24} />
-          <span>Projects, Labs & Real-World Engineering</span>
+          <span>Projects, labs and real-world engineering</span>
         </h1>
 
-        <p className="text-sm md:text-base text-gray-400 max-w-2xl">
-          Practical labs, automation tools, and infrastructure designs focused on
-          security, remote operations, and high-reliability networking. These
-          projects reflect real-world scenarios, not theoretical examples.
+        <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-relaxed">
+          Practical labs, automation tools and infrastructure designs focused on{" "}
+          <span className="text-emerald-300">
+            security, remote operations and reliable networking
+          </span>
+          . These projects reflect real production scenarios, not theoretical
+          exercises.
         </p>
       </header>
 
-      {/* Projects list */}
-      <div className="space-y-4">
-        {projects.map((project) => (
-          <article
-            key={project.title}
-            className="rounded-2xl bg-[#111]/70 p-6 ring-1 ring-green-500/20 backdrop-blur-sm hover:ring-emerald-400/40 hover:bg-[#151515]/80 transition"
-          >
-            <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-              <h2 className="text-lg md:text-xl font-semibold text-white">
-                {project.title}
-              </h2>
-              <span className="text-xs uppercase tracking-[0.2em] text-gray-500">
-                {project.period}
-              </span>
-            </div>
+      {/* MAIN GRID: PROJECTS + TERMINAL SIDEBAR */}
+      <div className="grid gap-8 md:gap-10 lg:grid-cols-[1.8fr,1.2fr] items-start">
+        {/* LEFT – PROJECT FEED */}
+        <div className="space-y-4">
+          {projects.map((project, index) => (
+            <article
+              key={project.title}
+              className="relative rounded-2xl border border-emerald-500/25 bg-black/80 shadow-[0_0_28px_-18px_rgba(16,185,129,0.9)] overflow-hidden group"
+            >
+              {/* Top bar */}
+              <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
+                <div className="flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
+                </div>
 
-            <p className="mt-3 text-sm md:text-base text-gray-300 leading-normal">
-              {project.description}
-            </p>
-
-            {/* Stack tags */}
-            <div className="mt-4 flex flex-wrap gap-2">
-              {project.stack.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-[11px] uppercase tracking-wide rounded-full bg-black/60 px-3 py-1 text-gray-200 ring-1 ring-green-500/30"
-                >
-                  {tag}
+                <span className="text-[10px] uppercase tracking-[0.25em] text-emerald-300/80">
+                  project-{String(index + 1).padStart(2, "0")}.log
                 </span>
-              ))}
+              </div>
+
+              {/* Body */}
+              <div className="p-4 sm:p-5 space-y-4">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                  <h2 className="text-lg md:text-xl font-semibold text-white">
+                    {project.title}
+                  </h2>
+                  <span className="inline-flex items-center gap-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-emerald-300">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    {project.period}
+                  </span>
+                </div>
+
+                <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
+                  {project.description.map((line) => (
+                    <p key={line}>{line}</p>
+                  ))}
+                </div>
+
+                {/* Stack tags */}
+                <div className="flex flex-wrap gap-2">
+                  {project.stack.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-[11px] uppercase tracking-wide rounded-md border border-white/10 bg-white/5 px-2.5 py-1 text-gray-200"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Footer path */}
+                <p className="text-[11px] text-gray-500 font-mono pt-1">
+                  ~/labs/{project.title.toLowerCase().replace(/\s+/g, "_")}
+                </p>
+              </div>
+
+              {/* Subtle hover outline */}
+              <div className="pointer-events-none absolute inset-0 rounded-2xl border border-emerald-400/0 group-hover:border-emerald-400/60 group-hover:shadow-[0_0_40px_-18px_rgba(16,185,129,1)] transition" />
+            </article>
+          ))}
+
+          {/* GitHub CTA */}
+          <div className="flex flex-wrap items-center gap-3 pt-2">
+            <a
+              href="https://github.com/SecureIT-Hub"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-4 py-2 text-xs md:text-sm font-medium text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition"
+            >
+              <ExternalLink size={14} />
+              <span>View all repositories on GitHub</span>
+            </a>
+
+            <span className="text-[11px] text-gray-500 font-mono">
+              github.com/SecureIT-Hub
+            </span>
+          </div>
+        </div>
+
+        {/* RIGHT – TERMINAL SNAPSHOT */}
+        <aside
+          className="
+            relative rounded-2xl border border-emerald-500/40 
+            bg-black/80 shadow-[0_0_30px_-15px_rgba(16,185,129,0.9)]
+            overflow-hidden font-mono text-[12px] text-emerald-100
+          "
+        >
+          {/* Terminal top bar */}
+          <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
+            <div className="flex items-center gap-1.5">
+              <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
+              <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
+              <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
+            </div>
+            <span className="text-[10px] uppercase tracking-[0.25em] text-emerald-300/80">
+              secureit-hub :: projects
+            </span>
+          </div>
+
+          {/* Console body */}
+          <div className="p-4 space-y-4">
+            {/* Summary */}
+            <div className="space-y-1.5">
+              <p className="text-[11px] text-emerald-400">
+                <span className="text-emerald-500">➜</span> summary
+              </p>
+              <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
+                <li>• homelab_mode: enterprise_grade</li>
+                <li>• focus: security · automation · observability</li>
+                <li>• env: multi-site_vpn + segmented_networks</li>
+                <li>• repo: github.com/SecureIT-Hub</li>
+              </ul>
             </div>
 
-            {/* Link */}
-            {project.link && (
-              <div className="mt-4">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1 text-xs md:text-sm text-emerald-400 hover:underline"
-                >
-                  <ExternalLink size={14} />
-                  <span>View more on GitHub</span>
-                </a>
-              </div>
-            )}
-          </article>
-        ))}
-      </div>
+            {/* Project types */}
+            <div className="space-y-1.5 border-t border-emerald-500/20 pt-3">
+              <p className="text-[11px] text-emerald-400">
+                <span className="text-emerald-500">➜</span> project_types
+              </p>
+              <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
+                <li>- homelab_architecture_design</li>
+                <li>- network_automation_tooling</li>
+                <li>- secure_remote_access_labs</li>
+                <li>- incident_response_playgrounds</li>
+                <li>- firewall_policy_optimization</li>
+              </ul>
+            </div>
 
-      {/* Note */}
-      <p className="text-xs text-gray-500">
-        Later, you can load these projects dynamically from GitHub or a simple
-        JSON file to keep the portfolio always in sync.
-      </p>
+            {/* Stack matrix */}
+            <div className="space-y-1.5 border-t border-emerald-500/20 pt-3">
+              <p className="text-[11px] text-emerald-400">
+                <span className="text-emerald-500">➜</span> stack_matrix
+              </p>
+              <pre className="text-[11px] md:text-[12px] text-emerald-100/90 leading-relaxed">
+{`stack = {
+  network:   [ "Cisco", "Fortinet", "VPN" ],
+  security:  [ "Zscaler", "Firewall", "Segmentation" ],
+  systems:   [ "Linux", "Syslog", "Monitoring" ],
+  automation:[ "Python", "CLI", "Scripting" ]
+}`}
+              </pre>
+            </div>
+
+            {/* Status */}
+            <div className="space-y-1.5 border-t border-emerald-500/20 pt-3">
+              <p className="text-[11px] text-emerald-400">
+                <span className="text-emerald-500">➜</span> lab_status
+              </p>
+              <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
+                <li>• enterprise_homelab: online</li>
+                <li>• automation_toolkit: iterating</li>
+                <li>• incident_playground: ready_for_scenarios</li>
+                <li>• firewall_study: in_progress</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
     </section>
   );
 }

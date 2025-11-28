@@ -43,21 +43,21 @@ export default function LoadingScreen() {
         }}
       >
         {/* ASCII Title */}
-        <div className="text-center mb-4 uppercase tracking-wider">
-          <pre
-            className="ascii-title text-[5px] tracking-wider font-semibold"
-            style={{ color: emerald }}
-          >
-{`
-███████ ███████  ██████ ██    ██ ██████  ███████     ██ ████████     ██   ██ ██    ██ ██████  
-██      ██      ██      ██    ██ ██   ██ ██          ██    ██        ██   ██ ██    ██ ██   ██ 
-███████ █████   ██      ██    ██ ██████  █████       ██    ██        ███████ ██    ██ ██████  
-     ██ ██      ██      ██    ██ ██   ██ ██          ██    ██        ██   ██ ██    ██ ██   ██ 
-███████ ███████  ██████  ██████  ██   ██ ███████     ██    ██        ██   ██  ██████  ██████  
+{/* SVG Logo */}
+<div className="flex justify-center mb-6">
+  <img
+    src="/secureithubLogo.svg"
+    alt="SecureIT-Hub Logo"
+    className="
+      w-[220px]        /* Mobile */
+      sm:w-[220px]     /* Small screens */
+      md:w-[260px]     /* Medium */
+      lg:w-[300px]     /* Desktop */
+      drop-shadow-[0_0_12px_rgba(52,211,153,0.7)] 
+    "
+  />
+</div>
 
-`}
-          </pre>
-        </div>
 
         {/* Loading label */}
         <div className="flex justify-between text-xs mb-2 opacity-75">

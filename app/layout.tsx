@@ -26,7 +26,7 @@ export default function RootLayout({
         <Sidebar />
 
         {/* Main content area */}
-        <main className="flex-1 px-10 py-10 md:ml-56 lg:ml-44 lg:pr-72 lg:pl-48 lg:py-10">
+        <main className="flex-1 px-12 py-10 md:ml-56 lg:ml-44 lg:pr-72 lg:pl-48 lg:py-10">
           {/* Logo Header */}
           <Header />
 

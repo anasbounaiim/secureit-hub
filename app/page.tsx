@@ -6,108 +6,306 @@ import {
   GlobeLock,
   Zap,
   Building2,
+  Lock,
+  Activity,
 } from "lucide-react";
 
 export default function HomePage() {
   return (
-    <section className="space-y-16">
-
-      {/* HERO SECTION */}
-      <div className="space-y-6">
-        <p className="text-xs uppercase tracking-[0.3em] text-emerald-400">/home</p>
-
-        <div className="space-y-2">
-          <h1 className="text-4xl md:text-5xl font-bold text-white flex items-center gap-3">
-            <ShieldCheck className="text-emerald-400" size={32} />
-            SECURE SYSTEMS.
-          </h1>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-white flex items-center gap-3">
-            <Network className="text-emerald-400" size={32} />
-            REMOTE EXECUTION.
-          </h1>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-white flex items-center gap-3">
-            <Zap className="text-emerald-400" size={32} />
-            BUILT FOR IMPACT.
-          </h1>
-        </div>
-
-        <p className="text-base md:text-lg text-gray-400 max-w-3xl leading-relaxed pl-1">
-          I design, secure, and optimize network infrastructures with Cisco, Fortinet,
-          Zscaler, and Linux at the core.  
-          VPN engineering, firewall hardening, automation, and secure remote operations
-          are my daily craft.
+    <section className="space-y-14 md:space-y-16">
+      {/* PATH LABEL */}
+      <div className="relative">
+        <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80 animate-pulse">
+          /home
         </p>
+        <div className="absolute -bottom-1 left-0 w-12 h-[1px] bg-gradient-to-r from-emerald-400/60 to-transparent"></div>
       </div>
 
-      {/* PROFESSIONAL SUMMARY WITH ICONS */}
-      <div className="space-y-6 max-w-none leading-normal text-gray-300">
+      {/* HERO + INTRO */}
+      <div className="grid gap-10 md:gap-12 md:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)] items-start">
+        {/* LEFT – HERO TITLES & MAIN TEXT */}
+        <div className="space-y-6">
+          <div className="space-y-1.5">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 hover:translate-x-1 transition-transform duration-300 group">
+              <ShieldCheck className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:rotate-12 transition-transform duration-300" size={30} />
+              SECURE SYSTEMS.
+            </h1>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 hover:translate-x-1 transition-transform duration-300 group">
+              <Network className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:scale-110 transition-transform duration-300" size={30} />
+              REMOTE EXECUTION.
+            </h2>
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 hover:translate-x-1 transition-transform duration-300 group">
+              <Zap className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:rotate-12 transition-transform duration-300" size={30} />
+              BUILT FOR IMPACT.
+            </h3>
+          </div>
 
-        <div className="flex items-start gap-4">
-          <Terminal className="text-emerald-400 mt-1 "  size={22} />
-          <p>
-            Every environment is a puzzle — solved with clean logic, disciplined
-            execution, and deep understanding of large-scale systems.
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-3xl leading-relaxed">
+            I design, secure and operate{" "}
+            <span className="text-emerald-400 font-medium hover:text-emerald-300 transition-colors duration-300 cursor-default">enterprise-grade networks</span>{" "}
+            using Cisco, Fortinet, Zscaler and Linux. My daily work is focused on{" "}
+            <span className="font-medium text-gray-100">
+              VPN connectivity, firewall operations, secure remote access and
+              clean troubleshooting in live production environments.
+            </span>
           </p>
+
+          {/* SHORT HIGHLIGHTS BAR */}
+          <div className="flex flex-wrap gap-3 text-[11px] sm:text-xs">
+            <span className="px-3 py-1 rounded-full border border-emerald-500/60 bg-emerald-500/10 text-emerald-300 uppercase tracking-[0.15em] hover:bg-emerald-500/20 hover:border-emerald-500 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all duration-300 cursor-default">
+              Network & Security Engineer
+            </span>
+            <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-gray-200 uppercase tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
+              10+ years in operational roles
+            </span>
+            <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-gray-200 uppercase tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
+              Belgium · Full Remote Ready
+            </span>
+          </div>
         </div>
 
-        <div className="flex items-start gap-4">
-          <Building2 className="text-emerald-400 mt-1 "  size={22} />
-          <p>
-            Current mission: <span className="text-emerald-400 font-medium">Ahold Delhaize</span>.
-            Enterprise-grade hybrid infrastructure, high uptime requirements, and full-remote delivery.
-          </p>
-        </div>
+        {/* RIGHT – STACK / CURRENT MISSION PANEL */}
+        {/* RIGHT – STACK / CURRENT MISSION PANEL */}
+        <div
+          className="
+            rounded-2xl border border-emerald-500/40 bg-black/60 
+            shadow-[0_0_25px_rgba(16,185,129,0.18)]
+            hover:shadow-[0_0_35px_rgba(16,185,129,0.28)]
+            hover:border-emerald-500/60
+            transition-all duration-500
+            backdrop-blur-sm
+            relative overflow-hidden
+            group
+          "
+        >
+          {/* Terminal top bar */}
+          <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
+            <div className="flex items-center gap-1.5">
+              <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
+              <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
+              <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
+            </div>
+            <span className="text-[10px] uppercase tracking-[0.25em] text-emerald-300/80">
+              secureit-hub :: context
+            </span>
+          </div>
 
-        <div className="flex items-start gap-4">
-          <GlobeLock className="text-emerald-400 mt-1 "  size={22} />
-          <p>
-            Full remote, multilingual, security-driven.  
-          </p>
-        </div>
+          {/* Panel body */}
+          <div className="p-5 sm:p-6 space-y-4 relative z-10">
+            {/* Animated corner accent */}
+            <div className="pointer-events-none absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 blur-3xl group-hover:bg-emerald-500/10 transition-all duration-700" />
 
-        <div className="flex items-start gap-4">
-          <ShieldCheck className="text-emerald-400 mt-1 "  size={22} />
-          <p>
-            Systems hardened. Networks fortified. Execution guaranteed.
-          </p>
+            <div className="flex items-center gap-3 relative z-10">
+              <Terminal className="text-emerald-400 animate-pulse" size={22} />
+              <p className="text-xs uppercase tracking-[0.25em] text-emerald-300/90">
+                CURRENT CONTEXT
+              </p>
+            </div>
+
+            <div className="space-y-1 text-sm text-gray-200 relative z-10">
+              <p className="hover:text-white transition-colors duration-200">
+                <span className="text-emerald-400 font-semibold">
+                  Role:&nbsp;
+                </span>
+                Systems / Network Engineer
+              </p>
+              <p className="hover:text-white transition-colors duration-200">
+                <span className="text-emerald-400 font-semibold">
+                  Mission:&nbsp;
+                </span>
+                Ahold Delhaize (Belgium &amp; remote) – hybrid infrastructure with
+                strong uptime and security requirements.
+              </p>
+              <p className="hover:text-white transition-colors duration-200">
+                <span className="text-emerald-400 font-semibold">
+                  Focus:&nbsp;
+                </span>
+                Secure connectivity, stability, incident resolution and service
+                continuity.
+              </p>
+            </div>
+
+            <div className="border-t border-emerald-500/20 pt-3 space-y-2 relative z-10">
+              <p className="text-[11px] uppercase tracking-[0.2em] text-gray-400 flex items-center gap-2">
+                <Server className="text-emerald-400" size={16} />
+                CORE STACK
+              </p>
+              <div className="flex flex-wrap gap-2 text-[11px] text-emerald-200">
+                {[
+                  "Cisco (routing & switching)",
+                  "Fortinet FortiGate",
+                  "Zscaler ZIA / ZPA",
+                  "IPSec & SSL VPN",
+                  "Linux (Ubuntu / servers)",
+                  "VMware / virtualization",
+                  "Infoblox · F5 · Citrix",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="px-2.5 py-1 rounded-md border border-white/10 bg-white/5 hover:bg-emerald-500/10 hover:border-emerald-500/40 hover:text-emerald-300 transition-all duration-300 cursor-default"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="border-t border-emerald-500/20 pt-3 space-y-1 relative z-10">
+              <p className="text-[11px] uppercase tracking-[0.2em] text-gray-400 flex items-center gap-2">
+                <GlobeLock className="text-emerald-400" size={16} />
+                WORKING MODE
+              </p>
+              <p className="text-xs text-gray-300 hover:text-gray-100 transition-colors duration-200">
+                Full-remote, production-focused and documentation-friendly.
+                Languages:{" "}
+                <span className="text-emerald-300 font-medium">
+                  English, French, Dutch, Arabic.
+                </span>
+              </p>
+            </div>
+          </div>
         </div>
 
       </div>
 
-{/* CAPABILITIES ROW */}
-<div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6">
+      {/* HOW I WORK – THREE COLUMNS */}
+      <div className="grid gap-6 md:grid-cols-3">
+        <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="flex items-center gap-3 relative z-10">
+            <Activity className="text-emerald-400 group-hover:scale-110 transition-transform duration-300" size={20} />
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
+              APPROACH
+            </p>
+          </div>
+          <p className="text-sm text-gray-300 leading-relaxed relative z-10">
+            I treat every change, rule and VPN as something that can impact a real
+            business in real time. That means{" "}
+            <span className="text-emerald-300 font-medium">
+              structured troubleshooting, clear communication and minimal noise.
+            </span>
+          </p>
+        </div>
 
-  {/* Item */}
-  {[
-    { icon: Server, label: "Infra" },
-    { icon: ShieldCheck, label: "Security" },
-    { icon: Network, label: "VPN" },
-    { icon: Terminal, label: "Linux" },
-  ].map(({ icon: Icon, label }) => (
-    <div
-      key={label}
-      className="
-        flex flex-col items-center gap-2 p-4 
-        rounded-xl border border-white/10
-        bg-white/5 backdrop-blur-md
-        shadow-[0_0_20px_-5px_rgba(16,185,129,0.15)]
-        transition-all duration-300
-        hover:scale-105 cursor-pointer hover:border-emerald-400/40
-        hover:shadow-[0_0_25px_-2px_rgba(16,185,129,0.35)]
-      "
-    >
-      <Icon className="text-emerald-400" size={28} />
-      <p className="text-xs uppercase tracking-wide text-gray-300">
-        {label}
-      </p>
-    </div>
-  ))}
+        <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="flex items-center gap-3 relative z-10">
+            <Lock className="text-emerald-400 group-hover:scale-110 transition-transform duration-300" size={20} />
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
+              SECURITY MINDSET
+            </p>
+          </div>
+          <p className="text-sm text-gray-300 leading-relaxed relative z-10">
+            Firewalls, VPNs and access controls are not just boxes or policies –
+            they are{" "}
+            <span className="text-emerald-300 font-medium">
+              entry points, boundaries and guarantees
+            </span>{" "}
+            that need to stay consistent under pressure.
+          </p>
+        </div>
 
-</div>
+        <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="flex items-center gap-3 relative z-10">
+            <Terminal className="text-emerald-400 group-hover:scale-110 transition-transform duration-300" size={20} />
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
+              TOOLING & AUTOMATION
+            </p>
+          </div>
+          <p className="text-sm text-gray-300 leading-relaxed relative z-10">
+            I use{" "}
+            <span className="text-emerald-300 font-medium">
+              Python, CLI and structured configs
+            </span>{" "}
+            to automate checks, backups and repetitive tasks – always with
+            readability and auditability in mind.
+          </p>
+        </div>
+      </div>
 
+      {/* AT A GLANCE – SMALL STAT CARDS */}
+      <div className="space-y-4">
+        <div className="relative">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80">
+            // at a glance
+          </p>
+          <div className="absolute -bottom-1 left-0 w-16 h-[1px] bg-gradient-to-r from-emerald-400/60 to-transparent"></div>
+        </div>
 
+        <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            {
+              label: "Production-focused years",
+              value: "10+",
+              desc: "From security operations to systems & network engineering.",
+            },
+            {
+              label: "Current mission",
+              value: "Ahold Delhaize",
+              desc: "Hybrid infra, strict uptime, secure remote access.",
+            },
+            {
+              label: "Core domains",
+              value: "Infra · Security · VPN",
+              desc: "Stable routing, firewalls, remote connectivity.",
+            },
+            {
+              label: "Remote-ready",
+              value: "100%",
+              desc: "Full-remote delivery, documentation and async-friendly.",
+            },
+          ].map((item) => (
+            <div
+              key={item.label}
+              className="rounded-xl border border-white/10 bg-black/70 hover:bg-black/80 hover:border-emerald-500/40 px-4 py-3 sm:py-4 flex flex-col gap-1.5 transition-all duration-300 group relative overflow-hidden cursor-default"
+            >
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500/0 via-emerald-500/50 to-emerald-500/0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+              <p className="text-xs uppercase tracking-[0.18em] text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                {item.label}
+              </p>
+              <p className="text-lg sm:text-xl font-semibold text-emerald-300 group-hover:text-emerald-400 group-hover:scale-105 transition-all duration-300">
+                {item.value}
+              </p>
+              <p className="text-[11px] sm:text-xs text-gray-400">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* SMALL CAPABILITIES ROW – KEEPING YOUR ORIGINAL IDEA */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
+        {[
+          { icon: Server, label: "INFRA" },
+          { icon: ShieldCheck, label: "SECURITY" },
+          { icon: Network, label: "VPN" },
+          { icon: Terminal, label: "LINUX" },
+        ].map(({ icon: Icon, label }) => (
+          <div
+            key={label}
+            className="
+              flex flex-col items-center gap-2 p-4 
+              rounded-xl border border-white/10
+              bg-black/70 backdrop-blur-md
+              shadow-[0_0_18px_-6px_rgba(16,185,129,0.35)]
+              hover:shadow-[0_0_28px_-4px_rgba(16,185,129,0.55)]
+              transition-all duration-300
+              hover:scale-105 cursor-default hover:border-emerald-400/50
+              hover:bg-black/90
+              group
+              relative overflow-hidden
+            "
+          >
+            <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Icon className="text-emerald-400 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.6)] transition-all duration-300 relative z-10" size={26} />
+            <p className="text-[11px] md:text-xs uppercase tracking-[0.18em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300 relative z-10">
+              {label}
+            </p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
