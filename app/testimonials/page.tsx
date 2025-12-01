@@ -324,13 +324,13 @@ export default function TestimonialsPage() {
 {/* Header */}
       <header className="space-y-4">
         <p className="text-xs uppercase tracking-[0.3em] text-emerald-400">
-          /testimonials
+          /Recommendations
         </p>
 
         <div className="flex items-center gap-3">
           <MessageSquareQuote className="h-7 w-7 text-emerald-400 opacity-80" />
           <h1 className="text-3xl md:text-4xl font-semibold tracking-wide text-white">
-            Testimonials &amp; Recommendations
+            Recommendations
           </h1>
         </div>
 

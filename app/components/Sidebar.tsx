@@ -19,7 +19,7 @@ const navItems = [
   { href: "/about", label: "About", icon: User },
   { href: "/skills", label: "Skills", icon: Layers },
   { href: "/projects", label: "Projects", icon: FolderGit2 },
-  { href: "/testimonials", label: "Testimonials", icon: MessageSquareQuote },
+  { href: "/testimonials", label: "Recommendations", icon: MessageSquareQuote },
   { href: "/contact", label: "Contact", icon: Mail },
 ];
 

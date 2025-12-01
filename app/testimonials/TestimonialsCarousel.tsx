@@ -82,7 +82,7 @@ export default function TestimonialsCarousel({
             <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
           </div>
           <span className="text-[10px] md:text-xs tracking-wider text-emerald-300/90">
-            testimonials.log
+            recommendations.log
           </span>
         </div>
 
@@ -136,25 +136,14 @@ export default function TestimonialsCarousel({
                       </p>
                     </div>
 
-                    {/* Footer */}
-                    <div className="border-t border-emerald-500/30 pt-3 text-[10px] md:text-xs space-y-1.5">
-                      {t.relationship && (
-                        <p className="text-emerald-300/70 line-clamp-1">
-                          :: {t.relationship}
-                        </p>
-                      )}
-                      {t.date && (
-                        <p className="text-emerald-400/90 font-semibold text-[10px]">
-                          [{t.date}]
-                        </p>
-                      )}
-
+                    {/* Actions – only LinkedIn button */}
+                    <div className="pt-3">
                       <a
                         href={t.profileUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
-                          mt-2 inline-flex items-center justify-center gap-2 w-full
+                          inline-flex items-center justify-center gap-2 w-full
                           border border-emerald-500/60 px-4 py-2 rounded
                           text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400
                           transition-all text-xs md:text-sm font-medium
@@ -175,11 +164,11 @@ export default function TestimonialsCarousel({
       {/* Navigation */}
       {total > 1 && (
         <>
-          {/* Desktop arrows - positioned outside on left/right */}
+          {/* Desktop arrows */}
           <div className="hidden lg:block">
             <button
               onClick={prev}
-              aria-label="Previous testimonial"
+              aria-label="Previous recommendation"
               className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 p-3 rounded-full border border-emerald-500/40 bg-black/80 text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all"
             >
               <ChevronLeft className="h-6 w-6" />
@@ -187,36 +176,36 @@ export default function TestimonialsCarousel({
 
             <button
               onClick={next}
-              aria-label="Next testimonial"
+              aria-label="Next recommendation"
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 p-3 rounded-full border border-emerald-500/40 bg-black/80 text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all"
             >
               <ChevronRight className="h-6 w-6" />
             </button>
           </div>
 
-          {/* Mobile navigation - below carousel */}
+          {/* Mobile dots */}
           <div className="lg:hidden mt-5 flex justify-center items-center gap-3">
             <div className="flex items-center gap-2">
               {slides.map((_, idx) => {
-                // On mobile, show max 5 dots with current in center
-                const shouldShow = slides.length <= 5 || 
-                  idx === current || 
-                  idx === current - 1 || 
+                const shouldShow =
+                  slides.length <= 5 ||
+                  idx === current ||
+                  idx === current - 1 ||
                   idx === current + 1 ||
-                  idx === 0 || 
+                  idx === 0 ||
                   idx === slides.length - 1;
-                
+
                 if (!shouldShow) return null;
-                
+
                 return (
                   <button
                     key={idx}
                     onClick={() => setCurrent(idx)}
                     aria-label={`Go to slide ${idx + 1}`}
                     className={`h-2 rounded-full transition-all ${
-                      idx === current 
-                        ? 'w-8 bg-emerald-400' 
-                        : 'w-2 bg-emerald-500/40 hover:bg-emerald-500/60'
+                      idx === current
+                        ? "w-8 bg-emerald-400"
+                        : "w-2 bg-emerald-500/40 hover:bg-emerald-500/60"
                     }`}
                   />
                 );
