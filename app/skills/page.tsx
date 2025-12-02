@@ -60,20 +60,15 @@ export default function SkillsPage() {
               </div>
 
               <p className="text-sm md:text-[13px] text-gray-300">
-                Design and troubleshooting of enterprise routing &amp; switching
-                with a strong focus on{" "}
-                <span className="text-emerald-300">
-                  availability, redundancy and clean topologies
-                </span>
+              Cisco Routing & Switching (CCNA, CCNP Security in progress)
+BGP, OSPF, EIGRP
+VLANs, STP, EtherChannel, HSRP / VRRP
+Enterprise WAN/LAN design and VPN troubleshooting
+Production-grade network operations across multiple sites
+
                 .
               </p>
 
-              <ul className="space-y-2 text-sm md:text-[13px] text-gray-200">
-                <li>✔ Cisco Routing &amp; Switching (CCNA / CCNP level)</li>
-                <li>✔ BGP, OSPF, EIGRP – design &amp; troubleshooting</li>
-                <li>✔ VLANs, STP, EtherChannel, HSRP / VRRP</li>
-                <li>✔ QoS, traffic shaping &amp; link optimization</li>
-              </ul>
 
               <div className="flex flex-wrap gap-2 pt-1">
                 {["Cisco IOS", "WAN / MPLS", "LAN design", "High availability"].map(
@@ -111,18 +106,16 @@ export default function SkillsPage() {
               </div>
 
               <p className="text-sm md:text-[13px] text-gray-300">
-                Daily work on{" "}
-                <span className="text-emerald-300">
-                  edge security, segmentation and secure remote access
-                </span>{" "}
-                with Fortinet &amp; Zscaler ecosystems.
+              Fortinet FortiGate (policies, NAT, VPN, IPS)
+Zscaler ZIA / ZPA administration
+Firewall rules, segmentation and secure access design
+IPSec VPN design, remote access stability
+Security posture review and incident analysis
+
               </p>
 
               <ul className="space-y-2 text-sm md:text-[13px] text-gray-200">
-                <li>✔ Fortinet FortiGate (policies, VPN, IPS, NAT)</li>
-                <li>✔ Zscaler ZIA / ZPA administration</li>
-                <li>✔ Firewall rules, segmentation &amp; access design</li>
-                <li>✔ IPSec / SSL VPN design &amp; troubleshooting</li>
+            
               </ul>
 
               <div className="flex flex-wrap gap-2 pt-1">
@@ -152,18 +145,16 @@ export default function SkillsPage() {
 
             <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200">
               <p className="text-gray-300">
-                Solid Linux background with{" "}
-                <span className="text-emerald-300">
-                  scripting, monitoring and virtualization
-                </span>{" "}
-                in day-to-day operations.
+              Linux administration (Ubuntu as main OS)
+Bash and shell scripting
+Monitoring and log analysis
+VMware and Proxmox virtualization
+
               </p>
 
               <ul className="space-y-2">
-                <li>✔ Linux administration (Debian / Ubuntu)</li>
-                <li>✔ Bash &amp; shell scripting</li>
-                <li>✔ Monitoring: SNMP, Syslog, Zabbix, Prometheus basics</li>
-                <li>✔ Virtualization (VMware, Proxmox, Hyper-V)</li>
+                <li>✔ Linux administration (Ubuntu)</li>
+  
               </ul>
 
               <div className="flex flex-wrap gap-2 pt-1">
@@ -191,11 +182,11 @@ export default function SkillsPage() {
 
             <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200">
               <p className="text-gray-300">
-                Using{" "}
-                <span className="text-emerald-300">
-                  Python &amp; Ansible to automate recurring network tasks
-                </span>{" "}
-                and keep configurations consistent.
+              Python for network automation
+Backups, audits, config checks
+Ansible basics for network tasks
+Structured YAML / JSON configurations
+
               </p>
 
               <ul className="space-y-2">

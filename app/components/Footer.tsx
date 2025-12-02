@@ -6,15 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex flex-col items-center gap-4 text-center">
         {/* Text */}
         <p className="font-mono tracking-wide text-[11px] sm:text-xs text-gray-500">
-          © {new Date().getFullYear()} SecureIT-Hub — Crafted by{" "}
-          <a
-            href="https://www.linkedin.com/in/anas-bounaim-37450621a"
-            target="_blank"
-            rel="noreferrer"
-            className="text-emerald-400 hover:text-emerald-300"
-          >
-            Anas Bounaim
-          </a>
+          © {new Date().getFullYear()} SecureIT-Hub 
         </p>
 
         {/* Responsive SVG Footer Logo */}

@@ -335,8 +335,12 @@ export default function TestimonialsPage() {
         </div>
 
         <p className="max-w-2xl text-gray-400 text-[15px] leading-relaxed">
-          Industry peers, collaborators, and managers share their experience
-          working with me — from engineering discipline to execution quality.
+         
+I receive consistent appreciation from engineers, managers and colleagues I collaborate with.
+Only public LinkedIn recommendations are displayed here to keep everything clean, secure and fully compliant.
+Each recommendation highlights what defines my work: clarity, reliability, discipline and real problem-solving in live production environments.
+( et tu intègre comme convenu ceux de mon LinkedIn)
+
         </p>
 
         {/* Small terminal prompt line */}

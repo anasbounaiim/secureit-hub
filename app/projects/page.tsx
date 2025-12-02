@@ -6,9 +6,8 @@ const projects = [
     period: "Ongoing",
     stack: ["Cisco", "Fortinet", "VPN", "Linux", "Monitoring"],
     description: [
-      "Designing a multi-site homelab inspired by enterprise environments.",
-      "Segmented networks, IPSec tunnels, centralized logging, SNMP monitoring and policy-driven firewalling.",
-      "A full playground to test real production behavior.",
+      "Multi-site homelab built like an enterprise environment: segmented networks, IPSec tunnels, centralized logging, SNMP monitoring and policy-driven firewalling.A full playground to test real production behavior.",
+      "Cisco · Fortinet · VPN · Linux · Monitoring ~/labs/enterprise_homelab"
     ],
   },
   {
@@ -16,8 +15,8 @@ const projects = [
     period: "Ongoing",
     stack: ["Python", "Automation", "CLI", "Scripting"],
     description: [
-      "Python automations for daily network operations: configuration backups, compliance checks, inventory parsing and CLI-based bulk tasks.",
-      "Built for clarity, repeatability and speed.",
+      "Python tools for daily network operations: backups, compliance checks, inventory parsing and CLI-based bulk tasks. Focused on clarity, repeatability and speed.",
+   ,"Python · Automation · CLI · Scripting ~/labs/automation_toolkit"
     ],
   },
   {
@@ -25,8 +24,8 @@ const projects = [
     period: "Lab",
     stack: ["Zscaler", "VPN", "Firewall", "Access control"],
     description: [
-      "Research environment focused on testing and comparing remote-access architectures such as Zscaler ZPA and ZIA, IPSec and SSL VPNs.",
-      "Analysis of policy behavior and optimisation of user experience while maintaining strong security posture.",
+      "Testing and comparing remote-access paths: Zscaler ZPA / ZIA, IPSec, SSL VPN.Focus on policy behavior, user experience and security posture.",
+    "Zscaler · VPN · Firewall · Access control ~/labs/remote_access_hardening"
     ],
   },
   {
@@ -34,8 +33,9 @@ const projects = [
     period: "Lab",
     stack: ["Linux", "Syslog", "Traffic capture", "Automation"],
     description: [
-      "Environment to analyze logs, replay captures, simulate incidents and validate diagnostic workflows.",
+      "Environment for log analysis, packet replay and incident simulation.",
       "Objective: visibility, forensic discipline and structured troubleshooting.",
+    ,"Objective: visibility, forensic discipline, structured troubleshooting. Linux · Syslog · Traffic capture · Automation ~/labs/incident_response_playground"
     ],
   },
   {
@@ -43,7 +43,8 @@ const projects = [
     period: "Lab",
     stack: ["Fortinet", "AlgoSec", "Segmentation"],
     description: [
-      "Study focused on cleaning firewall rulebases, reducing shadowed rules, optimizing NAT and improving segmentation using AlgoSec-style methodology.",
+      "Review and optimization of firewall rulebases: cleanup, segmentation and NAT improvements.Fortinet · AlgoSec · Segmentation",
+    "Fortinet · AlgoSec · Segmentation ~/labs/firewall_policy_optimization"
     ],
   },
 ];
@@ -66,12 +67,11 @@ export default function ProjectsPage() {
         </h1>
 
         <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-relaxed">
-          Practical labs, automation tools and infrastructure designs focused on{" "}
-          <span className="text-emerald-300">
-            security, remote operations and reliable networking
-          </span>
-          . These projects reflect real production scenarios, not theoretical
-          exercises.
+        Projects, labs and real-world engineering
+Hands-on labs, automation tools and network designs focused on security, remote access and reliable connectivity.
+Each project reflects real production behavior not theoretical exercises.
+
+
         </p>
       </header>
 

@@ -22,16 +22,13 @@ export default function AboutPage() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-semibold text-white">
-          About Mohammed
+          About Me
         </h1>
 
         <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-relaxed">
-          Network &amp; Security Engineer focused on{" "}
-          <span className="text-emerald-300">
-            secure connectivity, stable infrastructures and real-world
-            production operations
-          </span>{" "}
-          across hybrid environments.
+        Network Engineer focused on secure connectivity, stable infrastructures and clean remote operations.
+Experience across Belgium and remote environments, with daily work on enterprise production systems.
+
         </p>
       </header>
 
@@ -60,74 +57,23 @@ export default function AboutPage() {
               </div>
 
               <p>
-                I&apos;m a Systems &amp; Network Engineer with a strong
-                operational background in{" "}
-                <span className="text-emerald-300">
-                  security, connectivity and uptime
-                </span>
-                . I work daily with Cisco, Fortinet, Zscaler and Linux to keep
-                infrastructures stable, secure and predictable.
+
+              Network Engineer working on hybrid infrastructures, secure VPN connectivity, firewall operations and reliable network paths.
+Background built around clarity, troubleshooting discipline and service continuity.
+Certified CCNA and Linux+.
+Currently advancing toward CCNP Security.
+Ubuntu as main OS, Kali in VM for structured learning and protocol testing.
+Communication and stable design guide my daily work.
+
+               
               </p>
 
-              <p>
-                Years of experience in{" "}
-                <span className="text-emerald-300">
-                  monitoring, incident response and infrastructure support
-                </span>{" "}
-                shaped the way I execute: production first, clear impact
-                awareness, and disciplined troubleshooting.
-              </p>
-
-              <p>
-                I&apos;m{" "}
-                <span className="text-emerald-300">
-                  CompTIA Linux+ and Cisco CCNA certified
-                </span>
-                , with{" "}
-                <span className="text-emerald-300">
-                  Fortinet Certified Fundamentals in Cybersecurity
-                </span>{" "}
-                and <span className="text-emerald-300">CCNP Security</span> in
-                progress. Ubuntu is my daily OS; Kali runs in a VM for labs and
-                controlled security testing.
-              </p>
             </div>
           </div>
 
           {/* EXPERIENCE + TOOLING ROW */}
           <div className="grid gap-4 md:grid-cols-2">
-            {/* EXPERIENCE SUMMARY */}
-            <div className="relative rounded-2xl border border-white/10 bg-black/70 overflow-hidden">
-              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 bg-black/80">
-                <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-emerald-300">
-                  <Activity size={14} />
-                  <span>Experience</span>
-                </div>
-                <span className="text-[10px] text-gray-400">2009 → now</span>
-              </div>
 
-              <div className="p-4 space-y-2 text-[12px] md:text-[13px] text-gray-200">
-                <p className="font-semibold text-emerald-200">
-                  Systems / Network Engineer – Ahold Delhaize
-                </p>
-                <p className="text-gray-400">
-                  Hybrid infrastructure, secure connectivity, VPN, firewalls and
-                  remote access across multiple sites.
-                </p>
-
-                <p className="font-semibold text-emerald-200 pt-2">
-                  Previous roles
-                </p>
-                <ul className="list-disc list-inside space-y-1 text-gray-300">
-                  <li>IT Consultant at Econocom (systems &amp; network support)</li>
-                  <li>Security support at BNP Paribas Securities Services</li>
-                  <li>
-                    Application support &amp; monitoring (Verisure, Johnson
-                    Controls, UZ Brussel, SERIS, Securitas)
-                  </li>
-                </ul>
-              </div>
-            </div>
 
             {/* TOOLING & ECOSYSTEM */}
             <div className="relative rounded-2xl border border-white/10 bg-black/70 overflow-hidden">
@@ -140,32 +86,13 @@ export default function AboutPage() {
 
               <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200">
                 <p>
-                  I work with a broad ecosystem to keep infrastructures{" "}
-                  <span className="text-emerald-300">
-                    observable, debuggable and maintainable
-                  </span>
-                  .
+ 
+                Hands-on experience with Cisco, Fortinet, VPN technologies, Infoblox, F5 and Zscaler.
+Used for connectivity, visibility, segmentation and secure access with an operational mindset.
+
                 </p>
 
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Cisco routing & switching",
-                    "Fortinet FortiGate",
-                    "Zscaler ZIA / ZPA",
-                    "IPSec & SSL VPN",
-                    "Linux (Ubuntu)",
-                    "VMware / virtualization",
-                    "Infoblox · F5 · Citrix",
-                    "AlgoSec policy analysis",
-                  ].map((item) => (
-                    <span
-                      key={item}
-                      className="px-2.5 py-1 rounded-md border border-white/10 bg-white/5 text-[11px] text-gray-200"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
+
               </div>
             </div>
           </div>
@@ -183,18 +110,12 @@ export default function AboutPage() {
 
               <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200">
                 <p>
-                  Comfortable in{" "}
-                  <span className="text-emerald-300">
-                    fully remote, distributed teams
-                  </span>{" "}
-                  with clear documentation and async-friendly communication.
+                Remote ready, structured and reliability focused.
+I document the essentials, simplify where it adds value and automate when it strengthens consistency.
+Multilingual: French, Dutch, Arabic, English.
+
                 </p>
-                <p className="text-gray-300">
-                  Languages:{" "}
-                  <span className="text-emerald-300">
-                    French · Dutch · Arabic · English
-                  </span>
-                </p>
+   
               </div>
             </div>
 
@@ -212,19 +133,19 @@ export default function AboutPage() {
                   <span className="font-semibold text-emerald-200">
                     Cisco CCNA
                   </span>{" "}
-                  – issued 2022
+                  
                 </p>
                 <p>
                   <span className="font-semibold text-emerald-200">
                     CompTIA Linux+
                   </span>{" "}
-                  – issued 2024
+                  
                 </p>
                 <p>
                   <span className="font-semibold text-emerald-200">
                     Fortinet Certified Fundamentals in Cybersecurity
                   </span>{" "}
-                  – issued 2025
+                  
                 </p>
                 <p className="text-gray-400 pt-1">
                   Currently advancing toward{" "}
@@ -262,13 +183,14 @@ export default function AboutPage() {
               <p className="text-[11px] text-emerald-400">
                 <span className="text-emerald-500">➜</span> snapshot
               </p>
-              <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-                <li>• role: Network_&_Security_Engineer</li>
-                <li>• stack: Cisco · Fortinet · Zscaler · VPN · Linux</li>
-                <li>• mode: full_remote</li>
-                <li>• current_mission: Ahold_Delhaize (BE)</li>
-                <li>• focus: connectivity · stability · incident_response</li>
-              </ul>
+              role Network Engineer
+stack Cisco Fortinet VPN Zscaler Linux
+mode full remote
+focus secure connectivity troubleshooting stability hardening
+current mission Ahold Delhaize (Belgium & Luxembourg)
+quick links github.com/SecureIT-Hub
+quick links linkedin.com/in/mohammed-a-780b47195
+
             </div>
 
             {/* Focus areas */}
@@ -277,10 +199,7 @@ export default function AboutPage() {
                 <span className="text-emerald-500">➜</span> focus_areas
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-                <li>- vpn_design &amp; secure_remote_access</li>
-                <li>- firewall_policy &amp; segmentation_reviews</li>
-                <li>- network_automation (Python / Ansible basics)</li>
-                <li>- security_posture &amp; incident_analysis</li>
+   
               </ul>
             </div>
 

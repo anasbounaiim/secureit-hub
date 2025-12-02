@@ -8,7 +8,6 @@ import {
   Terminal,
   GlobeLock,
   Zap,
-  Building2,
   Lock,
   Activity,
 } from "lucide-react";
@@ -67,7 +66,7 @@ export default function HomePage() {
           <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80 animate-pulse">
             /home
           </p>
-          <div className="absolute -bottom-1 left-0 w-12 h-[1px] bg-gradient-to-r from-emerald-400/60 to-transparent"></div>
+          <div className="absolute -bottom-1 left-0 w-12 h-[1px] bg-gradient-to-r from-emerald-400/60 to-transparent" />
         </div>
 
         {/* HERO + INTRO */}
@@ -98,18 +97,31 @@ export default function HomePage() {
               </h3>
             </div>
 
-            <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-3xl leading-relaxed">
-              I design, secure and operate{" "}
-              <span className="text-emerald-400 font-medium hover:text-emerald-300 transition-colors duration-300 cursor-default">
-                enterprise-grade networks
-              </span>{" "}
-              using Cisco, Fortinet, Zscaler and Linux. My daily work is focused
-              on{" "}
-              <span className="font-medium text-gray-100">
-                VPN connectivity, firewall operations, secure remote access and
-                clean troubleshooting in live production environments.
-              </span>
-            </p>
+            {/* NEW HERO COPY – 1rem, line-height 1.55, max width 780px */}
+            <div className="space-y-3 text-[1rem] text-gray-300 max-w-[780px] leading-[1.55]">
+              <p>
+                I work on secure and reliable network infrastructures with Cisco,
+                Fortinet, Zscaler and Linux. My focus is on stable VPN
+                connectivity, firewall operations, and clean remote execution in
+                real production environments.
+              </p>
+
+              <p>
+                Strong background in network operations across Belgium and remote
+                setups. Clear, pragmatic and consistent problem-solving with
+                reliability as a priority.
+              </p>
+
+              <p>
+                Current mission: Ahold Delhaize. Hybrid infrastructure, high
+                uptime requirements and full-remote delivery.
+              </p>
+
+              <p>
+                Multilingual: English, French, Dutch, Arabic. Fully remote.
+                Security-driven. Stable by design.
+              </p>
+            </div>
 
             {/* SHORT HIGHLIGHTS BAR */}
             <div className="flex flex-wrap gap-3 text-[11px] sm:text-xs">
@@ -125,18 +137,18 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* RIGHT – STACK / CURRENT MISSION PANEL */}
+          {/* RIGHT – STACK / CURRENT MISSION PANEL (UNCHANGED) */}
           <div
             className="
-            rounded-2xl border border-emerald-500/40 bg-black/60 
-            shadow-[0_0_25px_rgba(16,185,129,0.18)]
-            hover:shadow-[0_0_35px_rgba(16,185,129,0.28)]
-            hover:border-emerald-500/60
-            transition-all duration-500
-            backdrop-blur-sm
-            relative overflow-hidden
-            group
-          "
+              rounded-2xl border border-emerald-500/40 bg-black/60 
+              shadow-[0_0_25px_rgba(16,185,129,0.18)]
+              hover:shadow-[0_0_35px_rgba(16,185,129,0.28)]
+              hover:border-emerald-500/60
+              transition-all duration-500
+              backdrop-blur-sm
+              relative overflow-hidden
+              group
+            "
           >
             {/* Terminal top bar */}
             <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
@@ -180,8 +192,8 @@ export default function HomePage() {
                   <span className="text-emerald-400 font-semibold">
                     Focus:&nbsp;
                   </span>
-                  Secure connectivity, stability, incident resolution and service
-                  continuity.
+                  Secure connectivity, stability, incident resolution and
+                  service continuity.
                 </p>
               </div>
 
@@ -228,68 +240,66 @@ export default function HomePage() {
         </div>
 
         {/* HOW I WORK – THREE COLUMNS */}
-      {/* HOW I WORK – THREE COLUMNS */}
-      <div className="grid gap-6 md:grid-cols-3">
-        <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div className="flex items-center gap-3 relative z-10">
-            <Activity
-              className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
-              size={20}
-            />
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
-              APPROACH
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="flex items-center gap-3 relative z-10">
+              <Activity
+                className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
+                size={20}
+              />
+              <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
+                APPROACH
+              </p>
+            </div>
+            <p className="text-sm text-gray-300 leading-relaxed relative z-10">
+              I handle every change, rule and access path with disciplined
+              execution and clear communication.
             </p>
           </div>
-          <p className="text-sm text-gray-300 leading-relaxed relative z-10">
-            I handle every change, rule and access path with disciplined execution
-            and clear communication.
-          </p>
-        </div>
 
-        <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div className="flex items-center gap-3 relative z-10">
-            <Lock
-              className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
-              size={20}
-            />
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
-              SECURITY MINDSET
+          <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="flex items-center gap-3 relative z-10">
+              <Lock
+                className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
+                size={20}
+              />
+              <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
+                SECURITY MINDSET
+              </p>
+            </div>
+            <p className="text-sm text-gray-300 leading-relaxed relative z-10">
+              Security is structure. Boundaries, policies and flows must stay
+              predictable, consistent and controlled.
             </p>
           </div>
-          <p className="text-sm text-gray-300 leading-relaxed relative z-10">
-            Security is structure. Boundaries, policies and flows must stay
-            predictable, consistent and controlled.
-          </p>
-        </div>
 
-        <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div className="flex items-center gap-3 relative z-10">
-            <Terminal
-              className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
-              size={20}
-            />
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
-              TOOLING AND AUTOMATION
+          <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="flex items-center gap-3 relative z-10">
+              <Terminal
+                className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
+                size={20}
+              />
+              <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
+                TOOLING AND AUTOMATION
+              </p>
+            </div>
+            <p className="text-sm text-gray-300 leading-relaxed relative z-10">
+              Python, CLI and structured configs for clean automation, fast
+              validation and reliable repeatability.
             </p>
           </div>
-          <p className="text-sm text-gray-300 leading-relaxed relative z-10">
-            Python, CLI and structured configs for clean automation, fast
-            validation and reliable repeatability.
-          </p>
         </div>
-      </div>
 
-
-        {/* AT A GLANCE – SMALL STAT CARDS */}
+        {/* AT A GLANCE – SMALL STAT CARDS (UNCHANGED) */}
         <div className="space-y-4">
           <div className="relative">
             <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80">
               // at a glance
             </p>
-            <div className="absolute -bottom-1 left-0 w-16 h-[1px] bg-gradient-to-r from-emerald-400/60 to-transparent"></div>
+            <div className="absolute -bottom-1 left-0 w-16 h-[1px] bg-gradient-to-r from-emerald-400/60 to-transparent" />
           </div>
 
           <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -319,7 +329,7 @@ export default function HomePage() {
                 key={item.label}
                 className="rounded-xl border border-white/10 bg-black/70 hover:bg-black/80 hover:border-emerald-500/40 px-4 py-3 sm:py-4 flex flex-col gap-1.5 transition-all duration-300 group relative overflow-hidden cursor-default"
               >
-                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500/0 via-emerald-500/50 to-emerald-500/0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500/0 via-emerald-500/50 to-emerald-500/0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                 <p className="text-xs uppercase tracking-[0.18em] text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                   {item.label}
                 </p>
@@ -347,19 +357,19 @@ export default function HomePage() {
               key={label}
               onClick={() => setActiveLog(key)}
               className="
-              flex flex-col items-center gap-2 p-4 
-              rounded-xl border border-white/10
-              bg-black/70 backdrop-blur-md
-              shadow-[0_0_18px_-6px_rgba(16,185,129,0.35)]
-              hover:shadow-[0_0_28px_-4px_rgba(16,185,129,0.55)]
-              transition-all duration-300
-              hover:scale-105 cursor-pointer hover:border-emerald-400/50
-              hover:bg-black/90
-              group
-              relative overflow-hidden
-            "
+                flex flex-col items-center gap-2 p-4 
+                rounded-xl border border-white/10
+                bg-black/70 backdrop-blur-md
+                shadow-[0_0_18px_-6px_rgba(16,185,129,0.35)]
+                hover:shadow-[0_0_28px_-4px_rgba(16,185,129,0.55)]
+                transition-all duration-300
+                hover:scale-105 cursor-pointer hover:border-emerald-400/50
+                hover:bg-black/90
+                group
+                relative overflow-hidden
+              "
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <Icon
                 className="text-emerald-400 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.6)] transition-all duration-300 relative z-10"
                 size={26}
@@ -369,6 +379,44 @@ export default function HomePage() {
               </p>
             </button>
           ))}
+        </div>
+
+        {/* SIGNATURE / TRACEROUTE BLOCK – JUST ABOVE FOOTER */}
+        <div className="pt-8 flex justify-center">
+          <div
+            className="
+              w-full max-w-xl
+              rounded-2xl border border-emerald-500/40
+              bg-black/90 shadow-[0_0_28px_-10px_rgba(16,185,129,0.8)]
+              overflow-hidden font-mono text-sm text-emerald-100
+            "
+          >
+            {/* Terminal bar */}
+            <div className="flex items-center justify-between px-4 py-2 border-b border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-black to-emerald-500/20">
+              <div className="flex items-center gap-1.5">
+                <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
+                <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
+                <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
+              </div>
+              <span className="text-[11px] uppercase tracking-[0.25em] text-emerald-200">
+                traceroute :: secureit-hub.com
+              </span>
+            </div>
+
+            <div className="p-5 space-y-2">
+              <p className="text-emerald-300">
+                $ traceroute{" "}
+                <span className="text-emerald-100">secureit-hub.com</span>
+              </p>
+              <p>  hop 1: user_location</p>
+              <p>  hop 2: vpn_gateway</p>
+              <p>  hop 3: secureit_infra</p>
+
+              <p className="mt-3 text-emerald-300">
+                status: <span className="text-emerald-100">reachable ✓</span>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -391,7 +439,7 @@ export default function HomePage() {
             "
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Top bar like your context window */}
+            {/* Top bar */}
             <div className="flex items-center justify-between px-4 py-2 border-b border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-black to-emerald-500/20">
               <div className="flex items-center gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
@@ -404,7 +452,7 @@ export default function HomePage() {
               <span className="text-[10px] text-emerald-500/70">●</span>
             </div>
 
-            {/* Body – ONLY the final validated lines */}
+            {/* Body – ONLY final validated lines */}
             <div className="p-5 space-y-2">
               {LOG_CONTENT[activeLog].lines.map((line) => (
                 <p key={line} className="leading-relaxed">
