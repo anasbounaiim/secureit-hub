@@ -63,14 +63,28 @@ export default function ProjectsPage() {
 
         <h1 className="text-3xl md:text-4xl font-semibold text-white flex items-center gap-2">
           <FolderGit2 className="text-emerald-400" size={24} />
-          <span>Projects, labs and real-world engineering</span>
+          <span>Security Labs & Projects</span>
         </h1>
 
-        <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-[1.7] whitespace-pre-line">
-          {`Projects, labs and real-world engineering
-Hands-on labs, automation tools and network designs focused on security, remote access and reliable connectivity.
-Each project reflects real production behavior not theoretical exercises.`}
-        </p>
+        <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-2xl space-y-1">
+  <span className="block">
+    <span className="text-emerald-300/90 font-medium">Projects, labs and real-world engineering</span>
+  </span>
+
+  <span className="block mt-1">
+    Hands-on labs, automation tools and network designs focused on{" "}
+    <span className="text-emerald-300">security</span>,{" "}
+    <span className="text-emerald-300">remote access</span> and{" "}
+    <span className="text-emerald-300">reliable connectivity</span>.
+  </span>
+
+  <span className="block mt-1">
+    Each project reflects{" "}
+    <span className="text-emerald-400 font-medium">real production behavior</span>,
+    not theoretical exercises.
+  </span>
+</p>
+
       </header>
 
       {/* MAIN GRID: PROJECTS + TERMINAL SIDEBAR */}
@@ -157,7 +171,7 @@ Each project reflects real production behavior not theoretical exercises.`}
         <aside
           className="
             relative rounded-2xl border border-emerald-500/40 
-            bg-black/85 shadow-[0_0_32px_rgba(16,185,129,0.5)]
+            bg-black/85 
             overflow-hidden font-mono text-[12px] text-emerald-100
           "
         >

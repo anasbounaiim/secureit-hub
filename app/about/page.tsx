@@ -5,6 +5,7 @@ import {
   GlobeLock,
   Activity,
   Award,
+  User,
   Languages,
   Terminal,
 } from "lucide-react";
@@ -21,26 +22,15 @@ export default function AboutPage() {
           <div className="absolute -bottom-1 left-0 w-16 h-[1px] bg-gradient-to-r from-emerald-400/70 to-transparent" />
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-semibold text-white">
+        <h1 className="text-3xl md:text-4xl font-semibold text-white flex items-center gap-3">
+            <User className="h-5 w-5 md:h-6 md:w-6 text-emerald-400" />
           About Me
         </h1>
 
         <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-[1.7]">
-          Network Engineer focused on{" "}
-          <span className="text-emerald-300">
-            secure connectivity, stable infrastructures
-          </span>{" "}
-          and{" "}
-          <span className="text-emerald-300">clean remote operations</span>.
-          Experience across{" "}
-          <span className="text-emerald-300">
-            Belgium and remote environments
-          </span>
-          , with daily work on{" "}
-          <span className="text-emerald-300">
-            enterprise production systems
-          </span>
-          .
+          Network Engineer focused on secure connectivity, stable infrastructures
+          and clean remote operations. Experience across Belgium and remote
+          environments, with daily work on enterprise production systems.
         </p>
       </header>
 
@@ -73,23 +63,15 @@ export default function AboutPage() {
 
               <div className="space-y-2">
                 <p>
-                  Network Engineer working on{" "}
-                  <span className="text-emerald-300">
-                    hybrid infrastructures, secure VPN connectivity, firewall
-                    operations and reliable network paths
-                  </span>
-                  .
+                  Network Engineer working on hybrid infrastructures, secure VPN
+                  connectivity, firewall operations and reliable network paths.
                 </p>
                 <p>
-                  Background built around{" "}
-                  <span className="text-emerald-300">
-                    clarity, troubleshooting discipline and service continuity
-                  </span>
-                  .
+                  Background built around clarity, troubleshooting discipline and
+                  service continuity.
                 </p>
                 <p>
-                  Certified{" "}
-                  <span className="text-emerald-300">CCNA</span> and{" "}
+                  Certified <span className="text-emerald-300">CCNA</span> and{" "}
                   <span className="text-emerald-300">Linux+</span>.
                 </p>
                 <p>
@@ -97,16 +79,10 @@ export default function AboutPage() {
                   <span className="text-emerald-300">CCNP Security</span>.
                 </p>
                 <p>
-                  <span className="text-emerald-300">
-                    Ubuntu as main OS, Kali in VM
-                  </span>{" "}
-                  for structured learning and protocol testing.
+                  Ubuntu as main OS, Kali in VM for structured learning and
+                  protocol testing.
                 </p>
-                <p>
-                  Communication and{" "}
-                  <span className="text-emerald-300">stable design</span> guide
-                  my daily work.
-                </p>
+                <p>Communication and stable design guide my daily work.</p>
               </div>
             </div>
           </div>
@@ -124,22 +100,12 @@ export default function AboutPage() {
 
               <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200 leading-relaxed">
                 <p>
-                  Hands-on experience with{" "}
-                  <span className="text-emerald-300">
-                    Cisco, Fortinet, VPN technologies, Infoblox, F5 and Zscaler
-                  </span>
-                  .
+                  Hands-on experience with Cisco, Fortinet, VPN technologies,
+                  Infoblox, F5 and Zscaler.
                 </p>
                 <p>
-                  Used for{" "}
-                  <span className="text-emerald-300">
-                    connectivity, visibility, segmentation
-                  </span>{" "}
-                  and{" "}
-                  <span className="text-emerald-300">
-                    secure access with an operational mindset
-                  </span>
-                  .
+                  Used for connectivity, visibility, segmentation and secure
+                  access with an operational mindset.
                 </p>
               </div>
             </div>
@@ -157,23 +123,10 @@ export default function AboutPage() {
               </div>
 
               <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200 leading-relaxed">
+                <p>Remote ready, structured and reliability focused.</p>
                 <p>
-                  Remote ready,{" "}
-                  <span className="text-emerald-300">
-                    structured and reliability focused
-                  </span>
-                  .
-                </p>
-                <p>
-                  I document the essentials,{" "}
-                  <span className="text-emerald-300">
-                    simplify where it adds value
-                  </span>{" "}
-                  and{" "}
-                  <span className="text-emerald-300">
-                    automate when it strengthens consistency
-                  </span>
-                  .
+                  I document the essentials, simplify where it adds value and
+                  automate when it strengthens consistency.
                 </p>
                 <p>
                   Multilingual:{" "}
@@ -223,7 +176,7 @@ export default function AboutPage() {
         <aside
           className="
             relative rounded-2xl border border-emerald-500/40 
-            bg-black/85 shadow-[0_0_32px_rgba(16,185,129,0.5)]
+            bg-black/85 
             overflow-hidden font-mono text-[12px] text-emerald-100
           "
         >

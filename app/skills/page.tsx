@@ -7,7 +7,10 @@ import {
   Cloud,
   Lock,
   Code,
+  Layers
 } from "lucide-react";
+
+
 
 export default function SkillsPage() {
   return (
@@ -21,9 +24,12 @@ export default function SkillsPage() {
           <div className="absolute -bottom-1 left-0 w-20 h-[1px] bg-gradient-to-r from-emerald-400/70 to-transparent" />
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-semibold text-white">
-          Technical Skills &amp; Expertise
-        </h1>
+
+<h1 className="text-3xl md:text-4xl font-semibold text-white flex items-center gap-3">
+  <Layers className="text-emerald-400 h-8 w-8" />
+  Technical Skills &amp; Expertise
+</h1>
+
 
         <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-[1.7]">
           A{" "}
@@ -259,7 +265,7 @@ export default function SkillsPage() {
         <aside
           className="
             relative rounded-2xl border border-emerald-500/40 
-            bg-black/85 shadow-[0_0_32px_rgba(16,185,129,0.5)]
+            bg-black/85 
             overflow-hidden font-mono text-[12px] text-emerald-100
           "
         >
