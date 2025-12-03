@@ -396,7 +396,7 @@ export default function HomePage() {
             className="
               w-full max-w-xl
               rounded-2xl border border-emerald-500/45
-              bg-black/90 shadow-[0_0_32px_-10px_rgba(16,185,129,0.9)]
+              bg-black/90 
               overflow-hidden font-mono text-sm text-emerald-100
               relative
             "
@@ -417,18 +417,54 @@ export default function HomePage() {
             </div>
 
             <div className="relative z-10 p-5 space-y-2">
-              <p className="text-emerald-300">
-                $ traceroute{" "}
-                <span className="text-emerald-100">secureit-hub.com</span>
-              </p>
-              <p>  hop 1: user_location</p>
-              <p>  hop 2: vpn_gateway</p>
-              <p>  hop 3: secureit_infra</p>
+  <p className="text-emerald-300">
+    $ traceroute{" "}
+    <span className="text-emerald-100">secureit-hub.com</span>
+  </p>
 
-              <p className="mt-3 text-emerald-300">
-                status: <span className="text-emerald-100">reachable ✓</span>
-              </p>
-            </div>
+  <p className="text-emerald-100">
+    {"  "}hop 1: user_location{" "}
+    <span className="text-emerald-400/80">[edge_client]</span>
+  </p>
+  <p className="text-emerald-100">
+    {"  "}hop 2: vpn_gateway{" "}
+    <span className="text-emerald-400/80">
+      [encrypted_tunnel_established]
+    </span>
+  </p>
+  <p className="text-emerald-100">
+    {"  "}hop 3: secureit_infra{" "}
+    <span className="text-emerald-400/80">
+      [routing_clean · fw_policies_ok]
+    </span>
+  </p>
+  <p className="text-emerald-100">
+    {"  "}hop 4: secureit_services{" "}
+    <span className="text-emerald-400/80">
+      [monitoring_online · logs_streaming]
+    </span>
+  </p>
+  <p className="text-emerald-100">
+    {"  "}hop 5: secureit-hub.com{" "}
+    <span className="text-emerald-400/80">
+      [app_alive · tls_ok]
+    </span>
+  </p>
+
+  <p className="mt-3 text-emerald-300">
+    status: <span className="text-emerald-100">reachable ✓</span>
+  </p>
+  <p className="text-emerald-300">
+    signal: <span className="text-emerald-100">stable</span>
+  </p>
+  <p className="text-emerald-300">
+    notes:{" "}
+    <span className="text-emerald-100">
+      path_encrypted=true, packet_loss=0%, ready_for_remote_work
+    </span>
+  </p>
+</div>
+
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import { Mail, Linkedin, ShieldCheck, SendHorizonal, Terminal } from "lucide-react";
+import { Mail, Linkedin, ShieldCheck, SendHorizonal, Terminal, Contact } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -13,7 +13,7 @@ export default function ContactPage() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-semibold text-white flex items-center gap-2">
-          <ShieldCheck className="text-emerald-400" size={26} />
+          <Mail className="text-emerald-400" size={26} />
           <span>Get in touch</span>
         </h1>
 
