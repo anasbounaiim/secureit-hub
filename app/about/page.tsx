@@ -11,9 +11,9 @@ import {
 
 export default function AboutPage() {
   return (
-    <section className="space-y-10 md:space-y-12">
+    <section className="max-w-6xl mx-auto space-y-10 md:space-y-12 lg:space-y-16">
       {/* PATH + TITLE */}
-      <header className="space-y-3">
+      <header className="space-y-4">
         <div className="relative inline-block">
           <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80">
             /about
@@ -25,21 +25,33 @@ export default function AboutPage() {
           About Me
         </h1>
 
-        <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-relaxed">
-        Network Engineer focused on secure connectivity, stable infrastructures and clean remote operations.
-Experience across Belgium and remote environments, with daily work on enterprise production systems.
-
+        <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-[1.7]">
+          Network Engineer focused on{" "}
+          <span className="text-emerald-300">
+            secure connectivity, stable infrastructures
+          </span>{" "}
+          and{" "}
+          <span className="text-emerald-300">clean remote operations</span>.
+          Experience across{" "}
+          <span className="text-emerald-300">
+            Belgium and remote environments
+          </span>
+          , with daily work on{" "}
+          <span className="text-emerald-300">
+            enterprise production systems
+          </span>
+          .
         </p>
       </header>
 
       {/* MAIN GRID */}
-      <div className="grid gap-8 md:gap-10 lg:grid-cols-[1.7fr,1.3fr] items-start">
-        {/* LEFT COLUMN – "CARDS" IN TERMINAL STYLE */}
-        <div className="space-y-6">
+      <div className="grid gap-8 md:gap-10 lg:gap-12 lg:grid-cols-[1.7fr,1.3fr] items-start">
+        {/* LEFT COLUMN – TERMINAL-LIKE CARDS */}
+        <div className="space-y-6 md:space-y-7">
           {/* PROFILE CARD */}
-          <div className="relative rounded-2xl border border-emerald-500/30 bg-black/80 shadow-[0_0_28px_-16px_rgba(16,185,129,0.9)] overflow-hidden">
+          <div className="relative rounded-2xl border border-emerald-500/35 bg-black/80 shadow-[0_0_30px_rgba(16,185,129,0.35)] overflow-hidden">
             {/* top bar */}
-            <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
+            <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/25 bg-gradient-to-r from-emerald-500/18 via-black to-emerald-500/18">
               <div className="flex items-center gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
@@ -50,49 +62,85 @@ Experience across Belgium and remote environments, with daily work on enterprise
               </span>
             </div>
 
-            <div className="p-4 sm:p-5 space-y-4 text-sm md:text-base text-gray-200 leading-relaxed">
+            {/* subtle inner glow */}
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.16),transparent_60%)]" />
+
+            <div className="relative p-4 sm:p-5 space-y-4 text-sm md:text-[15px] text-gray-200 leading-relaxed">
               <div className="flex items-center gap-2 text-emerald-400 text-[11px] uppercase tracking-[0.25em]">
                 <ShieldCheck size={16} />
                 <span>Profile</span>
               </div>
 
-              <p>
-
-              Network Engineer working on hybrid infrastructures, secure VPN connectivity, firewall operations and reliable network paths.
-Background built around clarity, troubleshooting discipline and service continuity.
-Certified CCNA and Linux+.
-Currently advancing toward CCNP Security.
-Ubuntu as main OS, Kali in VM for structured learning and protocol testing.
-Communication and stable design guide my daily work.
-
-               
-              </p>
-
+              <div className="space-y-2">
+                <p>
+                  Network Engineer working on{" "}
+                  <span className="text-emerald-300">
+                    hybrid infrastructures, secure VPN connectivity, firewall
+                    operations and reliable network paths
+                  </span>
+                  .
+                </p>
+                <p>
+                  Background built around{" "}
+                  <span className="text-emerald-300">
+                    clarity, troubleshooting discipline and service continuity
+                  </span>
+                  .
+                </p>
+                <p>
+                  Certified{" "}
+                  <span className="text-emerald-300">CCNA</span> and{" "}
+                  <span className="text-emerald-300">Linux+</span>.
+                </p>
+                <p>
+                  Currently advancing toward{" "}
+                  <span className="text-emerald-300">CCNP Security</span>.
+                </p>
+                <p>
+                  <span className="text-emerald-300">
+                    Ubuntu as main OS, Kali in VM
+                  </span>{" "}
+                  for structured learning and protocol testing.
+                </p>
+                <p>
+                  Communication and{" "}
+                  <span className="text-emerald-300">stable design</span> guide
+                  my daily work.
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* EXPERIENCE + TOOLING ROW */}
-          <div className="grid gap-4 md:grid-cols-2">
-
-
+          {/* TOOLING ROW */}
+          <div className="grid gap-4">
             {/* TOOLING & ECOSYSTEM */}
-            <div className="relative rounded-2xl border border-white/10 bg-black/70 overflow-hidden">
-              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 bg-black/80">
+            <div className="relative rounded-2xl border border-white/10 bg-black/75 overflow-hidden">
+              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 bg-gradient-to-r from-black via-black to-emerald-500/10">
                 <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-emerald-300">
                   <Server size={14} />
                   <span>Tooling &amp; ecosystem</span>
                 </div>
               </div>
 
-              <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200">
+              <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200 leading-relaxed">
                 <p>
- 
-                Hands-on experience with Cisco, Fortinet, VPN technologies, Infoblox, F5 and Zscaler.
-Used for connectivity, visibility, segmentation and secure access with an operational mindset.
-
+                  Hands-on experience with{" "}
+                  <span className="text-emerald-300">
+                    Cisco, Fortinet, VPN technologies, Infoblox, F5 and Zscaler
+                  </span>
+                  .
                 </p>
-
-
+                <p>
+                  Used for{" "}
+                  <span className="text-emerald-300">
+                    connectivity, visibility, segmentation
+                  </span>{" "}
+                  and{" "}
+                  <span className="text-emerald-300">
+                    secure access with an operational mindset
+                  </span>
+                  .
+                </p>
               </div>
             </div>
           </div>
@@ -100,52 +148,67 @@ Used for connectivity, visibility, segmentation and secure access with an operat
           {/* LANGUAGES + CERTS ROW */}
           <div className="grid gap-4 md:grid-cols-2">
             {/* LANGUAGES / WORK STYLE */}
-            <div className="relative rounded-2xl border border-white/10 bg-black/70 overflow-hidden">
-              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 bg-black/80">
+            <div className="relative rounded-2xl border border-white/10 bg-black/75 overflow-hidden">
+              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 bg-gradient-to-r from-black via-black to-emerald-500/10">
                 <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-emerald-300">
                   <Languages size={14} />
                   <span>Languages &amp; work style</span>
                 </div>
               </div>
 
-              <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200">
+              <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200 leading-relaxed">
                 <p>
-                Remote ready, structured and reliability focused.
-I document the essentials, simplify where it adds value and automate when it strengthens consistency.
-Multilingual: French, Dutch, Arabic, English.
-
+                  Remote ready,{" "}
+                  <span className="text-emerald-300">
+                    structured and reliability focused
+                  </span>
+                  .
                 </p>
-   
+                <p>
+                  I document the essentials,{" "}
+                  <span className="text-emerald-300">
+                    simplify where it adds value
+                  </span>{" "}
+                  and{" "}
+                  <span className="text-emerald-300">
+                    automate when it strengthens consistency
+                  </span>
+                  .
+                </p>
+                <p>
+                  Multilingual:{" "}
+                  <span className="text-emerald-300">
+                    French, Dutch, Arabic, English
+                  </span>
+                  .
+                </p>
               </div>
             </div>
 
             {/* CERTIFICATIONS */}
-            <div className="relative rounded-2xl border border-white/10 bg-black/70 overflow-hidden">
-              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 bg-black/80">
+            <div className="relative rounded-2xl border border-white/10 bg-black/75 overflow-hidden">
+              <div className="flex items-center justify-between px-3 py-2 border-b border-white/10 bg-gradient-to-r from-black via-black to-emerald-500/10">
                 <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-emerald-300">
                   <Award size={14} />
                   <span>Certifications</span>
                 </div>
               </div>
 
-              <div className="p-4 space-y-2 text-[12px] md:text-[13px] text-gray-200">
+              <div className="p-4 space-y-2.5 text-[12px] md:text-[13px] text-gray-200">
                 <p>
                   <span className="font-semibold text-emerald-200">
                     Cisco CCNA
-                  </span>{" "}
-                  
+                  </span>
                 </p>
                 <p>
                   <span className="font-semibold text-emerald-200">
                     CompTIA Linux+
-                  </span>{" "}
-                  
+                  </span>
                 </p>
                 <p>
                   <span className="font-semibold text-emerald-200">
                     Fortinet Certified Fundamentals in Cybersecurity
-                  </span>{" "}
-                  
+                  </span>
                 </p>
                 <p className="text-gray-400 pt-1">
                   Currently advancing toward{" "}
@@ -160,12 +223,12 @@ Multilingual: French, Dutch, Arabic, English.
         <aside
           className="
             relative rounded-2xl border border-emerald-500/40 
-            bg-black/80 shadow-[0_0_30px_-15px_rgba(16,185,129,0.9)]
+            bg-black/85 shadow-[0_0_32px_rgba(16,185,129,0.5)]
             overflow-hidden font-mono text-[12px] text-emerald-100
           "
         >
           {/* Terminal top bar */}
-          <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
+          <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/25 bg-gradient-to-r from-emerald-500/18 via-black to-emerald-500/18">
             <div className="flex items-center gap-1.5">
               <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
               <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
@@ -177,20 +240,21 @@ Multilingual: French, Dutch, Arabic, English.
           </div>
 
           {/* Console body */}
-          <div className="p-4 space-y-4">
+          <div className="p-4 sm:p-5 space-y-4">
             {/* Snapshot */}
             <div className="space-y-1.5">
               <p className="text-[11px] text-emerald-400">
                 <span className="text-emerald-500">➜</span> snapshot
               </p>
-              role Network Engineer
+              <p className="text-[11px] md:text-[12px] text-emerald-100/90 whitespace-pre-line leading-relaxed">
+                {`role Network Engineer
 stack Cisco Fortinet VPN Zscaler Linux
 mode full remote
 focus secure connectivity troubleshooting stability hardening
 current mission Ahold Delhaize (Belgium & Luxembourg)
 quick links github.com/SecureIT-Hub
-quick links linkedin.com/in/mohammed-a-780b47195
-
+quick links linkedin.com/in/mohammed-a-780b47195`}
+              </p>
             </div>
 
             {/* Focus areas */}
@@ -199,7 +263,7 @@ quick links linkedin.com/in/mohammed-a-780b47195
                 <span className="text-emerald-500">➜</span> focus_areas
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-   
+                {/* still intentionally empty */}
               </ul>
             </div>
 

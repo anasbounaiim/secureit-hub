@@ -319,9 +319,9 @@ const recommendations: Recommendation[] = [
 
 export default function TestimonialsPage() {
   return (
-<section className="mx-auto w-full max-w-xl  md:max-w-5xl  space-y-10 text-gray-200">
+    <section className="mx-auto w-full max-w-xl md:max-w-5xl space-y-10 text-gray-200">
 
-{/* Header */}
+      {/* Header */}
       <header className="space-y-4">
         <p className="text-xs uppercase tracking-[0.3em] text-emerald-400">
           /Recommendations
@@ -334,13 +334,24 @@ export default function TestimonialsPage() {
           </h1>
         </div>
 
-        <p className="max-w-2xl text-gray-400 text-[15px] leading-relaxed">
-         
-I receive consistent appreciation from engineers, managers and colleagues I collaborate with.
-Only public LinkedIn recommendations are displayed here to keep everything clean, secure and fully compliant.
-Each recommendation highlights what defines my work: clarity, reliability, discipline and real problem-solving in live production environments.
-( et tu intègre comme convenu ceux de mon LinkedIn)
-
+        {/* Clean paragraph with highlighted spans */}
+        <p className="max-w-2xl text-gray-300 text-[15px] leading-relaxed">
+          I receive consistent appreciation from{" "}
+          <span className="text-emerald-300">
+            engineers, managers and colleagues
+          </span>{" "}
+          I collaborate with. Only{" "}
+          <span className="text-emerald-300">public LinkedIn recommendations</span>{" "}
+          are displayed here to keep everything{" "}
+          <span className="text-emerald-400">clean, secure and fully compliant</span>.
+          Each recommendation highlights what defines my work:{" "}
+          <span className="text-emerald-300">
+            clarity, reliability, discipline
+          </span>{" "}
+          and{" "}
+          <span className="text-emerald-400">
+            real problem-solving in live production environments
+          </span>.
         </p>
 
         {/* Small terminal prompt line */}

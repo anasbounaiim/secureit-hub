@@ -6,17 +6,17 @@ export default function Footer() {
       <div className="mx-auto flex flex-col items-center gap-4 text-center">
         {/* Text */}
         <p className="font-mono tracking-wide text-[11px] sm:text-xs text-gray-500">
-          © {new Date().getFullYear()} SecureIT-Hub 
+          © {new Date().getFullYear()} SecureIT-Hub — Network & Security Engineering portfolio .
         </p>
 
         {/* Responsive SVG Footer Logo */}
         <div
           className="
-            w-[100px]      /* Mobile */
-            sm:w-[100px]   /* Small screens */
-            md:w-[150px]   /* Medium */
-            lg:w-[180px]   /* Desktop */
-            xl:w-[200px]   /* Large desktop */
+            w-[100px]
+            sm:w-[100px]
+            md:w-[150px]
+            lg:w-[180px]
+            xl:w-[200px]
           "
         >
           <Image
@@ -30,7 +30,7 @@ export default function Footer() {
               object-contain
               select-none 
               pointer-events-none
-              drop-shadow-[0_0_10px_rgba(52,211,153,0.6)]  /* emerald-400 glow */
+              drop-shadow-[0_0_10px_rgba(52,211,153,0.6)]
             "
           />
         </div>

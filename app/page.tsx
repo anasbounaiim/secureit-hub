@@ -60,7 +60,7 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="space-y-14 md:space-y-16">
+      <section className="space-y-14 md:space-y-16 lg:space-y-20 max-w-6xl mx-auto">
         {/* PATH LABEL */}
         <div className="relative">
           <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80 animate-pulse">
@@ -70,40 +70,48 @@ export default function HomePage() {
         </div>
 
         {/* HERO + INTRO */}
-        <div className="grid gap-10 md:gap-12 md:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)] items-start">
+        <div className="grid gap-10 md:gap-12 lg:gap-14 md:grid-cols-[minmax(0,2fr)_minmax(0,1.35fr)] items-start">
           {/* LEFT – HERO TITLES & MAIN TEXT */}
-          <div className="space-y-6">
-            <div className="space-y-1.5">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 hover:translate-x-1 transition-transform duration-300 group">
-                <ShieldCheck
-                  className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:rotate-12 transition-transform duration-300"
-                  size={30}
-                />
-                SECURE SYSTEMS.
-              </h1>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 hover:translate-x-1 transition-transform duration-300 group">
-                <Network
-                  className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:scale-110 transition-transform duration-300"
-                  size={30}
-                />
-                REMOTE EXECUTION.
-              </h2>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 hover:translate-x-1 transition-transform duration-300 group">
-                <Zap
-                  className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:rotate-12 transition-transform duration-300"
-                  size={30}
-                />
-                BUILT FOR IMPACT.
-              </h3>
+          <div className="space-y-7 md:space-y-8">
+            <div className="space-y-2 md:space-y-3">
+              <div className="space-y-1.5 md:space-y-2">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 md:hover:translate-x-1 transition-transform duration-300 group">
+                  <ShieldCheck
+                    className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:rotate-6 transition-transform duration-300"
+                    size={30}
+                  />
+                  SECURE SYSTEMS.
+                </h1>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 md:hover:translate-x-1 transition-transform duration-300 group">
+                  <Network
+                    className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:scale-110 transition-transform duration-300"
+                    size={30}
+                  />
+                  REMOTE EXECUTION.
+                </h2>
+                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 md:hover:translate-x-1 transition-transform duration-300 group">
+                  <Zap
+                    className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:rotate-6 transition-transform duration-300"
+                    size={30}
+                  />
+                  BUILT FOR IMPACT.
+                </h3>
+              </div>
             </div>
 
-            {/* NEW HERO COPY – 1rem, line-height 1.55, max width 780px */}
-            <div className="space-y-3 text-[1rem] text-gray-300 max-w-[780px] leading-[1.55]">
+            {/* HERO COPY */}
+            <div className="space-y-3.5 text-[0.95rem] sm:text-[1rem] text-gray-300 max-w-[780px] leading-[1.6]">
               <p>
-                I work on secure and reliable network infrastructures with Cisco,
-                Fortinet, Zscaler and Linux. My focus is on stable VPN
-                connectivity, firewall operations, and clean remote execution in
-                real production environments.
+                I work on secure and reliable network infrastructures with{" "}
+                <span className="text-emerald-300/90">
+                  Cisco, Fortinet, Zscaler and Linux
+                </span>
+                . My focus is on stable VPN connectivity, firewall operations,
+                and clean remote execution in{" "}
+                <span className="text-emerald-300/90">
+                  real production environments
+                </span>
+                .
               </p>
 
               <p>
@@ -124,7 +132,7 @@ export default function HomePage() {
             </div>
 
             {/* SHORT HIGHLIGHTS BAR */}
-            <div className="flex flex-wrap gap-3 text-[11px] sm:text-xs">
+            <div className="flex flex-wrap gap-2.5 sm:gap-3 text-[10px] sm:text-[11px] md:text-xs">
               <span className="px-3 py-1 rounded-full border border-emerald-500/60 bg-emerald-500/10 text-emerald-300 uppercase tracking-[0.15em] hover:bg-emerald-500/20 hover:border-emerald-500 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all duration-300 cursor-default">
                 Network & Security Engineer
               </span>
@@ -137,21 +145,25 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* RIGHT – STACK / CURRENT MISSION PANEL (UNCHANGED) */}
+          {/* RIGHT – STACK / CURRENT MISSION PANEL */}
           <div
             className="
-              rounded-2xl border border-emerald-500/40 bg-black/60 
-              shadow-[0_0_25px_rgba(16,185,129,0.18)]
-              hover:shadow-[0_0_35px_rgba(16,185,129,0.28)]
-              hover:border-emerald-500/60
+              rounded-2xl border border-emerald-500/45
+              bg-black/70
+              shadow-[0_0_30px_rgba(16,185,129,0.3)]
+              hover:shadow-[0_0_45px_rgba(16,185,129,0.45)]
+              hover:border-emerald-500/70
               transition-all duration-500
-              backdrop-blur-sm
+              backdrop-blur-md
               relative overflow-hidden
               group
             "
           >
+            {/* Subtle inner glow */}
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.16),transparent_60%)] opacity-70 group-hover:opacity-100 transition-opacity duration-700" />
+
             {/* Terminal top bar */}
-            <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
+            <div className="relative z-10 flex items-center justify-between px-3 py-2 border-b border-emerald-500/25 bg-gradient-to-r from-emerald-500/20 via-black to-emerald-500/20">
               <div className="flex items-center gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
@@ -163,18 +175,15 @@ export default function HomePage() {
             </div>
 
             {/* Panel body */}
-            <div className="p-5 sm:p-6 space-y-4 relative z-10">
-              {/* Animated corner accent */}
-              <div className="pointer-events-none absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 blur-3xl group-hover:bg-emerald-500/10 transition-all duration-700" />
-
-              <div className="flex items-center gap-3 relative z-10">
+            <div className="relative z-10 p-5 sm:p-6 space-y-5">
+              <div className="flex items-center gap-3">
                 <Terminal className="text-emerald-400 animate-pulse" size={22} />
                 <p className="text-xs uppercase tracking-[0.25em] text-emerald-300/90">
                   CURRENT CONTEXT
                 </p>
               </div>
 
-              <div className="space-y-1 text-sm text-gray-200 relative z-10">
+              <div className="space-y-1.5 text-sm text-gray-200">
                 <p className="hover:text-white transition-colors duration-200">
                   <span className="text-emerald-400 font-semibold">
                     Role:&nbsp;
@@ -197,7 +206,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="border-t border-emerald-500/20 pt-3 space-y-2 relative z-10">
+              <div className="border-t border-emerald-500/25 pt-3.5 space-y-2">
                 <p className="text-[11px] uppercase tracking-[0.2em] text-gray-400 flex items-center gap-2">
                   <Server className="text-emerald-400" size={16} />
                   CORE STACK
@@ -222,12 +231,12 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="border-t border-emerald-500/20 pt-3 space-y-1 relative z-10">
+              <div className="border-t border-emerald-500/25 pt-3.5 space-y-1.5">
                 <p className="text-[11px] uppercase tracking-[0.2em] text-gray-400 flex items-center gap-2">
                   <GlobeLock className="text-emerald-400" size={16} />
                   WORKING MODE
                 </p>
-                <p className="text-xs text-gray-300 hover:text-gray-100 transition-colors duration-200">
+                <p className="text-xs text-gray-300 hover:text-gray-100 transition-colors	duration-200">
                   Full-remote, production-focused and documentation-friendly.
                   Languages:{" "}
                   <span className="text-emerald-300 font-medium">
@@ -240,9 +249,9 @@ export default function HomePage() {
         </div>
 
         {/* HOW I WORK – THREE COLUMNS */}
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="grid gap-5 md:gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border border-white/10 bg-black/60 hover:bg-black/75 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/8 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="flex items-center gap-3 relative z-10">
               <Activity
                 className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
@@ -258,8 +267,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="rounded-2xl border border-white/10 bg-black/60 hover:bg-black/75 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/8 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="flex items-center gap-3 relative z-10">
               <Lock
                 className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
@@ -275,14 +284,14 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="rounded-2xl border border-white/10 bg-black/60 hover:bg-black/75 hover:border-emerald-500/30 p-4 sm:p-5 space-y-3 transition-all duration-300 group relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/8 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="flex items-center gap-3 relative z-10">
               <Terminal
-                className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
+                className="text-emerald-400 group-hover:scale-110 transition-transform	duration-300"
                 size={20}
               />
-              <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
+              <p className="text-xs uppercase tracking-[0.2em] text-gray-300	group-hover:text-emerald-300 transition-colors duration-300">
                 TOOLING AND AUTOMATION
               </p>
             </div>
@@ -293,7 +302,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* AT A GLANCE – SMALL STAT CARDS (UNCHANGED) */}
+        {/* AT A GLANCE – SMALL STAT CARDS */}
         <div className="space-y-4">
           <div className="relative">
             <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80">
@@ -327,7 +336,7 @@ export default function HomePage() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="rounded-xl border border-white/10 bg-black/70 hover:bg-black/80 hover:border-emerald-500/40 px-4 py-3 sm:py-4 flex flex-col gap-1.5 transition-all duration-300 group relative overflow-hidden cursor-default"
+                className="rounded-2xl border border-white/10 bg-black/70 hover:bg-black/80 hover:border-emerald-500/40 px-4 py-3 sm:py-4 flex flex-col gap-1.5 transition-all duration-300 group relative overflow-hidden cursor-default"
               >
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500/0 via-emerald-500/50 to-emerald-500/0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                 <p className="text-xs uppercase tracking-[0.18em] text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
@@ -345,7 +354,7 @@ export default function HomePage() {
         </div>
 
         {/* SMALL CAPABILITIES ROW – TILES THAT TRIGGER LOG POPUP */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 pt-4">
           {[
             { icon: Server, label: "INFRA", key: "INFRA" as LogKey },
             { icon: ShieldCheck, label: "SECURITY", key: "SECURITY" as LogKey },
@@ -357,8 +366,8 @@ export default function HomePage() {
               key={label}
               onClick={() => setActiveLog(key)}
               className="
-                flex flex-col items-center gap-2 p-4 
-                rounded-xl border border-white/10
+                flex flex-col items-center gap-2 p-3.5 sm:p-4 
+                rounded-2xl border border-white/10
                 bg-black/70 backdrop-blur-md
                 shadow-[0_0_18px_-6px_rgba(16,185,129,0.35)]
                 hover:shadow-[0_0_28px_-4px_rgba(16,185,129,0.55)]
@@ -374,7 +383,7 @@ export default function HomePage() {
                 className="text-emerald-400 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.6)] transition-all duration-300 relative z-10"
                 size={26}
               />
-              <p className="text-[11px] md:text-xs uppercase tracking-[0.18em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300 relative z-10">
+              <p className="text-[10px] sm:text-[11px] md:text-xs uppercase tracking-[0.18em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300 relative z-10">
                 {label}
               </p>
             </button>
@@ -386,24 +395,28 @@ export default function HomePage() {
           <div
             className="
               w-full max-w-xl
-              rounded-2xl border border-emerald-500/40
-              bg-black/90 shadow-[0_0_28px_-10px_rgba(16,185,129,0.8)]
+              rounded-2xl border border-emerald-500/45
+              bg-black/90 shadow-[0_0_32px_-10px_rgba(16,185,129,0.9)]
               overflow-hidden font-mono text-sm text-emerald-100
+              relative
             "
           >
+            {/* subtle top glow */}
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-emerald-500/20 to-transparent" />
+
             {/* Terminal bar */}
-            <div className="flex items-center justify-between px-4 py-2 border-b border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-black to-emerald-500/20">
+            <div className="relative z-10 flex items-center justify-between px-4 py-2 border-b border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-black to-emerald-500/20">
               <div className="flex items-center gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
                 <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
               </div>
-              <span className="text-[11px] uppercase tracking-[0.25em] text-emerald-200">
-                traceroute :: secureit-hub.com
+              <span className="hidden sm:inline text-[11px] uppercase tracking-[0.25em] text-emerald-200">
+              traceroute :: secureit-hub.com
               </span>
             </div>
 
-            <div className="p-5 space-y-2">
+            <div className="relative z-10 p-5 space-y-2">
               <p className="text-emerald-300">
                 $ traceroute{" "}
                 <span className="text-emerald-100">secureit-hub.com</span>
@@ -425,37 +438,49 @@ export default function HomePage() {
         <div
           className="
             fixed inset-0 z-50 flex items-center justify-center
-            bg-black/80 backdrop-blur-sm
+            px-3 sm:px-0
+            bg-black/80 backdrop-blur-md
             animate-in fade-in duration-200
           "
           onClick={() => setActiveLog(null)}
         >
           <div
             className="
-              w-full max-w-xl mx-4
-              rounded-2xl border border-emerald-500/40
-              bg-black/95 shadow-[0_0_35px_rgba(16,185,129,0.7)]
-              overflow-hidden font-mono text-sm text-emerald-100
+              w-full max-w-lg mx-auto
+              rounded-2xl border border-emerald-500/45
+              bg-black/95 shadow-[0_0_40px_rgba(16,185,129,0.8)]
+              overflow-hidden font-mono text-xs sm:text-sm text-emerald-100
+              max-h-[80vh] flex flex-col
+              animate-in fade-in-0 zoom-in-95 slide-in-from-bottom-4 duration-200
             "
             onClick={(e) => e.stopPropagation()}
           >
             {/* Top bar */}
-            <div className="flex items-center justify-between px-4 py-2 border-b border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-black to-emerald-500/20">
+            <div className="flex items-center justify-between px-3 sm:px-4 py-2 border-b border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-black to-emerald-500/20">
               <div className="flex items-center gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
                 <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
               </div>
-              <span className="text-[11px] uppercase tracking-[0.25em] text-emerald-200">
+              <span className="text-[10px] uppercase tracking-[0.25em] text-emerald-200 truncate max-w-[55%] sm:max-w-none">
                 secureit-hub :: {LOG_CONTENT[activeLog].file}
               </span>
-              <span className="text-[10px] text-emerald-500/70">●</span>
+
+              {/* Close dot / button */}
+              <button
+                type="button"
+                onClick={() => setActiveLog(null)}
+                className="text-[10px] text-emerald-500/80 hover:text-emerald-300 px-1"
+                aria-label="Close log"
+              >
+                ●
+              </button>
             </div>
 
             {/* Body – ONLY final validated lines */}
-            <div className="p-5 space-y-2">
+            <div className="p-4 sm:p-5 space-y-2 overflow-y-auto">
               {LOG_CONTENT[activeLog].lines.map((line) => (
-                <p key={line} className="leading-relaxed">
+                <p key={line} className="leading-relaxed break-words">
                   {line}
                 </p>
               ))}
@@ -463,6 +488,7 @@ export default function HomePage() {
           </div>
         </div>
       )}
+
     </>
   );
 }

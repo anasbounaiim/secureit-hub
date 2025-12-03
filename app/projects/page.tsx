@@ -7,7 +7,7 @@ const projects = [
     stack: ["Cisco", "Fortinet", "VPN", "Linux", "Monitoring"],
     description: [
       "Multi-site homelab built like an enterprise environment: segmented networks, IPSec tunnels, centralized logging, SNMP monitoring and policy-driven firewalling.A full playground to test real production behavior.",
-      "Cisco · Fortinet · VPN · Linux · Monitoring ~/labs/enterprise_homelab"
+      "Cisco · Fortinet · VPN · Linux · Monitoring ~/labs/enterprise_homelab",
     ],
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     stack: ["Python", "Automation", "CLI", "Scripting"],
     description: [
       "Python tools for daily network operations: backups, compliance checks, inventory parsing and CLI-based bulk tasks. Focused on clarity, repeatability and speed.",
-   ,"Python · Automation · CLI · Scripting ~/labs/automation_toolkit"
+      "Python · Automation · CLI · Scripting ~/labs/automation_toolkit",
     ],
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     stack: ["Zscaler", "VPN", "Firewall", "Access control"],
     description: [
       "Testing and comparing remote-access paths: Zscaler ZPA / ZIA, IPSec, SSL VPN.Focus on policy behavior, user experience and security posture.",
-    "Zscaler · VPN · Firewall · Access control ~/labs/remote_access_hardening"
+      "Zscaler · VPN · Firewall · Access control ~/labs/remote_access_hardening",
     ],
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     description: [
       "Environment for log analysis, packet replay and incident simulation.",
       "Objective: visibility, forensic discipline and structured troubleshooting.",
-    ,"Objective: visibility, forensic discipline, structured troubleshooting. Linux · Syslog · Traffic capture · Automation ~/labs/incident_response_playground"
+      "Objective: visibility, forensic discipline, structured troubleshooting. Linux · Syslog · Traffic capture · Automation ~/labs/incident_response_playground",
     ],
   },
   {
@@ -44,16 +44,16 @@ const projects = [
     stack: ["Fortinet", "AlgoSec", "Segmentation"],
     description: [
       "Review and optimization of firewall rulebases: cleanup, segmentation and NAT improvements.Fortinet · AlgoSec · Segmentation",
-    "Fortinet · AlgoSec · Segmentation ~/labs/firewall_policy_optimization"
+      "Fortinet · AlgoSec · Segmentation ~/labs/firewall_policy_optimization",
     ],
   },
 ];
 
 export default function ProjectsPage() {
   return (
-    <section className="space-y-10 md:space-y-12">
+    <section className="max-w-6xl mx-auto space-y-10 md:space-y-12 lg:space-y-16">
       {/* PATH + TITLE */}
-      <header className="space-y-3">
+      <header className="space-y-4">
         <div className="relative inline-block">
           <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80">
             /projects
@@ -66,19 +66,17 @@ export default function ProjectsPage() {
           <span>Projects, labs and real-world engineering</span>
         </h1>
 
-        <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-relaxed">
-        Projects, labs and real-world engineering
+        <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-[1.7] whitespace-pre-line">
+          {`Projects, labs and real-world engineering
 Hands-on labs, automation tools and network designs focused on security, remote access and reliable connectivity.
-Each project reflects real production behavior not theoretical exercises.
-
-
+Each project reflects real production behavior not theoretical exercises.`}
         </p>
       </header>
 
       {/* MAIN GRID: PROJECTS + TERMINAL SIDEBAR */}
-      <div className="grid gap-8 md:gap-10 lg:grid-cols-[1.8fr,1.2fr] items-start">
+      <div className="grid gap-8 md:gap-10 lg:gap-12 lg:grid-cols-[1.8fr,1.2fr] items-start">
         {/* LEFT – PROJECT FEED */}
-        <div className="space-y-4">
+        <div className="space-y-4 md:space-y-5">
           {projects.map((project, index) => (
             <article
               key={project.title}
@@ -109,10 +107,9 @@ Each project reflects real production behavior not theoretical exercises.
                   </span>
                 </div>
 
-                <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
-                  {project.description.map((line) => (
-                    <p key={line}>{line}</p>
-                  ))}
+                {/* DESCRIPTION AS TERMINAL BLOCK */}
+                <div className="font-mono text-[11px] md:text-[12px] text-emerald-100/90 bg-black/70 border border-emerald-500/20 rounded-lg px-3 py-2 leading-relaxed whitespace-pre-line">
+                  {project.description.join("\n")}
                 </div>
 
                 {/* Stack tags */}
@@ -160,7 +157,7 @@ Each project reflects real production behavior not theoretical exercises.
         <aside
           className="
             relative rounded-2xl border border-emerald-500/40 
-            bg-black/80 shadow-[0_0_30px_-15px_rgba(16,185,129,0.9)]
+            bg-black/85 shadow-[0_0_32px_rgba(16,185,129,0.5)]
             overflow-hidden font-mono text-[12px] text-emerald-100
           "
         >
@@ -177,7 +174,7 @@ Each project reflects real production behavior not theoretical exercises.
           </div>
 
           {/* Console body */}
-          <div className="p-4 space-y-4">
+          <div className="p-4 sm:p-5 space-y-4">
             {/* Summary */}
             <div className="space-y-1.5">
               <p className="text-[11px] text-emerald-400">
@@ -210,7 +207,7 @@ Each project reflects real production behavior not theoretical exercises.
               <p className="text-[11px] text-emerald-400">
                 <span className="text-emerald-500">➜</span> stack_matrix
               </p>
-              <pre className="text-[11px] md:text-[12px] text-emerald-100/90 leading-relaxed">
+              <pre className="text-[11px] md:text-[12px] text-emerald-100/90 leading-relaxed whitespace-pre">
 {`stack = {
   network:   [ "Cisco", "Fortinet", "VPN" ],
   security:  [ "Zscaler", "Firewall", "Segmentation" ],

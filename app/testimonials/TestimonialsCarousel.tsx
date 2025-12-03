@@ -169,7 +169,7 @@ export default function TestimonialsCarousel({
             <button
               onClick={prev}
               aria-label="Previous recommendation"
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 p-3 rounded-full border border-emerald-500/40 bg-black/80 text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 p-3  border border-emerald-500/40 bg-black/80 text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all"
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
@@ -177,7 +177,7 @@ export default function TestimonialsCarousel({
             <button
               onClick={next}
               aria-label="Next recommendation"
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 p-3 rounded-full border border-emerald-500/40 bg-black/80 text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 p-3  border border-emerald-500/40 bg-black/80 text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all"
             >
               <ChevronRight className="h-6 w-6" />
             </button>

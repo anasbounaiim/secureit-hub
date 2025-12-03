@@ -11,9 +11,9 @@ import {
 
 export default function SkillsPage() {
   return (
-    <section className="space-y-10 md:space-y-12">
+    <section className="max-w-6xl mx-auto space-y-10 md:space-y-12 lg:space-y-16">
       {/* PATH + TITLE */}
-      <header className="space-y-3">
+      <header className="space-y-4">
         <div className="relative inline-block">
           <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80">
             /skills
@@ -25,7 +25,7 @@ export default function SkillsPage() {
           Technical Skills &amp; Expertise
         </h1>
 
-        <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-relaxed">
+        <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-[1.7]">
           A{" "}
           <span className="text-emerald-300">
             security-driven network &amp; systems stack
@@ -36,13 +36,13 @@ export default function SkillsPage() {
       </header>
 
       {/* MAIN GRID */}
-      <div className="grid gap-8 md:gap-10 lg:grid-cols-[1.7fr,1.3fr] items-start">
+      <div className="grid gap-8 md:gap-10 lg:gap-12 lg:grid-cols-[1.7fr,1.3fr] items-start">
         {/* LEFT COLUMN – TERMINAL CARDS */}
-        <div className="space-y-6">
+        <div className="space-y-6 md:space-y-7">
           {/* NETWORKING */}
-          <div className="relative rounded-2xl border border-emerald-500/30 bg-black/80 shadow-[0_0_28px_-16px_rgba(16,185,129,0.9)] overflow-hidden">
+          <div className="relative rounded-2xl border border-emerald-500/35 bg-black/80 shadow-[0_0_30px_rgba(16,185,129,0.35)] overflow-hidden">
             {/* Top bar */}
-            <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
+            <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/25 bg-gradient-to-r from-emerald-500/18 via-black to-emerald-500/18">
               <div className="flex items-center gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
@@ -53,22 +53,28 @@ export default function SkillsPage() {
               </span>
             </div>
 
-            <div className="p-4 sm:p-5 space-y-4">
+            {/* subtle inner glow */}
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.16),transparent_60%)]" />
+
+            <div className="relative p-4 sm:p-5 space-y-4">
               <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-emerald-300">
                 <Network size={16} />
                 <span>Networking</span>
               </div>
 
-              <p className="text-sm md:text-[13px] text-gray-300">
-              Cisco Routing & Switching (CCNA, CCNP Security in progress)
-BGP, OSPF, EIGRP
-VLANs, STP, EtherChannel, HSRP / VRRP
-Enterprise WAN/LAN design and VPN troubleshooting
-Production-grade network operations across multiple sites
-
-                .
-              </p>
-
+              {/* normal paragraphs with light accent */}
+              <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
+                <p>
+                  <span className="text-emerald-300">
+                    Cisco Routing &amp; Switching (CCNA, CCNP Security in
+                    progress)
+                  </span>
+                </p>
+                <p>BGP, OSPF, EIGRP</p>
+                <p>VLANs, STP, EtherChannel, HSRP / VRRP</p>
+                <p>Enterprise WAN/LAN design and VPN troubleshooting</p>
+                <p>Production-grade network operations across multiple sites</p>
+              </div>
 
               <div className="flex flex-wrap gap-2 pt-1">
                 {["Cisco IOS", "WAN / MPLS", "LAN design", "High availability"].map(
@@ -86,9 +92,9 @@ Production-grade network operations across multiple sites
           </div>
 
           {/* SECURITY */}
-          <div className="relative rounded-2xl border border-emerald-500/30 bg-black/80 shadow-[0_0_28px_-16px_rgba(16,185,129,0.9)] overflow-hidden">
+          <div className="relative rounded-2xl border border-emerald-500/35 bg-black/80 shadow-[0_0_30px_rgba(16,185,129,0.35)] overflow-hidden">
             {/* Top bar */}
-            <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
+            <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/25 bg-gradient-to-r from-emerald-500/18 via-black to-emerald-500/18">
               <div className="flex items-center gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
@@ -99,23 +105,29 @@ Production-grade network operations across multiple sites
               </span>
             </div>
 
-            <div className="p-4 sm:p-5 space-y-4">
+            {/* subtle inner glow */}
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.16),transparent_60%)]" />
+
+            <div className="relative p-4 sm:p-5 space-y-4">
               <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-emerald-300">
                 <ShieldCheck size={16} />
                 <span>Security</span>
               </div>
 
-              <p className="text-sm md:text-[13px] text-gray-300">
-              Fortinet FortiGate (policies, NAT, VPN, IPS)
-Zscaler ZIA / ZPA administration
-Firewall rules, segmentation and secure access design
-IPSec VPN design, remote access stability
-Security posture review and incident analysis
-
-              </p>
+              <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
+                <p>
+                  <span className="text-emerald-300">
+                    Fortinet FortiGate (policies, NAT, VPN, IPS)
+                  </span>
+                </p>
+                <p>Zscaler ZIA / ZPA administration</p>
+                <p>Firewall rules, segmentation and secure access design</p>
+                <p>IPSec VPN design, remote access stability</p>
+                <p>Security posture review and incident analysis</p>
+              </div>
 
               <ul className="space-y-2 text-sm md:text-[13px] text-gray-200">
-            
+                {/* left intentionally empty */}
               </ul>
 
               <div className="flex flex-wrap gap-2 pt-1">
@@ -144,17 +156,19 @@ Security posture review and incident analysis
             </div>
 
             <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200">
-              <p className="text-gray-300">
-              Linux administration (Ubuntu as main OS)
-Bash and shell scripting
-Monitoring and log analysis
-VMware and Proxmox virtualization
-
-              </p>
+              <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
+                <p>
+                  <span className="text-emerald-300">
+                    Linux administration (Ubuntu as main OS)
+                  </span>
+                </p>
+                <p>Bash and shell scripting</p>
+                <p>Monitoring and log analysis</p>
+                <p>VMware and Proxmox virtualization</p>
+              </div>
 
               <ul className="space-y-2">
                 <li>✔ Linux administration (Ubuntu)</li>
-  
               </ul>
 
               <div className="flex flex-wrap gap-2 pt-1">
@@ -181,13 +195,16 @@ VMware and Proxmox virtualization
             </div>
 
             <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200">
-              <p className="text-gray-300">
-              Python for network automation
-Backups, audits, config checks
-Ansible basics for network tasks
-Structured YAML / JSON configurations
-
-              </p>
+              <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
+                <p>
+                  <span className="text-emerald-300">
+                    Python for network automation
+                  </span>
+                </p>
+                <p>Backups, audits, config checks</p>
+                <p>Ansible basics for network tasks</p>
+                <p>Structured YAML / JSON configurations</p>
+              </div>
 
               <ul className="space-y-2">
                 <li>✔ Python for networking automation</li>
@@ -242,12 +259,12 @@ Structured YAML / JSON configurations
         <aside
           className="
             relative rounded-2xl border border-emerald-500/40 
-            bg-black/80 shadow-[0_0_30px_-15px_rgba(16,185,129,0.9)]
+            bg-black/85 shadow-[0_0_32px_rgba(16,185,129,0.5)]
             overflow-hidden font-mono text-[12px] text-emerald-100
           "
         >
           {/* Terminal top bar */}
-          <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/20 bg-gradient-to-r from-emerald-500/15 via-black to-emerald-500/15">
+          <div className="flex items-center justify-between px-3 py-2 border-b border-emerald-500/25 bg-gradient-to-r from-emerald-500/18 via-black to-emerald-500/18">
             <div className="flex items-center gap-1.5">
               <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
               <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
@@ -259,13 +276,13 @@ Structured YAML / JSON configurations
           </div>
 
           {/* Console body */}
-          <div className="p-4 space-y-4">
+          <div className="p-4 sm:p-5 space-y-4">
             {/* Skills tree */}
             <div className="space-y-1.5">
               <p className="text-[11px] text-emerald-400">
                 <span className="text-emerald-500">➜</span> skills tree
               </p>
-              <pre className="text-[11px] md:text-[12px] text-emerald-100/90 leading-relaxed">
+              <pre className="text-[11px] md:text-[12px] text-emerald-100/90 leading-relaxed whitespace-pre">
 {`skills/
 ├── networking
 │   ├── cisco_routing_switching
