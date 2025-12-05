@@ -5,11 +5,37 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LoadingScreen from "./components/LoadingScreen"; // ⬅️ add this
 
-export const metadata: Metadata = {
-  title: "SecureIT-Hub – Network & Security Engineer",
+// app/layout.tsx
+export const metadata = {
+  metadataBase: new URL("https://www.secureit-hub.com"),
+  title: "SecureIT Hub – Network & Security Engineer",
   description:
-    "Portfolio of a remote Network & Security Engineer specializing in Cisco, Fortinet, Zscaler, Linux, VPN and Automation.",
+    "Clean, security-driven network & systems engineering built around stable remote operations.",
+  openGraph: {
+    title: "SecureIT Hub – Network & Security Engineer",
+    description:
+      "Secure connectivity, VPN, firewalls and remote-friendly infrastructure.",
+    url: "https://www.secureit-hub.com",
+    siteName: "SecureIT Hub",
+    images: [
+      {
+        url: "/og-secureit-hub.png", // in /public
+        width: 1200,
+        height: 630,
+        alt: "SecureIT Hub terminal-style homepage",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SecureIT Hub – Network & Security Engineer",
+    description:
+      "Secure connectivity, VPN, firewalls and remote-friendly infrastructure.",
+    images: ["/og-secureit-hub.png"],
+  },
 };
+
 
 export default function RootLayout({
   children,
