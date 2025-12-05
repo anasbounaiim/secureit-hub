@@ -9,32 +9,36 @@ import LoadingScreen from "./components/LoadingScreen"; // ⬅️ add this
 export const metadata = {
   metadataBase: new URL("https://www.secureit-hub.com"),
   title: "SecureIT Hub – Network & Security Engineer",
-  description:
-    "Clean, security-driven network & systems engineering built around stable remote operations.",
+  description: "Clean, security-driven network & systems engineering.",
+
+  icons: {
+    icon: "/favicon.ico",
+  },
+
   openGraph: {
+    type: "website",
+    url: "https://www.secureit-hub.com",
     title: "SecureIT Hub – Network & Security Engineer",
     description:
       "Secure connectivity, VPN, firewalls and remote-friendly infrastructure.",
-    url: "https://www.secureit-hub.com",
-    siteName: "SecureIT Hub",
     images: [
       {
-        url: "/og-secureit-hub.png", // in /public
+        url: "/og-secureit-hub.png",
         width: 1200,
         height: 630,
-        alt: "SecureIT Hub terminal-style homepage",
+        alt: "SecureIT Hub – Terminal-style homepage preview",
       },
     ],
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "SecureIT Hub – Network & Security Engineer",
-    description:
-      "Secure connectivity, VPN, firewalls and remote-friendly infrastructure.",
+    description: "Secure networking & system engineering expertise.",
     images: ["/og-secureit-hub.png"],
   },
 };
+
 
 
 export default function RootLayout({

@@ -20,7 +20,7 @@ export default function ContactPage() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    formData.append("access_key","e877a33e-8a96-43d8-909c-c51ab0412dfd");
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "");
     formData.append("from_name", "SecureIT Hub – Contact Form");
     formData.append("subject", "New message from secureit-hub.com");
     // optional spam honeypot
