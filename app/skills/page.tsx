@@ -315,11 +315,13 @@ export default function SkillsPage() {
                 <span className="text-emerald-500">➜</span> focus_areas
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-                <li>- secure_connectivity &amp; remote_access</li>
-                <li>- firewall_policies &amp; segmentation_reviews</li>
-                <li>- observability &amp; incident_response</li>
-                <li>- config_automation &amp; drift_control</li>
-              </ul>
+  <li>- secure_connectivity & remote_access</li>
+  <li>- firewall_policies & segmentation_reviews</li>
+  <li>- observability & incident_response</li>
+  <li>- network_troubleshooting</li>
+  <li>- config_automation & drift_control</li>
+</ul>
+
             </div>
 
             {/* Tooling snapshot */}
