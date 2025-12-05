@@ -23,7 +23,7 @@ export const metadata = {
       "Secure connectivity, VPN, firewalls and remote-friendly infrastructure.",
     images: [
       {
-        url: "/og-secureit-hub.png",
+        url: "/images/og-secureit-hub.png",
         width: 1200,
         height: 630,
         alt: "SecureIT Hub – Terminal-style homepage preview",
@@ -35,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "SecureIT Hub – Network & Security Engineer",
     description: "Secure networking & system engineering expertise.",
-    images: ["/og-secureit-hub.png"],
+    images: ["/images/og-secureit-hub.png"],
   },
 };
 
