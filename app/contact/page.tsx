@@ -1,6 +1,54 @@
-import { Mail, Linkedin, ShieldCheck, SendHorizonal, Terminal, Contact } from "lucide-react";
+"use client";
+
+import { useState, FormEvent } from "react";
+import {
+  Mail,
+  Linkedin,
+  ShieldCheck,
+  SendHorizonal,
+  Terminal,
+} from "lucide-react";
 
 export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus("idle");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY!);
+    formData.append("from_name", "SecureIT Hub – Contact Form");
+    formData.append("subject", "New message from secureit-hub.com");
+    // optional spam honeypot
+    formData.append("botcheck", "");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const json = await res.json();
+
+      if (json.success) {
+        setStatus("success");
+        form.reset();
+      } else {
+        console.error(json);
+        setStatus("error");
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <section className="space-y-10 md:space-y-12">
       {/* PATH + TITLE */}
@@ -130,7 +178,7 @@ export default function ContactPage() {
             </h2>
           </div>
 
-          <form className="grid gap-6 md:grid-cols-2">
+          <form className="grid gap-6 md:grid-cols-2" onSubmit={handleSubmit}>
             {/* Name */}
             <div className="flex flex-col gap-1 md:col-span-1">
               <label className="text-[11px] text-gray-500 uppercase tracking-[0.2em]">
@@ -138,7 +186,9 @@ export default function ContactPage() {
               </label>
               <input
                 type="text"
+                name="name"
                 placeholder="Your name"
+                required
                 className="rounded-md bg-black/60 px-3 py-2 text-sm text-gray-100 ring-1 ring-emerald-500/25 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70"
               />
             </div>
@@ -150,7 +200,9 @@ export default function ContactPage() {
               </label>
               <input
                 type="email"
+                name="email"
                 placeholder="you@example.com"
+                required
                 className="rounded-md bg-black/60 px-3 py-2 text-sm text-gray-100 ring-1 ring-emerald-500/25 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70"
               />
             </div>
@@ -162,7 +214,9 @@ export default function ContactPage() {
               </label>
               <textarea
                 rows={4}
+                name="message"
                 placeholder="Your message..."
+                required
                 className="rounded-md bg-black/60 px-3 py-2 text-sm text-gray-100 ring-1 ring-emerald-500/25 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 resize-none"
               />
             </div>
@@ -170,11 +224,32 @@ export default function ContactPage() {
             {/* Submit */}
             <button
               type="submit"
-              className="md:col-span-2 mt-1 inline-flex items-center justify-center gap-2 rounded-md border border-emerald-500/60 bg-emerald-500/10 px-4 py-2.5 text-[11px] uppercase tracking-[0.25em] text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition"
+              disabled={isSubmitting}
+              className="md:col-span-2 mt-1 inline-flex items-center justify-center gap-2 rounded-md border border-emerald-500/60 bg-emerald-500/10 px-4 py-2.5 text-[11px] uppercase tracking-[0.25em] text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition disabled:opacity-60 disabled:cursor-not-allowed"
             >
               <SendHorizonal size={14} />
-              <span>Send message</span>
+              <span>{isSubmitting ? "Sending..." : "Send message"}</span>
             </button>
+
+            {/* Status message */}
+            {status === "success" && (
+              <p className="md:col-span-2 text-xs text-emerald-300">
+                ✓ Message sent successfully. I will get back to you shortly.
+              </p>
+            )}
+            {status === "error" && (
+              <p className="md:col-span-2 text-xs text-red-400">
+                Something went wrong. Please try again, or email
+                {" "}
+                <a
+                  href="mailto:contact@secureit-hub.com"
+                  className="underline"
+                >
+                  contact@secureit-hub.com
+                </a>
+                .
+              </p>
+            )}
           </form>
         </div>
       </div>
