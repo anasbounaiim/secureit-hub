@@ -34,10 +34,7 @@ const recommendations: Recommendation[] = [
     relationship: "Kevin a travaillé avec Mohammed mais dans des équipes différentes",
     text:
       "Working with Mohammed was a real pleasure. He’s not only technically sharp but also genuinely collaborative. Mohammed doesn’t just fix problems; he anticipates them, often having a solution ready before they escalate.\n\n" +
-      "What I appreciated most was his ability to break down complex technical challenges into clear, actionable steps. His upfront thinking and calm presence quietly raise the bar for everyone around him. Any team would benefit from having Mohammed, not just for his expertise, but for the positive energy and professionalism he brings to the room.\n\n" +
-      "Working with Mohammed was a real pleasure. He’s not only technically sharp but also genuinely collaborative. Mohammed doesn’t just fix problems; he anticipates them, often having a solution ready before they escalate.\n\n" +
-      "What I appreciated most was his ability to break down complex technical challenges into clear, actionable steps. His upfront thinking and calm presence quietly raise the bar for everyone around him. Any team would benefit from having Mohammed, not just for his expertise, but for the positive energy and professionalism he brings to the room.",
-  },
+      "What I appreciated most was his ability to break down complex technical challenges into clear, actionable steps. His upfront thinking and calm presence quietly raise the bar for everyone around him. Any team would benefit from having Mohammed, not just for his expertise, but for the positive energy and professionalism he brings to the room.\n\n" },
   {
     index: 1,
     name: "Kevin Huysmans",
@@ -49,14 +46,11 @@ const recommendations: Recommendation[] = [
     relationship: "Kevin a travaillé avec Mohammed mais dans des équipes différentes",
     text:
       "I’ve had the pleasure of working alongside Mohammed at Delhaize. Even though we’re in different teams, his proactive and solution-driven approach really stands out. He’s always willing to help and goes the extra mile to solve problems efficiently.\n\n" +
-      "Mohammed is skilled, approachable, and calm under pressure; the kind of professional who makes collaboration easy. A true team player and a real asset to any organization.\n\n" +
-      "I’ve had the pleasure of working alongside Mohammed at Delhaize. Even though we’re in different teams, his proactive and solution-driven approach really stands out. He’s always willing to help and goes the extra mile to solve problems efficiently.\n\n" +
-      "Mohammed is skilled, approachable, and calm under pressure; the kind of professional who makes collaboration easy. A true team player and a real asset to any organization.",
-  },
+      "Mohammed is skilled, approachable, and calm under pressure; the kind of professional who makes collaboration easy. A true team player and a real asset to any organization.\n\n" },
   {
     index: 2,
     name: "Michael Van Nynatten",
-    headline: "Michael",
+    headline: "Experienced Client Services Manager | Driving Results through Strategic Digital Initiatives",
     profileUrl: "https://www.linkedin.com/in/michaelvn",
     imageDataSavepageSrc:
       "https://media.licdn.com/dms/image/v2/D4E03AQG_BsNMSdStUQ/profile-displayphoto-scale_100_100/B4EZi90RjHHEAc-/0/1755531254633?e=1765411200&v=beta&t=r8X2lqEhgWo49BO3kSOfdx84tBuxduA7tpRP85uDngs",
@@ -65,11 +59,8 @@ const recommendations: Recommendation[] = [
       "Experienced Client Services Manager | Driving Results through Strategic Digital Initiatives\n\n" +
       "I had the pleasure of working directly with Mohammed during his time at Ahold Delhaize, and I can confidently say he is one of the most reliable and driven professionals I’ve worked with. Mohammed consistently demonstrated a strong sense of ownership, a sharp analytical mindset, and a collaborative spirit that made him an invaluable member of the team.\n\n" +
       "Beyond his technical and strategic capabilities, what stands out most is his eagerness to learn and grow. He actively sought feedback, embraced new responsibilities, and continuously pushed himself to exceed expectations.\n\n" +
-      "I highly recommend Mohammed to any organization looking for a dedicated, thoughtful, and high-performing team member. He will undoubtedly be a strong asset wherever he goes.\n\n" +
-      "I had the pleasure of working directly with Mohammed during his time at Ahold Delhaize, and I can confidently say he is one of the most reliable and driven professionals I’ve worked with. Mohammed consistently demonstrated a strong sense of ownership, a sharp analytical mindset, and a collaborative spirit that made him an invaluable member of the team.\n\n" +
-      "Beyond his technical and strategic capabilities, what stands out most is his eagerness to learn and grow. He actively sought feedback, embraced new responsibilities, and continuously pushed himself to exceed expectations.\n\n" +
-      "I highly recommend Mohammed to any organization looking for a dedicated, thoughtful, and high-performing team member. He will undoubtedly be a strong asset wherever he goes.",
-  },
+      "I highly recommend Mohammed to any organization looking for a dedicated, thoughtful, and high-performing team member. He will undoubtedly be a strong asset wherever he goes.\n\n" 
+     },
   {
     index: 3,
     name: "Besmir Mehmetaj",
@@ -102,7 +93,6 @@ const recommendations: Recommendation[] = [
     relationship: "Axel a travaillé avec Mohammed mais dans des équipes différentes",
     text:
       "I truly enjoyed working with Mohammed. He is highly available, customer-focused, and always finds pragmatic solutions quickly. A reliable professional with a strong service mindset.\n\n" +
-      "I truly enjoyed working with Mohammed. He is highly available, customer-focused, and always finds pragmatic solutions quickly. A reliable professional with a strong service mindset.\n" +
       "Thanks again Mohammed for the solutions provided to us as client.",
   },
   {
@@ -116,10 +106,7 @@ const recommendations: Recommendation[] = [
     text:
       "Working with Mohammed is like having a Swiss Army knife on your team, he’s everywhere, always ready, and always effective.\n\n" +
       "He has an exceptional ability to communicate clearly, even under pressure, and brings calm to chaos like it’s second nature. Whether it’s solving complex issues or navigating tight deadlines, Mohammed handles it with confidence and precision.\n\n" +
-      "A true problem solver and someone you definitely want in your corner when it counts.\n\n" +
-      "Working with Mohammed is like having a Swiss Army knife on your team, he’s everywhere, always ready, and always effective.\n" +
-      "He has an exceptional ability to communicate clearly, even under pressure, and brings calm to chaos like it’s second nature. Whether it’s solving complex issues or navigating tight deadlines, Mohammed handles it with confidence and precision.\n" +
-      "A true problem solver and someone you definitely want in your corner when it counts.",
+      "A true problem solver and someone you definitely want in your corner when it counts.\n\n"
   },
   {
     index: 7,
@@ -146,9 +133,6 @@ const recommendations: Recommendation[] = [
       "Working with Mohammed during the deployment of Pickstar at Forest & Puurs was a game-changer.\n\n" +
       "Even with the network instability on the new site and the switch from Cisco VPN to Zscaler, he quickly implemented a practical solution to restore our RDP access using a custom VBS script.\n\n" +
       "His ability to adapt, troubleshoot, and secure business continuity under pressure was outstanding.\n\n" +
-      "Working with Mohammed during the deployment of Pickstar at Forest & Puurs was a game-changer.\n" +
-      "Even with the network instability on the new site and the switch from Cisco VPN to Zscaler, he quickly implemented a practical solution to restore our RDP access using a custom VBS script.\n" +
-      "His ability to adapt, troubleshoot, and secure business continuity under pressure was outstanding.\n" +
       "Mohammed is a true go-to person for critical IT/business challenges",
   },
   {
@@ -175,10 +159,6 @@ const recommendations: Recommendation[] = [
       "Working with Mohammed has always been a great experience from a client perspective.\n\n" +
       "As the advisor of the affiliated stores in Luxembourg, I’ve seen him solve many critical IT and network incidents with speed and efficiency.\n\n" +
       "Whenever an issue arises, he brings confidence and clear communication, making sure our operations continue without disruption.\n\n" +
-      "His technical expertise and dedication to supporting the stores make him a highly reliable professional.\n\n" +
-      "Working with Mohammed has always been a great experience from a client perspective.\n" +
-      "As the advisor of the affiliated stores in Luxembourg, I’ve seen him solve many critical IT and network incidents with speed and efficiency.\n" +
-      "Whenever an issue arises, he brings confidence and clear communication, making sure our operations continue without disruption.\n" +
       "His technical expertise and dedication to supporting the stores make him a highly reliable professional.\n\n" +
       "Thanks a lot",
   },
@@ -219,10 +199,7 @@ const recommendations: Recommendation[] = [
     text:
       "I've known Mohammed since our high school days and it’s been great to reconnect years later as we both evolved in the IT world.\n\n" +
       "We’ve had the chance to exchange on various technical topics like automation, security, and systems. I’ve always appreciated his sharp mind, calm attitude, and clear way of explaining things.\n\n" +
-      "He’s a grounded, helpful, and skilled professional. Someone you can count on when it matters.\n\n" +
-      "I've known Mohammed since our high school days and it’s been great to reconnect years later as we both evolved in the IT world.\n\n" +
-      "We’ve had the chance to exchange on various technical topics like automation, security, and systems. I’ve always appreciated his sharp mind, calm attitude, and clear way of explaining things.\n\n" +
-      "He’s a grounded, helpful, and skilled professional. Someone you can count on when it matters.",
+      "He’s a grounded, helpful, and skilled professional. Someone you can count on when it matters.\n\n" 
   },
   {
     index: 14,
@@ -247,9 +224,7 @@ const recommendations: Recommendation[] = [
     text:
       "I had the pleasure of working with Mohammed Arbaoui at Ahold Delhaize, and I can confidently say they are one of the most dedicated and talented professionals I’ve worked alongside. He brought a unique mix of creativity, strategic thinking, and a strong work ethic to every project.\n\n" +
       "Whether it was collaborating on high-pressure deadlines or finding smart solutions to complex problems, Mohammed consistently delivered exceptional results while maintaining a positive and team-oriented attitude. He also have a natural ability to lead by example, making everyone around them better at what they do.\n\n" +
-      "I had the pleasure of working with Mohammed Arbaoui at Ahold Delhaize, and I can confidently say they are one of the most dedicated and talented professionals I’ve worked alongside. He brought a unique mix of creativity, strategic thinking, and a strong work ethic to every project.\n\n" +
-      "Whether it was collaborating on high-pressure deadlines or finding smart solutions to complex problems, Mohammed consistently delivered exceptional results while maintaining a positive and team-oriented attitude. He also have a natural ability to lead by example, making everyone around them better at what they do.\n\n" +
-      "Any team would be lucky to have Mohammed Arbaoui.",
+  "Any team would be lucky to have Mohammed Arbaoui.",
   },
   {
     index: 16,
@@ -275,8 +250,6 @@ const recommendations: Recommendation[] = [
     text:
       "I've met Mohammed in the position of System Engineer in Ahold Delhaize. He has demonstrated excellent technical skills and ability to communicate effectively with the teams. His technical expertise and aptitude for solving problems have been a valuable asset to the organization.\n\n" +
       "I am confident that Mohammed will continue to excel and bring significant value to any organization.\n\n" +
-      "I've met Mohammed in the position of System Engineer in Ahold Delhaize. He has demonstrated excellent technical skills and ability to communicate effectively with the teams. His technical expertise and aptitude for solving problems have been a valuable asset to the organization.\n\n" +
-      "I am confident that Mohammed will continue to excel and bring significant value to any organization.\n\n" +
       "Sincerely,\nDimitri",
   },
   {
@@ -288,20 +261,13 @@ const recommendations: Recommendation[] = [
     date: "Le 15 octobre 2024,",
     text:
       "I had the pleasure of working with Mohammed at Verisure, where he worked under my supervision.\n\n" +
+      "Later I had the opportunity to rely on him as IT Support at Ahold Delhaize.\n" +
       "Mohammed is professional, proactive, driven, and consistently goes above and beyond in his work. His contributions significantly impacted our team by improving efficiency and productivity.\n\n" +
       "Mohammed is an excellent team player, always willing to collaborate and support his colleagues to achieve common goals. His problem-solving skills have been invaluable in addressing issues swiftly and effectively.\n\n" +
       "On a personal note, I have always been impressed by Mohammed's dedication and positive attitude. His ability to stay calm under pressure and find innovative solutions has made a lasting impression on me.\n\n" +
       "I am grateful to have had the opportunity to work with someone as talented, flexible and reliable as Mohammed.\n\n" +
       "His technical expertise, particularly in IT support, has been instrumental ensuring smooth operations.\n\n" +
-      "I highly recommend Mohammed for any position that requires a dedicated and skilled professional\n\n" +
-      "I had the pleasure of working with Mohammed at Verisure, where he worked under my supervision.\n" +
-      "Later I had the opportunity to rely on him as IT Support at Ahold Delhaize.\n" +
-      "Mohammed is professional, proactive, driven, and consistently goes above and beyond in his work. His contributions significantly impacted our team by improving efficiency and productivity.\n\n" +
-      "Mohammed is an excellent team player, always willing to collaborate and support his colleagues to achieve common goals. His problem-solving skills have been invaluable in addressing issues swiftly and effectively.\n" +
-      "On a personal note, I have always been impressed by Mohammed's dedication and positive attitude. His ability to stay calm under pressure and find innovative solutions has made a lasting impression on me.\n" +
-      "I am grateful to have had the opportunity to work with someone as talented, flexible and reliable as Mohammed.\n" +
-      "His technical expertise, particularly in IT support, has been instrumental ensuring smooth operations.\n\n" +
-      "I highly recommend Mohammed for any position that requires a dedicated and skilled professional",
+      "I highly recommend Mohammed for any position that requires a dedicated and skilled professional\n\n" 
   },
   {
     index: 19,
