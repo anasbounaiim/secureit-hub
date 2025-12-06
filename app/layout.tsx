@@ -15,7 +15,28 @@ export const metadata = {
     icon: "/favicon.ico",
   },
 
+  openGraph: {
+    type: "website",
+    url: "https://www.secureit-hub.com",
+    title: "SecureIT Hub – Network & Security Engineer",
+    description:
+      "Secure connectivity, VPN, firewalls and remote-friendly infrastructure.",
+    images: [
+      {
+        url: "/images/og-secureit-hub.png",
+        width: 1200,
+        height: 630,
+        alt: "SecureIT Hub – Terminal-style homepage preview",
+      },
+    ],
+  },
 
+  twitter: {
+    card: "summary_large_image",
+    title: "SecureIT Hub – Network & Security Engineer",
+    description: "Secure networking & system engineering expertise.",
+    images: ["/images/og-secureit-hub.png"],
+  },
 };
 
 
