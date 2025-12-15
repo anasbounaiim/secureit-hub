@@ -29,7 +29,7 @@ const recommendations: Recommendation[] = [
     headline: "Digital Media Manager",
     profileUrl: "https://www.linkedin.com/in/kevin-r-63422092",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/D4E03AQHJ4lZtLPYbFA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1685564066059?e=1765411200&v=beta&t=PuR2HiFwuI4NI076Wchc5fiXalyNhS92bSVmi5GXdFU",
+      "/linkedin_pfp/linkedin_pfp (16).png",
     date: "Le 29 octobre 2025,",
     relationship: "Kevin a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -41,7 +41,7 @@ const recommendations: Recommendation[] = [
     headline: "Senior Network engineer",
     profileUrl: "https://www.linkedin.com/in/kevin-huysmans-94aa8a40",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/D4E03AQHpfwDT3VM8qQ/profile-displayphoto-scale_100_100/B4EZqEdhSnGUAc-/0/1763158924122?e=1765411200&v=beta&t=mW6-ZR1p7GyddG4jr29bJXT16TjwEm1HPWGC6uZ7ujo",
+      "/linkedin_pfp/linkedin_pfp (15).png",
     date: "Le 20 octobre 2025,",
     relationship: "Kevin a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -53,7 +53,7 @@ const recommendations: Recommendation[] = [
     headline: "Experienced Client Services Manager | Driving Results through Strategic Digital Initiatives",
     profileUrl: "https://www.linkedin.com/in/michaelvn",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/D4E03AQG_BsNMSdStUQ/profile-displayphoto-scale_100_100/B4EZi90RjHHEAc-/0/1755531254633?e=1765411200&v=beta&t=r8X2lqEhgWo49BO3kSOfdx84tBuxduA7tpRP85uDngs",
+      "/linkedin_pfp/linkedin_pfp (14).png",
     date: "Le 14 octobre 2025,",
     text:
       "Experienced Client Services Manager | Driving Results through Strategic Digital Initiatives\n\n" +
@@ -77,7 +77,7 @@ const recommendations: Recommendation[] = [
     headline: "Director Company-Owned Stores at Delhaize Luxembourg",
     profileUrl: "https://www.linkedin.com/in/alfredo-de-azeredo-a42169172",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C4E03AQH__aUE0J4sEQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1538332170498?e=1765411200&v=beta&t=jVzA-hWUDgksor8G1G_JGdvzypBE9n8NnT29VTaNmrk",
+      "/linkedin_pfp/linkedin_pfp (13).png",
     date: "Le 29 août 2025,",
     text:
       "I had the pleasure of working with Mohammed on network incident management for Luxembourg. His approach is always structured and incredibly efficient. He consistently responds with speed and clarity, making him a reliable and essential team member.",
@@ -88,7 +88,7 @@ const recommendations: Recommendation[] = [
     headline: "R2R & ESG Product Owner chez Delhaize Le Lion/De Leeuw SCA",
     profileUrl: "https://www.linkedin.com/in/axel-joris-512674a4",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/D4E03AQGMMXXvep-iEQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1693568672474?e=1765411200&v=beta&t=97oYJbSdBf23uqvueQtjbaf6O0T5-dRnjti5pnGHH6Q",
+      "/linkedin_pfp/linkedin_pfp (12).png",
     date: "Le 26 août 2025,",
     relationship: "Axel a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -101,7 +101,7 @@ const recommendations: Recommendation[] = [
     headline: "IT Consultant",
     profileUrl: "https://www.linkedin.com/in/aydansec",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/D4E03AQFLYs3Yq2DuGQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1684649650275?e=1765411200&v=beta&t=UN_UzVCK-zSldnI6tYuBSoGvcvLPY_8r7dk2UVEEm_8",
+      "/linkedin_pfp/linkedin_pfp (11).png",
     date: "Le 9 août 2025,",
     text:
       "Working with Mohammed is like having a Swiss Army knife on your team, he’s everywhere, always ready, and always effective.\n\n" +
@@ -114,7 +114,7 @@ const recommendations: Recommendation[] = [
     headline: "Supply chain Replenishment Specialiste",
     profileUrl: "https://www.linkedin.com/in/valeed-khan-908076157",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/D4E03AQEJjmeQn5fA3w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1685486227321?e=1765411200&v=beta&t=LJQGeN99p5Trx5JitqcZ_UGKs39LrvOBDH0gvAlnOJ8",
+      "/linkedin_pfp/linkedin_pfp (10).png",
     date: "Le 8 août 2025,",
     relationship: "Valeed a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -126,7 +126,7 @@ const recommendations: Recommendation[] = [
     headline: "Supply Chain Consultant at EY",
     profileUrl: "https://www.linkedin.com/in/antoine-boyenval-877154161",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C4D03AQGqu9il9LOACA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1632307717678?e=1765411200&v=beta&t=mQjOPlBLphIzz9-spf8648HQevCSCSXogZMGGhK6HFs",
+      "/linkedin_pfp/linkedin_pfp (9).png",
     date: "Le 5 août 2025,",
     relationship: "Antoine a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -141,7 +141,7 @@ const recommendations: Recommendation[] = [
     headline: "Reverse Logistics Manager bij Delhaize Belgium",
     profileUrl: "https://www.linkedin.com/in/sammolkens",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C4E03AQGj2tB83qNQmA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1659515563479?e=1765411200&v=beta&t=O7HVjEVd0MMMx44aMXctau69ZZDPGYM1JmG3UuPhzjA",
+      "/linkedin_pfp/linkedin_pfp (8).png",
     date: "Le 5 août 2025,",
     relationship: "Sam a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -153,7 +153,7 @@ const recommendations: Recommendation[] = [
     headline: "Conseiller affiliés chez Delhaize Luxembourg SA",
     profileUrl: "https://www.linkedin.com/in/boualam-zariouh-9a6a45131",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C4E03AQE5S9tR7mhAYQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1662638564797?e=1765411200&v=beta&t=EX2cTi1EePVqRqBpdiK5POLYtN91XYwlv4HbO8pKW-I",
+      "/linkedin_pfp/linkedin_pfp (7).png",
     date: "Le 5 août 2025,",
     text:
       "Working with Mohammed has always been a great experience from a client perspective.\n\n" +
@@ -168,7 +168,7 @@ const recommendations: Recommendation[] = [
     headline: "Solution Consultant S&C - Microsoft at SoftwareOne /  CEO of DogConnXion",
     profileUrl: "https://www.linkedin.com/in/david-tshibassu",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/D4E03AQHjEYlSQdaVsQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1703016995144?e=1765411200&v=beta&t=oEu1_VTrNaq7_Zdgov28498JYJBtZ7wB-vutZ-C_Yjc",
+      "/linkedin_pfp/linkedin_pfp (6).png",
     date: "Le 24 juillet 2025,",
     text:
       "I had the pleasure of working with Mohammed Arbaoui in a security company, and I can confidently recommend him. He is reliable, professional, and always showed great attention to detail. His calm demeanor and quick thinking made him a valuable team member in both routine and high-pressure situations. A true asset in any security role.",
@@ -179,7 +179,7 @@ const recommendations: Recommendation[] = [
     headline: "Consultant .NET @ Delhaize Belgium | Azure",
     profileUrl: "https://www.linkedin.com/in/naitali",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C4D03AQFL8429Gjcl1Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1556381523835?e=1765411200&v=beta&t=OpahEnfZ6_fz4SWWR3cF8c1dKmIieC36oQDudwnzX8E",
+      "/linkedin_pfp/linkedin_pfp (5).png",
     date: "Le 22 juillet 2025,",
     relationship: "Hassan a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -193,7 +193,7 @@ const recommendations: Recommendation[] = [
     headline: "ServiceNow Consultant",
     profileUrl: "https://www.linkedin.com/in/ismael-saidi-890613201",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C4E03AQHcwe8M15LwjQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1607453666052?e=1765411200&v=beta&t=NUUQT7hplna-c6vT8phRqCy4dI28USLwe1MutpS8G9A",
+      "/linkedin_pfp/linkedin_pfp (4).png",
     date: "Le 9 juillet 2025,",
     relationship: "Ismaël a travaillé avec Mohammed mais dans des entreprises différentes",
     text:
@@ -207,7 +207,7 @@ const recommendations: Recommendation[] = [
     headline: "Reporting & Analytics specialist",
     profileUrl: "https://www.linkedin.com/in/youssef-boutazakhti-8b7b5812a",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C5603AQFKKFtLjyqTBA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1545613778502?e=1765411200&v=beta&t=4wGfR53JZj6Oo9lhRq2W0w7VKh6KTT5giO4N7lltalo",
+      "/linkedin_pfp/linkedin_pfp (3).png",
     date: "Le 24 juin 2025,",
     relationship: "Youssef a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -219,7 +219,7 @@ const recommendations: Recommendation[] = [
     headline: "DevSecOps",
     profileUrl: "https://www.linkedin.com/in/filip-djordjevic-0a91b121a",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/D4D03AQFN82n3544Cog/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1706820781164?e=1765411200&v=beta&t=t7emW-Mx4ZfIW1gT6dACs8URsTdO5NQS_UVf8melYO8",
+      "/linkedin_pfp/linkedin_pfp (2).png",
     date: "Le 12 juin 2025,",
     text:
       "I had the pleasure of working with Mohammed Arbaoui at Ahold Delhaize, and I can confidently say they are one of the most dedicated and talented professionals I’ve worked alongside. He brought a unique mix of creativity, strategic thinking, and a strong work ethic to every project.\n\n" +
@@ -232,7 +232,7 @@ const recommendations: Recommendation[] = [
     headline: "Leeroy",
     profileUrl: "https://www.linkedin.com/in/leeroy-salomez-68aa602",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C4E03AQFzkOFb0kECIQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1649422325159?e=1765411200&v=beta&t=hJksjjeS0kOQCvSZZPZUIHT5bT-CkoDAuZbUoEd4boY",
+      "/linkedin_pfp/linkedin_pfp (1).png",
     date: "Le 21 mai 2025,",
     relationship: "Leeroy a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -275,7 +275,7 @@ const recommendations: Recommendation[] = [
     headline: "IT Strategy and Operations, Business Transformation and Change",
     profileUrl: "https://www.linkedin.com/in/powro",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C5603AQGdYj_nfXLKGw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1551948617570?e=1765411200&v=beta&t=gQ91HR0hROayaQnpCnzqKiHfBK20r1eKsLhtR6_uXzM",
+      "/linkedin_pfp/linkedin_pfp.png",
     date: "Le 30 juillet 2023,",
     relationship: "André a travaillé avec Mohammed mais dans des équipes différentes",
     text:
@@ -287,7 +287,7 @@ const recommendations: Recommendation[] = [
     headline: "Senior IT Consultant",
     profileUrl: "https://www.linkedin.com/in/victorclinckemaille/",
     imageDataSavepageSrc:
-      "https://media.licdn.com/dms/image/v2/C5603AQGdYj_nfXLKGw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1551948617570?e=1765411200&v=beta&t=gQ91HR0hROayaQnpCnzqKiHfBK20r1eKsLhtR6_uXzM",
+      "/linkedin_pfp/linkedin_pfp (17).png",
     date: "Le 12 december 2025,",
     relationship: "Victor a travaillé avec Mohammed mais dans des équipes différentes",
     text:
