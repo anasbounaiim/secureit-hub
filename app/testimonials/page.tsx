@@ -281,6 +281,18 @@ const recommendations: Recommendation[] = [
     text:
       "J'ai eu le plaisir de collaborer avec Mohammed Arbaoui chez Johnson Controls et j'ai été ravi de le retrouver chez Ahold Delhaize. Tout au long de notre parcours professionnel ensemble, j'ai été impressionné par son dynamisme, sa proactivité ainsi que ses excellentes compétences techniques. Mohammed se distingue par sa capacité à communiquer efficacement et à apporter des solutions pertinentes. Sa détermination à relever les défis en fait un collègue apprécié et un atout précieux pour toute personne travaillant avec lui.",
   },
+  {
+    index: 20,
+    name: "Victor Clinckemaille",
+    headline: "Senior IT Consultant",
+    profileUrl: "https://www.linkedin.com/in/victorclinckemaille/",
+    imageDataSavepageSrc:
+      "https://media.licdn.com/dms/image/v2/C5603AQGdYj_nfXLKGw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1551948617570?e=1765411200&v=beta&t=gQ91HR0hROayaQnpCnzqKiHfBK20r1eKsLhtR6_uXzM",
+    date: "Le 12 december 2025,",
+    relationship: "Victor a travaillé avec Mohammed mais dans des équipes différentes",
+    text:
+      "I had the pleasure of working with Mohammed on several Delhaize store openings. His strong expertise allowed him to quickly identify the root cause of issues and provide effective solutions. Reactive, dynamic, and results-oriented, he was a great support in fast-paced and demanding environments. I highly recommend him for his professionalism and commitment.",
+  },
 ];
 
 export default function TestimonialsPage() {
