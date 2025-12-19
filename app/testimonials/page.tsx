@@ -293,6 +293,18 @@ const recommendations: Recommendation[] = [
     text:
       "I had the pleasure of working with Mohammed on several Delhaize store openings. His strong expertise allowed him to quickly identify the root cause of issues and provide effective solutions. Reactive, dynamic, and results-oriented, he was a great support in fast-paced and demanding environments. I highly recommend him for his professionalism and commitment.",
   },
+  {
+    index: 21,
+    name: "Angelo Junior Irakoze",
+    headline: "IT L2 Retail Applications Support",
+    profileUrl: "https://www.linkedin.com/in/angelo-junior-irakoze/",
+    imageDataSavepageSrc:
+      "/linkedin_pfp/linkedin_pfp (18).png",
+    date: "Le 19 décembre 2025,",
+    relationship: "Angelo Junior a travaillé avec Mohammed mais dans des équipes différentes",
+    text:
+      "It has been an immense honor working with Mohammed. He is a fantastic engineer with a sharp problem-solving mindset, consistently delivering reliable and well-planned solutions. Having him on the team means having someone you can truly count on.",
+  },
 ];
 
 export default function TestimonialsPage() {
