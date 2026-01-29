@@ -305,6 +305,28 @@ const recommendations: Recommendation[] = [
     text:
       "It has been an immense honor working with Mohammed. He is a fantastic engineer with a sharp problem-solving mindset, consistently delivering reliable and well-planned solutions. Having him on the team means having someone you can truly count on.",
   },
+  {
+    index: 22,
+    name: "André Powroznik",
+    headline: "IT Strategy and Operations, Business Transformation and Change",
+    profileUrl: "https://www.linkedin.com/in/powro/",
+    imageDataSavepageSrc:
+      "/linkedin_pfp/linkedin_pfp.png",
+    date: "29 janvier 2026,",
+    relationship: "André a travaillé avec Mohammed, mais dans des équipes différentes",
+    text:
+      "I’ve had the pleasure of working with Mohammed Arbaoui at Johnson Controls and was glad to reconnect with him at Ahold Delhaize. Throughout our time in both organizations, I was consistently impressed by his energy, pro activity, and strong technical expertise. Mohammed stands out for his clarity in communication and his ability to deliver relevant solutions, even under pressure. His determination to face challenges head-on makes him a valued colleague and a real asset to any team."},
+  {
+    index: 23,
+    name: "Sumit Dutta",
+    headline: ".NET Developer | IAM Analyst | AI & ML Enthusiastic",
+    profileUrl: "https://www.linkedin.com/in/sumitdutta10/",
+    imageDataSavepageSrc:
+      "/linkedin_pfp/linkedin_pfp (19).png",
+    date: "24 janvier 2026,",
+    relationship: "Sumit a travaillé avec Mohammed, mais dans des équipes différentes",
+    text:
+      "Mohammed is an exceptional professional and truly a gem for his team. His problem-solving skills are outstanding, and he consistently approaches every challenge with a positive attitude. He is proactive, reliable, and always ready to help others without hesitation. Mohammed quickly understands complex issues, finds practical solutions, and delivers quality work on time. His calm nature, dedication to learning, and commitment towards team success make him a great asset to any organization. I strongly recommend Mohammed and am confident he will excel in any role he takes up."}
 ];
 
 export default function TestimonialsPage() {
