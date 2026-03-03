@@ -2,50 +2,110 @@ import { FolderGit2, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Enterprise-grade homelab architecture",
-    period: "Ongoing",
-    stack: ["Cisco", "Fortinet", "VPN", "Linux", "Monitoring"],
+    title: "Enterprise-Grade Multi-Site Homelab",
+    period: "Active",
+    stack: ["Cisco", "Fortinet", "IPSec", "VPN", "Linux", "Monitoring"],
     description: [
-      "Multi-site homelab built like an enterprise environment: segmented networks, IPSec tunnels, centralized logging, SNMP monitoring and policy-driven firewalling.A full playground to test real production behavior.",
-      "Cisco · Fortinet · VPN · Linux · Monitoring ~/labs/enterprise_homelab",
+      "Enterprise-style multi-site lab environment replicating segmented networks, routed domains and secure inter-site connectivity.",
+      "",
+      "Scope includes:",
+      "- IPSec site-to-site tunnels",
+      "- Policy-driven firewall enforcement",
+      "- Centralized logging & visibility",
+      "- SNMP-based monitoring",
+      "- Segmentation and traffic boundary validation",
+      "",
+      "Purpose: simulate production-grade behavior under controlled constraints and validate secure connectivity patterns.",
+      "",
+      "Stack: Cisco · Fortinet · VPN · Linux · Monitoring",
+      "Path: ~/labs/enterprise-grade_homelab_architecture",
     ],
+    path: "~/labs/enterprise-grade_homelab_architecture",
   },
   {
-    title: "Network automation toolkit",
-    period: "Ongoing",
-    stack: ["Python", "Automation", "CLI", "Scripting"],
+    title: "Network Automation Toolkit",
+    period: "Iterating",
+    stack: ["Python", "Automation", "CLI", "Structured Configs"],
     description: [
-      "Python tools for daily network operations: backups, compliance checks, inventory parsing and CLI-based bulk tasks. Focused on clarity, repeatability and speed.",
-      "Python · Automation · CLI · Scripting ~/labs/automation_toolkit",
+      "Operational Python toolkit designed to improve reliability and consistency in network environments.",
+      "",
+      "Includes:",
+      "- Automated configuration backups",
+      "- Compliance & drift checks",
+      "- Inventory parsing",
+      "- CLI-driven bulk operations",
+      "- Structured validation workflows",
+      "",
+      "Focus: repeatability, execution control and reduced human error in operational tasks.",
+      "",
+      "Stack: Python · Automation · CLI · Structured Configs",
+      "Path: ~/labs/network_automation_toolkit",
     ],
+    path: "~/labs/network_automation_toolkit",
   },
   {
-    title: "Secure remote access hardening lab",
-    period: "Lab",
-    stack: ["Zscaler", "VPN", "Firewall", "Access control"],
+    title: "Secure Remote Access Validation Lab",
+    period: "Active Lab",
+    stack: ["Zscaler", "VPN", "Firewall", "Access Control"],
     description: [
-      "Testing and comparing remote-access paths: Zscaler ZPA / ZIA, IPSec, SSL VPN.Focus on policy behavior, user experience and security posture.",
-      "Zscaler · VPN · Firewall · Access control ~/labs/remote_access_hardening",
+      "Comparative testing of secure remote-access architectures:",
+      "- Zscaler ZIA / ZPA",
+      "- IPSec VPN",
+      "- SSL VPN",
+      "",
+      "Validation focus:",
+      "- Policy behavior",
+      "- Authentication flows",
+      "- Traffic inspection paths",
+      "- User experience vs security trade-offs",
+      "- Access segmentation enforcement",
+      "",
+      "Designed to analyze real-world remote connectivity patterns and hardening strategies.",
+      "",
+      "Stack: Zscaler · VPN · Firewall · Access Control",
+      "Path: ~/labs/secure_remote_access_hardening_lab",
     ],
+    path: "~/labs/secure_remote_access_hardening_lab",
   },
   {
-    title: "Incident response and log analysis playground",
-    period: "Lab",
-    stack: ["Linux", "Syslog", "Traffic capture", "Automation"],
+    title: "Incident Response & Log Analysis Playground",
+    period: "Scenario-Ready",
+    stack: ["Linux", "Syslog", "Traffic Capture", "Automation"],
     description: [
-      "Environment for log analysis, packet replay and incident simulation.",
-      "Objective: visibility, forensic discipline and structured troubleshooting.",
-      "Objective: visibility, forensic discipline, structured troubleshooting. Linux · Syslog · Traffic capture · Automation ~/labs/incident_response_playground",
+      "Controlled environment for:",
+      "- Log correlation",
+      "- Syslog analysis",
+      "- Packet capture & replay",
+      "- Incident simulation",
+      "- Structured troubleshooting methodology",
+      "",
+      "Objective: strengthen observability discipline and forensic awareness within network security operations.",
+      "",
+      "Stack: Linux · Syslog · Traffic Capture · Automation",
+      "Path: ~/labs/incident_response_and_log_analysis_playground",
     ],
+    path: "~/labs/incident_response_and_log_analysis_playground",
   },
   {
-    title: "Firewall policy optimization study",
-    period: "Lab",
+    title: "Firewall Policy Optimization Study",
+    period: "In Progress",
     stack: ["Fortinet", "AlgoSec", "Segmentation"],
     description: [
-      "Review and optimization of firewall rulebases: cleanup, segmentation and NAT improvements.Fortinet · AlgoSec · Segmentation",
-      "Fortinet · AlgoSec · Segmentation ~/labs/firewall_policy_optimization",
+      "Structured review and refinement of firewall rulebases.",
+      "",
+      "Focus areas:",
+      "- Rule cleanup & lifecycle management",
+      "- NAT optimization",
+      "- Segmentation reinforcement",
+      "- Policy overlap detection",
+      "- Change impact validation",
+      "",
+      "Designed to improve clarity, performance and security posture in enterprise firewall environments.",
+      "",
+      "Stack: Fortinet · AlgoSec · Segmentation",
+      "Path: ~/labs/firewall_policy_optimization_study",
     ],
+    path: "~/labs/firewall_policy_optimization_study",
   },
 ];
 
@@ -66,23 +126,17 @@ export default function ProjectsPage() {
           <span>Security Labs & Projects</span>
         </h1>
 
-        <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-2xl space-y-1">
-  <span className="block">
-    <span className="text-emerald-300/90 font-medium">Projects, labs and real-world engineering</span>
-  </span>
-
-  <span className="block mt-1">
-    Hands-on labs, automation tools and network designs focused on{" "}
-    <span className="text-emerald-300">security</span>,{" "}
-    <span className="text-emerald-300">remote access</span> and{" "}
-    <span className="text-emerald-300">reliable connectivity</span>.
-  </span>
-
-  <span className="block mt-1">
-    Each project reflects{" "}
-    <span className="text-emerald-400 font-medium">real production behavior</span>,
-    not theoretical exercises.
-  </span>
+        <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-3xl">
+  Enterprise-oriented labs and operational tooling built to validate secure
+  connectivity, firewall behavior and production-grade network stability.
+  <br />
+  <br />
+  These environments are designed to simulate real-world constraints:
+  segmentation, VPN reliability, logging visibility and controlled change
+  management.
+  <br />
+  <br />
+  They serve as validation platforms — not theoretical exercises.
 </p>
 
       </header>
@@ -139,9 +193,7 @@ export default function ProjectsPage() {
                 </div>
 
                 {/* Footer path */}
-                <p className="text-[11px] text-gray-500 font-mono pt-1">
-                  ~/labs/{project.title.toLowerCase().replace(/\s+/g, "_")}
-                </p>
+                <p className="text-[11px] text-gray-500 font-mono pt-1">{project.path}</p>
               </div>
 
               {/* Subtle hover outline */}
@@ -195,11 +247,11 @@ export default function ProjectsPage() {
                 <span className="text-emerald-500">➜</span> summary
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-                <li>• homelab_mode: enterprise_grade</li>
-                <li>• focus: security · automation · observability</li>
-                <li>• env: multi-site_vpn + segmented_networks</li>
-                <li>• repo: github.com/SecureIT-Hub</li>
-              </ul>
+  <li>• homelab_mode: enterprise_validation_platform</li>
+  <li>• focus: secure_connectivity · policy_enforcement · automation · observability</li>
+  <li>• environment: multi-site_vpn + segmented_network_domains</li>
+  <li>• repository: github.com/SecureIT-Hub</li>
+</ul>
             </div>
 
             {/* Project types */}
@@ -208,12 +260,12 @@ export default function ProjectsPage() {
                 <span className="text-emerald-500">➜</span> project_types
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-                <li>- homelab_architecture_design</li>
-                <li>- network_automation_tooling</li>
-                <li>- secure_remote_access_labs</li>
-                <li>- incident_response_playgrounds</li>
-                <li>- firewall_policy_optimization</li>
-              </ul>
+  <li>enterprise_lab_validation</li>
+  <li>network_automation_tooling</li>
+  <li>secure_remote_access_analysis</li>
+  <li>incident_response_simulation</li>
+  <li>firewall_policy_lifecycle_review</li>
+</ul>
             </div>
 
             {/* Stack matrix */}
@@ -223,12 +275,12 @@ export default function ProjectsPage() {
               </p>
               <pre className="text-[11px] md:text-[12px] text-emerald-100/90 leading-relaxed whitespace-pre">
 {`stack = {
-  network:   [ "Cisco", "Fortinet", "VPN" ],
-  security:  [ "Zscaler", "Firewall", "Segmentation" ],
-  systems:   [ "Linux", "Syslog", "Monitoring" ],
-  automation:[ "Python", "CLI", "Scripting" ]
+  network:    [ "Cisco", "Fortinet", "IPSec" ],
+  security:   [ "Zscaler", "Firewall", "Segmentation" ],
+  observability: [ "Syslog", "Monitoring", "Traffic Analysis" ],
+  automation: [ "Python", "CLI", "Structured Workflows" ]
 }`}
-              </pre>
+</pre>
             </div>
 
             {/* Status */}
@@ -237,11 +289,11 @@ export default function ProjectsPage() {
                 <span className="text-emerald-500">➜</span> lab_status
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-                <li>• enterprise_homelab: online</li>
-                <li>• automation_toolkit: iterating</li>
-                <li>• incident_playground: ready_for_scenarios</li>
-                <li>• firewall_study: in_progress</li>
-              </ul>
+  <li>• enterprise_homelab: operational</li>
+  <li>• automation_toolkit: iterating</li>
+  <li>• incident_playground: scenario_ready</li>
+  <li>• firewall_study: refinement_phase</li>
+</ul>
             </div>
           </div>
         </aside>

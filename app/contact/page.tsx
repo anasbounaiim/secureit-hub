@@ -1,13 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import {
-  Mail,
-  Linkedin,
-  ShieldCheck,
-  SendHorizonal,
-  Terminal,
-} from "lucide-react";
+import { Mail, Linkedin, SendHorizonal, Terminal } from "lucide-react";
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -62,11 +56,12 @@ export default function ContactPage() {
 
         <h1 className="text-3xl md:text-4xl font-semibold text-white flex items-center gap-2">
           <Mail className="text-emerald-400" size={26} />
-          <span>Get in touch</span>
+          <span>Get in Touch</span>
         </h1>
 
         <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-relaxed">
-          For network architecture, security, VPN or remote collaboration.
+          For secure connectivity projects, VPN environments, firewall operations
+          or remote collaboration within production infrastructures.
         </p>
       </header>
 
@@ -174,7 +169,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-2">
             <SendHorizonal className="text-emerald-400" size={18} />
             <h2 className="text-sm uppercase tracking-[0.25em] text-emerald-400">
-              Send a message
+              Send a Message
             </h2>
           </div>
 
@@ -215,7 +210,7 @@ export default function ContactPage() {
               <textarea
                 rows={4}
                 name="message"
-                placeholder="Your message..."
+                placeholder="Your message…"
                 required
                 className="rounded-md bg-black/60 px-3 py-2 text-sm text-gray-100 ring-1 ring-emerald-500/25 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/70 resize-none"
               />
@@ -239,12 +234,8 @@ export default function ContactPage() {
             )}
             {status === "error" && (
               <p className="md:col-span-2 text-xs text-red-400">
-                Something went wrong. Please try again, or email
-                {" "}
-                <a
-                  href="mailto:contact@secureit-hub.com"
-                  className="underline"
-                >
+                Something went wrong. Please try again, or email{" "}
+                <a href="mailto:contact@secureit-hub.com" className="underline">
                   contact@secureit-hub.com
                 </a>
                 .
@@ -271,9 +262,12 @@ export default function ContactPage() {
           <p>secureit-hub :: contact</p>
           <p>➜ email: contact@secureit-hub.com</p>
           <p>➜ phone: +32 479 13 01 45</p>
-          <p>➜ https://www.linkedin.com/in/mohammed-a-780b47195/</p>
+          <p>➜ linkedin: linkedin.com/in/mohammed-a-780b47195</p>
           <p>➜ languages: FR · NL · EN · AR</p>
-          <p>➜ mode: full_remote</p>
+          <p>➜ availability: full_remote</p>
+          <p>
+            ➜ focus: secure_connectivity · vpn_operations · firewall_enforcement
+          </p>
         </div>
       </div>
     </section>

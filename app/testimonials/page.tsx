@@ -331,6 +331,8 @@ const recommendations: Recommendation[] = [
 
 export default function TestimonialsPage() {
   return (
+    <>
+   
     <section className="mx-auto w-full max-w-xl md:max-w-5xl space-y-10 text-gray-200">
 
       {/* Header */}
@@ -347,24 +349,38 @@ export default function TestimonialsPage() {
         </div>
 
         {/* Clean paragraph with highlighted spans */}
-        <p className="max-w-2xl text-gray-300 text-[15px] leading-relaxed">
-          I receive consistent appreciation from{" "}
-          <span className="text-emerald-300">
-            engineers, managers and colleagues
-          </span>{" "}
-          I collaborate with. Only{" "}
-          <span className="text-emerald-300">public LinkedIn recommendations</span>{" "}
-          are displayed here to keep everything{" "}
-          <span className="text-emerald-400">clean, secure and fully compliant</span>.
-          Each recommendation highlights what defines my work:{" "}
-          <span className="text-emerald-300">
-            clarity, reliability, discipline
-          </span>{" "}
-          and{" "}
-          <span className="text-emerald-400">
-            real problem-solving in live production environments
-          </span>.
-        </p>
+        {/* Client-approved intro (3 paragraphs) */}
+<div className="max-w-2xl space-y-3 text-gray-300 text-[15px] leading-relaxed">
+  <p>
+    I receive consistent recognition from{" "}
+    <span className="text-emerald-300">
+      engineers, managers and cross-functional teams
+    </span>{" "}
+    I collaborate with in{" "}
+    <span className="text-emerald-400">production environments</span>.
+  </p>
+
+  <p>
+    Only{" "}
+    <span className="text-emerald-300">
+      publicly visible LinkedIn recommendations
+    </span>{" "}
+    are displayed here to ensure{" "}
+    <span className="text-emerald-400">
+      transparency, compliance and clarity
+    </span>
+    .
+  </p>
+
+  <p>
+    These testimonials reflect the principles that guide my work:{" "}
+    <span className="text-emerald-300">structured execution</span>,{" "}
+    <span className="text-emerald-300">operational reliability</span>,{" "}
+    <span className="text-emerald-300">disciplined troubleshooting</span> and{" "}
+    <span className="text-emerald-400">clear communication</span> within{" "}
+    <span className="text-emerald-400">security-sensitive environments</span>.
+  </p>
+</div>
 
         {/* Small terminal prompt line */}
         <div className="inline-flex items-center gap-2 rounded-md border border-emerald-500/40 bg-black/80 px-3 py-2 font-mono text-[11px] text-emerald-300 shadow-[0_0_20px_rgba(16,185,129,0.25)]">
@@ -376,5 +392,10 @@ export default function TestimonialsPage() {
       {/* Carousel */}
       <TestimonialsCarousel recommendations={recommendations} />
     </section>
+
+
+
+    </>
+
   );
 }

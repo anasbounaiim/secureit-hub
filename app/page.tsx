@@ -24,33 +24,33 @@ const LOG_CONTENT: Record<
   INFRA: {
     file: "infra.log",
     lines: [
-      "Enterprise-grade infrastructures with Cisco switching, routing and segmented designs.",
-      "Focus on clean topologies, resilient routing (OSPF/BGP), predictable paths and stable WAN connectivity.",
-      "Built for operational discipline and reliability in multi-site environments.",
+      "Cisco routing & switching in enterprise environments.",
+      "Stable WAN/LAN behavior, clean routing paths and high-availability enforcement.",
+      "Designed for predictable connectivity under strict uptime constraints.",
     ],
   },
   SECURITY: {
     file: "security.log",
     lines: [
-      "Firewall operations and segmentation with Fortinet and Zscaler.",
-      "Rules, NAT, VPN, IPS, visibility and incident handling with clarity and control.",
-      "Security aligned with continuity, stability and clean enforcement.",
+      "Firewall operations, segmentation enforcement and policy consistency.",
+      "Fortinet policy control (NAT, IPSec VPN, IPS) and secure access workflows.",
+      "Security is structural: controlled flows, validated impact, clear execution.",
     ],
   },
   VPN: {
     file: "vpn.log",
     lines: [
-      "Enterprise remote access and site-to-site VPNs with Cisco, Fortinet and Zscaler.",
-      "IPSec, SSL, ZPA/ZIA behavior, tunnel stability and clean troubleshooting under pressure.",
-      "Designed for reliability and consistent access paths.",
+      "Enterprise VPN environments: IPSec, SSL and Zscaler ZPA/ZIA paths.",
+      "Tunnel stability, traffic inspection behavior and access boundary validation.",
+      "Built for reliable remote execution in production contexts.",
     ],
   },
   LINUX: {
     file: "linux.log",
     lines: [
-      "Linux as primary engineering environment (Ubuntu + Kali VM).",
-      "System admin, CLI, automation, logs, packet capture and secure tooling.",
-      "A stable platform for structured work and remote execution.",
+      "Linux (Ubuntu) as primary operational OS. Kali Linux in virtualized lab environments.",
+      "CLI-driven execution, log analysis, packet capture and secure tooling.",
+      "A stable platform for structured work, validation and automation.",
     ],
   },
 };
@@ -102,42 +102,54 @@ export default function HomePage() {
             {/* HERO COPY */}
             <div className="space-y-3.5 text-[0.95rem] sm:text-[1rem] text-gray-300 max-w-[780px] leading-[1.6]">
               <p>
-                I work on secure and reliable network infrastructures with{" "}
+                I operate secure and resilient network infrastructures leveraging{" "}
                 <span className="text-emerald-300/90">
                   Cisco, Fortinet, Zscaler and Linux
-                </span>
-                . My focus is on stable VPN connectivity, firewall operations,
-                and clean remote execution in{" "}
+                </span>{" "}
+                platforms within{" "}
                 <span className="text-emerald-300/90">
-                  real production environments
+                  enterprise production environments
                 </span>
                 .
               </p>
 
               <p>
-                Strong background in network operations across Belgium and remote
-                setups. Clear, pragmatic and consistent problem-solving with
-                reliability as a priority.
+                My focus is on secure connectivity, firewall operations, VPN
+                stability and controlled remote execution under strict uptime
+                constraints.
               </p>
 
               <p>
-                Current mission: Ahold Delhaize. Hybrid infrastructure, high
-                uptime requirements and full-remote delivery.
+                Background built across Belgian enterprise environments and fully
+                remote operations. Structured, pragmatic and reliability-driven
+                engineering with security as a constant foundation.
               </p>
 
               <p>
-                Multilingual: English, French, Dutch, Arabic. Fully remote.
-                Security-driven. Stable by design.
+                Current mission:{" "}
+                <span className="text-emerald-300/90">
+                  Ahold Delhaize
+                </span>{" "}
+                – hybrid infrastructure with high availability requirements and
+                security-critical connectivity.
+              </p>
+
+              <p>
+                Multilingual: English, French, Dutch, Arabic. Fully remote
+                capable. Security-driven. Operationally disciplined.
               </p>
             </div>
 
             {/* SHORT HIGHLIGHTS BAR */}
             <div className="flex flex-wrap gap-2.5 sm:gap-3 text-[10px] sm:text-[11px] md:text-xs">
               <span className="px-3 py-1 rounded-full border border-emerald-500/60 bg-emerald-500/10 text-emerald-300 uppercase tracking-[0.15em] hover:bg-emerald-500/20 hover:border-emerald-500 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all duration-300 cursor-default">
-                Network & Security Engineer
+                Network &amp; Security Engineer
               </span>
               <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-gray-200 uppercase tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
-                10+ years in operational roles
+                CCNP Security – SVPN
+              </span>
+              <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-gray-200 uppercase tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
+                10+ years in production environments
               </span>
               <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-gray-200 uppercase tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
                 Belgium · Full Remote Ready
@@ -190,19 +202,21 @@ export default function HomePage() {
                   </span>
                   Systems / Network Engineer
                 </p>
+
                 <p className="hover:text-white transition-colors duration-200">
                   <span className="text-emerald-400 font-semibold">
                     Mission:&nbsp;
                   </span>
-                  Ahold Delhaize (Belgium &amp; remote) – hybrid infrastructure
-                  with strong uptime and security requirements.
+                  Ahold Delhaize (Belgium &amp; remote) – hybrid enterprise infrastructure
+                  with strict uptime and security enforcement requirements.
                 </p>
+
                 <p className="hover:text-white transition-colors duration-200">
                   <span className="text-emerald-400 font-semibold">
-                    Focus:&nbsp;
+                    Primary Focus:&nbsp;
                   </span>
-                  Secure connectivity, stability, incident resolution and
-                  service continuity.
+                  Secure connectivity operations, VPN reliability, firewall policy control,
+                  incident resolution and service continuity.
                 </p>
               </div>
 
@@ -211,14 +225,15 @@ export default function HomePage() {
                   <Server className="text-emerald-400" size={16} />
                   CORE STACK
                 </p>
+
                 <div className="flex flex-wrap gap-2 text-[11px] text-emerald-200">
                   {[
-                    "Cisco (routing & switching)",
-                    "Fortinet FortiGate",
+                    "Cisco routing & switching (enterprise environments)",
+                    "Fortinet FortiGate (policy enforcement, NAT, VPN, IPS)",
                     "Zscaler ZIA / ZPA",
-                    "IPSec & SSL VPN",
-                    "Linux (Ubuntu / servers)",
-                    "VMware / virtualization",
+                    "IPSec & SSL VPN (CCNP Security – SVPN level)",
+                    "Linux (Ubuntu servers & operational tooling)",
+                    "VMware / enterprise virtualization",
                     "Infoblox · F5 · Citrix",
                   ].map((item) => (
                     <span
@@ -236,11 +251,11 @@ export default function HomePage() {
                   <GlobeLock className="text-emerald-400" size={16} />
                   WORKING MODE
                 </p>
-                <p className="text-xs text-gray-300 hover:text-gray-100 transition-colors	duration-200">
-                  Full-remote, production-focused and documentation-friendly.
-                  Languages:{" "}
+                <p className="text-xs text-gray-300 hover:text-gray-100 transition-colors duration-200">
+                  Production-focused, full-remote delivery with structured documentation,
+                  change discipline and controlled implementation practices. Languages:{" "}
                   <span className="text-emerald-300 font-medium">
-                    English, French, Dutch, Arabic.
+                    English · French · Dutch · Arabic
                   </span>
                 </p>
               </div>
@@ -262,8 +277,8 @@ export default function HomePage() {
               </p>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed relative z-10">
-              I handle every change, rule and access path with disciplined
-              execution and clear communication.
+              Every configuration change, firewall rule and access path is handled
+              with structured validation, impact awareness and clear communication.
             </p>
           </div>
 
@@ -279,8 +294,8 @@ export default function HomePage() {
               </p>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed relative z-10">
-              Security is structure. Boundaries, policies and flows must stay
-              predictable, consistent and controlled.
+              Security is not a feature — it is a structural principle. Segmentation,
+              policy consistency and predictable traffic flows preserve operational integrity.
             </p>
           </div>
 
@@ -288,16 +303,17 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/8 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="flex items-center gap-3 relative z-10">
               <Terminal
-                className="text-emerald-400 group-hover:scale-110 transition-transform	duration-300"
+                className="text-emerald-400 group-hover:scale-110 transition-transform duration-300"
                 size={20}
               />
-              <p className="text-xs uppercase tracking-[0.2em] text-gray-300	group-hover:text-emerald-300 transition-colors duration-300">
-                TOOLING AND AUTOMATION
+              <p className="text-xs uppercase tracking-[0.2em] text-gray-300 group-hover:text-emerald-300 transition-colors duration-300">
+                TOOLING &amp; AUTOMATION
               </p>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed relative z-10">
-              Python, CLI and structured configs for clean automation, fast
-              validation and reliable repeatability.
+              Python and CLI-based tooling for automation, validation and operational
+              efficiency — structured configs (YAML/JSON) and repeatable workflows
+              to ensure consistency across environments.
             </p>
           </div>
         </div>
@@ -314,24 +330,24 @@ export default function HomePage() {
           <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                label: "Production-focused years",
-                value: "10+",
-                desc: "From security operations to systems & network engineering.",
+                label: "Network & Security Engineer",
+                value: "Role",
+                desc: "Secure connectivity · VPN stability · Firewall operations.",
               },
               {
-                label: "Current mission",
-                value: "Ahold Delhaize",
-                desc: "Hybrid infra, strict uptime, secure remote access.",
+                label: "CCNP Security – SVPN",
+                value: "Certified",
+                desc: "Enterprise VPN environments and controlled access paths.",
               },
               {
-                label: "Core domains",
-                value: "Infra · Security · VPN",
-                desc: "Stable routing, firewalls, remote connectivity.",
+                label: "Production environments",
+                value: "10+ years",
+                desc: "Operational discipline, service continuity and uptime focus.",
               },
               {
-                label: "Remote-ready",
-                value: "100%",
-                desc: "Full-remote delivery, documentation and async-friendly.",
+                label: "Belgium · Full Remote Ready",
+                value: "Mode",
+                desc: "Structured documentation, change discipline, remote delivery.",
               },
             ].map((item) => (
               <div
@@ -345,9 +361,7 @@ export default function HomePage() {
                 <p className="text-lg sm:text-xl font-semibold text-emerald-300 group-hover:text-emerald-400 group-hover:scale-105 transition-all duration-300">
                   {item.value}
                 </p>
-                <p className="text-[11px] sm:text-xs text-gray-400">
-                  {item.desc}
-                </p>
+                <p className="text-[11px] sm:text-xs text-gray-400">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -390,7 +404,7 @@ export default function HomePage() {
           ))}
         </div>
 
-        {/* SIGNATURE / TRACEROUTE BLOCK – JUST ABOVE FOOTER */}
+        {/* SIGNATURE / TRACEROUTE BLOCK */}
         <div className="pt-8 flex justify-center">
           <div
             className="
@@ -401,10 +415,8 @@ export default function HomePage() {
               relative
             "
           >
-            {/* subtle top glow */}
             <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-emerald-500/20 to-transparent" />
 
-            {/* Terminal bar */}
             <div className="relative z-10 flex items-center justify-between px-4 py-2 border-b border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-black to-emerald-500/20">
               <div className="flex items-center gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
@@ -412,59 +424,49 @@ export default function HomePage() {
                 <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
               </div>
               <span className="hidden sm:inline text-[11px] uppercase tracking-[0.25em] text-emerald-200">
-              traceroute :: secureit-hub.com
+                traceroute :: secureit-hub.com
               </span>
             </div>
 
             <div className="relative z-10 p-5 space-y-2">
-  <p className="text-emerald-300">
-    $ traceroute{" "}
-    <span className="text-emerald-100">secureit-hub.com</span>
-  </p>
+              <p className="text-emerald-300">
+                $ traceroute <span className="text-emerald-100">secureit-hub.com</span>
+              </p>
 
-  <p className="text-emerald-100">
-    {"  "}hop 1: user_location{" "}
-    <span className="text-emerald-400/80">[edge_client]</span>
-  </p>
-  <p className="text-emerald-100">
-    {"  "}hop 2: vpn_gateway{" "}
-    <span className="text-emerald-400/80">
-      [encrypted_tunnel_established]
-    </span>
-  </p>
-  <p className="text-emerald-100">
-    {"  "}hop 3: secureit_infra{" "}
-    <span className="text-emerald-400/80">
-      [routing_clean · fw_policies_ok]
-    </span>
-  </p>
-  <p className="text-emerald-100">
-    {"  "}hop 4: secureit_services{" "}
-    <span className="text-emerald-400/80">
-      [monitoring_online · logs_streaming]
-    </span>
-  </p>
-  <p className="text-emerald-100">
-    {"  "}hop 5: secureit-hub.com{" "}
-    <span className="text-emerald-400/80">
-      [app_alive · tls_ok]
-    </span>
-  </p>
+              <p className="text-emerald-100">
+                {"  "}hop 1: user_location{" "}
+                <span className="text-emerald-400/80">[edge_client]</span>
+              </p>
+              <p className="text-emerald-100">
+                {"  "}hop 2: vpn_gateway{" "}
+                <span className="text-emerald-400/80">[encrypted_tunnel_established]</span>
+              </p>
+              <p className="text-emerald-100">
+                {"  "}hop 3: secureit_infra{" "}
+                <span className="text-emerald-400/80">[routing_clean · fw_policies_ok]</span>
+              </p>
+              <p className="text-emerald-100">
+                {"  "}hop 4: secureit_services{" "}
+                <span className="text-emerald-400/80">[monitoring_online · logs_streaming]</span>
+              </p>
+              <p className="text-emerald-100">
+                {"  "}hop 5: secureit-hub.com{" "}
+                <span className="text-emerald-400/80">[app_alive · tls_ok]</span>
+              </p>
 
-  <p className="mt-3 text-emerald-300">
-    status: <span className="text-emerald-100">reachable ✓</span>
-  </p>
-  <p className="text-emerald-300">
-    signal: <span className="text-emerald-100">stable</span>
-  </p>
-  <p className="text-emerald-300">
-    notes:{" "}
-    <span className="text-emerald-100">
-      path_encrypted=true, packet_loss=0%, ready_for_remote_work
-    </span>
-  </p>
-</div>
-
+              <p className="mt-3 text-emerald-300">
+                status: <span className="text-emerald-100">reachable ✓</span>
+              </p>
+              <p className="text-emerald-300">
+                signal: <span className="text-emerald-100">stable</span>
+              </p>
+              <p className="text-emerald-300">
+                notes:{" "}
+                <span className="text-emerald-100">
+                  path_encrypted=true, packet_loss=0%, ready_for_remote_work
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -491,7 +493,6 @@ export default function HomePage() {
             "
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Top bar */}
             <div className="flex items-center justify-between px-3 sm:px-4 py-2 border-b border-emerald-500/30 bg-gradient-to-r from-emerald-500/20 via-black to-emerald-500/20">
               <div className="flex items-center gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
@@ -502,7 +503,6 @@ export default function HomePage() {
                 secureit-hub :: {LOG_CONTENT[activeLog].file}
               </span>
 
-              {/* Close dot / button */}
               <button
                 type="button"
                 onClick={() => setActiveLog(null)}
@@ -513,7 +513,6 @@ export default function HomePage() {
               </button>
             </div>
 
-            {/* Body – ONLY final validated lines */}
             <div className="p-4 sm:p-5 space-y-2 overflow-y-auto">
               {LOG_CONTENT[activeLog].lines.map((line) => (
                 <p key={line} className="leading-relaxed break-words">
@@ -524,7 +523,6 @@ export default function HomePage() {
           </div>
         </div>
       )}
-
     </>
   );
 }
