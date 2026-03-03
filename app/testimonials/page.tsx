@@ -269,18 +269,7 @@ const recommendations: Recommendation[] = [
       "His technical expertise, particularly in IT support, has been instrumental ensuring smooth operations.\n\n" +
       "I highly recommend Mohammed for any position that requires a dedicated and skilled professional\n\n" 
   },
-  {
-    index: 19,
-    name: "André Powroznik",
-    headline: "IT Strategy and Operations, Business Transformation and Change",
-    profileUrl: "https://www.linkedin.com/in/powro",
-    imageDataSavepageSrc:
-      "/linkedin_pfp/linkedin_pfp.png",
-    date: "Le 30 juillet 2023,",
-    relationship: "André a travaillé avec Mohammed mais dans des équipes différentes",
-    text:
-      "J'ai eu le plaisir de collaborer avec Mohammed Arbaoui chez Johnson Controls et j'ai été ravi de le retrouver chez Ahold Delhaize. Tout au long de notre parcours professionnel ensemble, j'ai été impressionné par son dynamisme, sa proactivité ainsi que ses excellentes compétences techniques. Mohammed se distingue par sa capacité à communiquer efficacement et à apporter des solutions pertinentes. Sa détermination à relever les défis en fait un collègue apprécié et un atout précieux pour toute personne travaillant avec lui.",
-  },
+
   {
     index: 20,
     name: "Victor Clinckemaille",
@@ -327,75 +316,107 @@ const recommendations: Recommendation[] = [
     relationship: "Sumit a travaillé avec Mohammed, mais dans des équipes différentes",
     text:
       "Mohammed is an exceptional professional and truly a gem for his team. His problem-solving skills are outstanding, and he consistently approaches every challenge with a positive attitude. He is proactive, reliable, and always ready to help others without hesitation. Mohammed quickly understands complex issues, finds practical solutions, and delivers quality work on time. His calm nature, dedication to learning, and commitment towards team success make him a great asset to any organization. I strongly recommend Mohammed and am confident he will excel in any role he takes up."}
-];
+,
+
+{
+  index: 24,
+  name: "Justine D'hoe",
+  headline: "HR Officer @ Delhaize",
+  profileUrl: "https://www.linkedin.com/in/justine-d-hoe-4ab078182/",
+  imageDataSavepageSrc:
+    "/linkedin_pfp/linkedin_pfp (24).png",
+  date: "27 février 2026",
+  relationship: "Justine a travaillé avec Mohammed mais dans des équipes différentes",
+  text:
+    "I had the pleasure of working with Mohammed, and I can confidently say he is a fantastic colleague. He is always ready to help, no matter the situation, and consistently brings a positive and supportive attitude to the team.What truly sets him apart is not only his expertise, but his constant willingness to share his knowledge. No matter how busy he is, he’s always there to help, explain, guide, and support the team with patience and clarity.Reliable, proactive, and genuinely supportive, he is someone you can always count on. I highly recommend him to any team looking for a dedicated and collaborative professional.Thanks for everything !"}
+
+    ,
+
+    {
+      index: 25,
+      name: "Sandra D.",
+      headline: "Store Manager",
+      profileUrl: "https://www.linkedin.com/in/justine-d-hoe-4ab078182/",
+      imageDataSavepageSrc:
+        "/linkedin_pfp/linkedin_pfp (25).png",
+      date: "3 mars 2026",
+      relationship: "Sandra a travaillé avec Mohammed mais dans des équipes différentes",
+      text:
+        "I have the pleasure of working with Mohammed, who is a dedicated, reliable, and highly professional individual.He consistently demonstrates strong organizational skills, works efficiently, and approaches challenges with a positive attitude.Mohammed is a great team player and a valuable asset to any team. I highly recommend him." }
+
+    ];
 
 export default function TestimonialsPage() {
+  // ✅ show latest first (bigger index = more recent)
+  const recommendationsNewestFirst = [...recommendations].sort(
+    (a, b) => b.index - a.index
+  );
+
   return (
     <>
-   
-    <section className="mx-auto w-full max-w-xl md:max-w-5xl space-y-10 text-gray-200">
+      <section className="mx-auto w-full max-w-xl md:max-w-5xl space-y-10 text-gray-200">
+        {/* Header */}
+        <header className="space-y-4">
+          <p className="text-xs uppercase tracking-[0.3em] text-emerald-400">
+            /Recommendations
+          </p>
 
-      {/* Header */}
-      <header className="space-y-4">
-        <p className="text-xs uppercase tracking-[0.3em] text-emerald-400">
-          /Recommendations
-        </p>
+          <div className="flex items-center gap-3">
+            <MessageSquareQuote className="h-7 w-7 text-emerald-400 opacity-80" />
+            <h1 className="text-3xl md:text-4xl font-semibold tracking-wide text-white">
+              Recommendations
+            </h1>
+          </div>
 
-        <div className="flex items-center gap-3">
-          <MessageSquareQuote className="h-7 w-7 text-emerald-400 opacity-80" />
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-wide text-white">
-            Recommendations
-          </h1>
-        </div>
+          {/* Client-approved intro (3 paragraphs) */}
+          <div className="max-w-2xl space-y-3 text-gray-300 text-[15px] leading-relaxed">
+            <p>
+              I receive consistent recognition from{" "}
+              <span className="text-emerald-300">
+                engineers, managers and cross-functional teams
+              </span>{" "}
+              I collaborate with in{" "}
+              <span className="text-emerald-400">production environments</span>.
+            </p>
 
-        {/* Clean paragraph with highlighted spans */}
-        {/* Client-approved intro (3 paragraphs) */}
-<div className="max-w-2xl space-y-3 text-gray-300 text-[15px] leading-relaxed">
-  <p>
-    I receive consistent recognition from{" "}
-    <span className="text-emerald-300">
-      engineers, managers and cross-functional teams
-    </span>{" "}
-    I collaborate with in{" "}
-    <span className="text-emerald-400">production environments</span>.
-  </p>
+            <p>
+              Only{" "}
+              <span className="text-emerald-300">
+                publicly visible LinkedIn recommendations
+              </span>{" "}
+              are displayed here to ensure{" "}
+              <span className="text-emerald-400">
+                transparency, compliance and clarity
+              </span>
+              .
+            </p>
 
-  <p>
-    Only{" "}
-    <span className="text-emerald-300">
-      publicly visible LinkedIn recommendations
-    </span>{" "}
-    are displayed here to ensure{" "}
-    <span className="text-emerald-400">
-      transparency, compliance and clarity
-    </span>
-    .
-  </p>
+            <p>
+              These testimonials reflect the principles that guide my work:{" "}
+              <span className="text-emerald-300">structured execution</span>,{" "}
+              <span className="text-emerald-300">operational reliability</span>,{" "}
+              <span className="text-emerald-300">
+                disciplined troubleshooting
+              </span>{" "}
+              and <span className="text-emerald-400">clear communication</span>{" "}
+              within{" "}
+              <span className="text-emerald-400">
+                security-sensitive environments
+              </span>
+              .
+            </p>
+          </div>
 
-  <p>
-    These testimonials reflect the principles that guide my work:{" "}
-    <span className="text-emerald-300">structured execution</span>,{" "}
-    <span className="text-emerald-300">operational reliability</span>,{" "}
-    <span className="text-emerald-300">disciplined troubleshooting</span> and{" "}
-    <span className="text-emerald-400">clear communication</span> within{" "}
-    <span className="text-emerald-400">security-sensitive environments</span>.
-  </p>
-</div>
+          {/* Small terminal prompt line */}
+          <div className="inline-flex items-center gap-2 rounded-md border border-emerald-500/40 bg-black/80 px-3 py-2 font-mono text-[11px] text-emerald-300 shadow-[0_0_20px_rgba(16,185,129,0.25)]">
+            <span className="text-emerald-400">$</span>
+            <span>cat testimonials.log</span>
+          </div>
+        </header>
 
-        {/* Small terminal prompt line */}
-        <div className="inline-flex items-center gap-2 rounded-md border border-emerald-500/40 bg-black/80 px-3 py-2 font-mono text-[11px] text-emerald-300 shadow-[0_0_20px_rgba(16,185,129,0.25)]">
-          <span className="text-emerald-400">$</span>
-          <span>cat testimonials.log</span>
-        </div>
-      </header>
-
-      {/* Carousel */}
-      <TestimonialsCarousel recommendations={recommendations} />
-    </section>
-
-
-
+        {/* Carousel */}
+        <TestimonialsCarousel recommendations={recommendationsNewestFirst} />
+      </section>
     </>
-
   );
 }
