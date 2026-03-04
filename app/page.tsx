@@ -345,7 +345,7 @@ export default function HomePage() {
               {
                 label: "CCNP Security – SVPN",
                 value: "Certified",
-                desc: "Enterprise VPN and secure remote-access environments.",
+                desc: "Large-scale VPN and secure remote-access environments.",
               },
               {
                 label: "Production environments",
