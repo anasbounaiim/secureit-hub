@@ -1,4 +1,12 @@
-import { ShieldCheck, Server, Network, Terminal, Cpu, Code, Layers } from "lucide-react";
+import {
+  ShieldCheck,
+  Server,
+  Network,
+  Terminal,
+  Cpu,
+  Code,
+  Layers,
+} from "lucide-react";
 
 export default function SkillsPage() {
   return (
@@ -17,10 +25,13 @@ export default function SkillsPage() {
           Technical Skills &amp; Expertise
         </h1>
 
+        {/* ✅ Updated per client request */}
         <p className="text-sm md:text-base text-gray-400 max-w-3xl leading-[1.7]">
-          A security-driven Network &amp; Systems stack focused on secure connectivity,
-          VPN reliability and production-grade stability across hybrid enterprise
-          environments.
+          A security-driven Network &amp; Systems stack focused on{" "}
+          <span className="text-emerald-300">secure connectivity</span>,{" "}
+          <span className="text-emerald-300">VPN reliability</span> and{" "}
+          <span className="text-emerald-300">production-grade stability</span>{" "}
+          across <span className="text-emerald-300">distributed infrastructures</span>.
         </p>
       </header>
 
@@ -60,17 +71,17 @@ export default function SkillsPage() {
                 <p>BGP · OSPF · EIGRP</p>
                 <p>VLANs · STP · EtherChannel</p>
                 <p>HSRP / VRRP</p>
-                <p>Enterprise WAN / LAN environments</p>
+                <p className="pt-1">Production WAN / LAN environments</p>
                 <p>VPN troubleshooting in production contexts</p>
-                <p>Multi-site operational networks</p>
+                <p>Multi-site network operations</p>
               </div>
 
               <div className="flex flex-wrap gap-2 pt-1">
                 {[
                   "Cisco IOS",
                   "WAN / MPLS",
-                  "Enterprise LAN/WAN",
-                  "High availability enforcement",
+                  "LAN/WAN infrastructures",
+                  "High availability operations",
                 ].map((chip) => (
                   <span
                     key={chip}
@@ -112,12 +123,14 @@ export default function SkillsPage() {
                     Fortinet FortiGate (policy control, NAT, IPSec VPN, IPS)
                   </span>
                 </p>
-                <p>Zscaler ZIA / ZPA administration</p>
+                <p>Zscaler ZIA / ZPA</p>
                 <p>IPSec &amp; SSL VPN (CCNP Security – SVPN level)</p>
-                <p>Firewall rule lifecycle management</p>
-                <p>Segmentation enforcement</p>
+
+                <p className="pt-1">Firewall rule lifecycle management</p>
+                <p>Network segmentation enforcement</p>
                 <p>Secure remote-access environments</p>
-                <p>Zero Trust principles (access control &amp; traffic boundaries)</p>
+
+                <p className="pt-1">Zero Trust access control principles</p>
                 <p>Security posture validation</p>
                 <p>Incident impact analysis</p>
               </div>
@@ -151,14 +164,14 @@ export default function SkillsPage() {
               <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
                 <p>
                   <span className="text-emerald-300">
-                    Linux administration (Ubuntu – primary operational OS)
+                    Linux administration (Ubuntu – primary OS)
                   </span>
                 </p>
                 <p>Systemd &amp; service management</p>
                 <p>Monitoring, SNMP &amp; Syslog analysis</p>
                 <p>Bash &amp; operational scripting</p>
-                <p>VMware (enterprise virtualization)</p>
-                <p>Proxmox lab environments</p>
+                <p className="pt-1">VMware virtualization environments</p>
+                <p>Proxmox lab infrastructure</p>
               </div>
 
               <div className="flex flex-wrap gap-2 pt-1">
@@ -191,34 +204,26 @@ export default function SkillsPage() {
                     Python for network automation &amp; validation
                   </span>
                 </p>
-                <p>Backup automation &amp; configuration audits</p>
-                <p>Drift detection &amp; compliance checks</p>
-                <p>Ansible (network task basics)</p>
+                <p>Configuration backup automation</p>
+                <p>Drift detection &amp; configuration validation</p>
+                <p>Ansible (network task foundations)</p>
                 <p>YAML / JSON structured configurations</p>
                 <p>REST APIs</p>
                 <p>Configuration templating</p>
                 <p>Git / GitHub workflow integration</p>
               </div>
 
-              <ul className="space-y-2 text-sm md:text-[13px] text-gray-200">
-                <li>✔ Python for network automation &amp; validation</li>
-                <li>✔ Backup automation &amp; configuration audits</li>
-                <li>✔ Drift detection &amp; compliance checks</li>
-                <li>✔ Ansible (network task basics)</li>
-                <li>✔ YAML / JSON structured configurations</li>
-                <li>✔ REST APIs &amp; configuration templating</li>
-                <li>✔ Git / GitHub workflow integration</li>
-              </ul>
-
               <div className="flex flex-wrap gap-2 pt-1">
-                {["Python", "Ansible", "YAML/JSON", "REST APIs", "Git/GitHub"].map((chip) => (
-                  <span
-                    key={chip}
-                    className="px-2.5 py-1 rounded-md border border-white/10 bg-white/5 text-[11px] text-gray-200"
-                  >
-                    {chip}
-                  </span>
-                ))}
+                {["Python", "Ansible", "YAML / JSON", "REST APIs", "Git / GitHub"].map(
+                  (chip) => (
+                    <span
+                      key={chip}
+                      className="px-2.5 py-1 rounded-md border border-white/10 bg-white/5 text-[11px] text-gray-200"
+                    >
+                      {chip}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           </div>
@@ -275,15 +280,15 @@ export default function SkillsPage() {
               <pre className="text-[11px] md:text-[12px] text-emerald-100/90 leading-relaxed whitespace-pre">
 {`skills/
 ├── networking
-│   ├── enterprise_routing_switching
+│   ├── routing_switching
 │   ├── bgp_ospf_eigrp
 │   └── high_availability_vpn_ops
 ├── security
 │   ├── fortinet_policy_control
 │   ├── zscaler_secure_access
-│   └── ipsec_ssl_vpn_svnp
+│   └── ipsec_ssl_vpn_ops
 ├── systems
-│   ├── linux_operational_admin
+│   ├── linux_operations
 │   ├── monitoring_syslog_snmp
 │   └── virtualization_platforms
 └── automation
@@ -300,9 +305,9 @@ export default function SkillsPage() {
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
                 <li>secure_connectivity &amp; vpn_stability</li>
-                <li>firewall_policy_lifecycle &amp; segmentation_enforcement</li>
+                <li>firewall_policy_lifecycle &amp; segmentation</li>
                 <li>observability &amp; incident_resolution</li>
-                <li>enterprise_network_troubleshooting</li>
+                <li>network_troubleshooting</li>
                 <li>configuration_validation &amp; drift_control</li>
               </ul>
             </div>
