@@ -343,8 +343,36 @@ const recommendations: Recommendation[] = [
       relationship: "Sandra a travaillé avec Mohammed mais dans des équipes différentes",
       text:
         "I have the pleasure of working with Mohammed, who is a dedicated, reliable, and highly professional individual.He consistently demonstrates strong organizational skills, works efficiently, and approaches challenges with a positive attitude.Mohammed is a great team player and a valuable asset to any team. I highly recommend him." }
+,
+        {
+          index: 26,
+          name: "Moradiellos Yessica",
+          headline: "Customer Care Coordinator chez Delhaize Group",
+          profileUrl: "https://www.linkedin.com/in/moradiellos-yessica-604971164/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (26).png",
+          date: "6 mars 2026",
+          relationship: "Moradiellos a travaillé avec Mohammed mais dans des équipes différentes",
+          text:
+            "I had the opportunity to work with Mohammed, who, although he was not initially my direct contact, quickly became my main reference for IT developments. I chose to work directly with him because, in the end, he was the only one with whom I was always able to find effective and lasting solutions. Mohammed stands out for his exceptional talent, remarkable ease of understanding, and ability to quickly analyze problems. His unwavering determination and motivation always drive him to go above and beyond expectations. Not only does he immediately identify the bottlenecks, but he also promptly undertakes the necessary developments, while proactively proposing thoughtful and innovative alternatives that he develops himself. He is someone you can always rely on, both for his efficiency and his dependability. Working with Mohammed has been a real privilege, as he brought a clear vision, tangible results, and perfectly adapted solutions to every project. His collaborative spirit, dynamism, and ability to exceed expectations make him an exceptional colleague and a true asset in any professional context. Moreover, I will make sure that he remains in my network for all future developments, as his expertise and reliability are simply invaluable."
+    
+        },
 
-    ];
+        {
+          index: 27,
+          name: "Soumaya Fleerackers",
+          headline: "Performance | KPI Optimization | Operational Improvement",
+          profileUrl: "https://www.linkedin.com/in/soumaya-fleerackers-b8990a125/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (27).png",
+          date: "11 mars 2026",
+          relationship: "Soumaya a travaillé avec Mohammed mais dans des équipes différentes",
+          text:
+            "Although I haven’t worked directly with Mohammed on the same team, I have had the opportunity to get to know him professionally, and it’s clear that he is an outstanding colleague. Mohammed is a pleasure to work with: friendly, approachable, and professional.  What truly sets him apart is his knowledge and insight — he quickly grasps the core of a problem and consistently comes up with effective, practical solutions. I wholeheartedly recommend Mohammed to anyone looking for a smart, reliable, and solution-oriented colleague."
+        },
+
+
+          ];
 
 export default function TestimonialsPage() {
   // ✅ show latest first (bigger index = more recent)
