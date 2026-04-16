@@ -338,7 +338,7 @@ export default function HomePage() {
           <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                label: "Network & Security Engineer",
+                label: "Network Security Engineer",
                 value: "Role",
                 desc: "Secure connectivity · VPN stability · Firewall operations.",
               },

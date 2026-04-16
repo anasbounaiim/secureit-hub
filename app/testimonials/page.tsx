@@ -370,6 +370,28 @@ const recommendations: Recommendation[] = [
           text:
             "Although I haven’t worked directly with Mohammed on the same team, I have had the opportunity to get to know him professionally, and it’s clear that he is an outstanding colleague. Mohammed is a pleasure to work with: friendly, approachable, and professional.  What truly sets him apart is his knowledge and insight — he quickly grasps the core of a problem and consistently comes up with effective, practical solutions. I wholeheartedly recommend Mohammed to anyone looking for a smart, reliable, and solution-oriented colleague."
         },
+        {
+          index: 28,
+          name: "Juliette Vieuxtemps",
+          headline: "Marketing and Internal Communication Officer at Delhaize Luxembourg",
+          profileUrl: "https://www.linkedin.com/in/juliette-vieuxtemps-9b776315b/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (28).png",
+          date: "1 avril 2026",
+          relationship: "Juliette a travaillé avec Mohammed, mais dans des équipes différentes",
+          text: "I had the pleasure of working with Mohammed, who provided outstanding IT support during our collaboration. He is highly skilled, responsive, and always willing to go the extra mile to solve complex technical issues. Whether it was troubleshooting urgent problems or implementing long-term solutions, Mohammed consistently demonstrated professionalism, efficiency, and a deep understanding of IT systems. What truly sets him apart is his ability to explain technical concepts in a clear and approachable way, making it easy for non-technical colleagues to understand and feel confident. I would highly recommend Mohammed to any organization looking for a reliable and talented IT professional."},
+
+          ,
+        {
+          index: 29,
+          name: "Alexander Rottiers",
+          headline: "Senior cockpit medewerker",
+          profileUrl: "https://www.linkedin.com/in/alexander-rottiers-4a1b99b4/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (29).png",
+          date: "9 avril 2026",
+          relationship: "Alexander a travaillé avec Mohammed, mais dans des équipes différentes",
+          text: "I had the opportunity to work with Mohammed during a critical overnight incident affecting Zebra PDA devices in our Ninove distribution center. Mohammed quickly performed a structured technical analysis and was able to clearly demonstrate that the issue was not network related by validating connectivity, DNS resolution and backend reachability. His calm approach, clear communication and strong troubleshooting skills helped to quickly direct the investigation towards the correct application team, which contributed to a fast resolution of the incident. Mohammed is a reliable and knowledgeable network and security engineer who shows strong ownership during production incidents. I would definitely recommend him for any network operations or security related role."},
 
 
           ];

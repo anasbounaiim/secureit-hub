@@ -266,7 +266,7 @@ export default function ContactPage() {
           <p>➜ languages: FR · NL · EN · AR</p>
           <p>➜ availability: full_remote</p>
           <p>
-            ➜ focus: secure_connectivity · vpn_operations · firewall_enforcement
+            ➜ focus: secure_connectivity · proxy_environments · vpn_operations · firewall_enforcement · p2_incident_resolution
           </p>
         </div>
       </div>

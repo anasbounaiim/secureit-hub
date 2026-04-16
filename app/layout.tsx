@@ -8,7 +8,7 @@ import LoadingScreen from "./components/LoadingScreen"; // ⬅️ add this
 // app/layout.tsx
 export const metadata = {
   metadataBase: new URL("https://www.secureit-hub.com"),
-  title: "SecureIT Hub – Network & Security Engineer",
+  title: "SecureIT Hub – Network Security Engineer",
   description: "Clean, security-driven network & systems engineering.",
 
   icons: {
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.secureit-hub.com",
-    title: "SecureIT Hub – Network & Security Engineer",
+    title: "SecureIT Hub – Network Security Engineer",
     description:
       "Secure connectivity, VPN, firewalls and remote-friendly infrastructure.",
     images: [
@@ -33,7 +33,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "SecureIT Hub – Network & Security Engineer",
+    title: "SecureIT Hub – Network Security Engineer",
     description: "Secure networking & system engineering expertise.",
     images: ["/og-secureit-hub.png"],
   },

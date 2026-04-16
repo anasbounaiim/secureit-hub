@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex flex-col items-center gap-4 text-center">
         {/* Text */}
         <p className="font-mono tracking-wide text-[11px] sm:text-xs text-gray-500">
-          © {new Date().getFullYear()} SecureIT-Hub — Network & Security Engineering portfolio .
+          © {new Date().getFullYear()} SecureIT-Hub — Network Security Engineering portfolio .
         </p>
 
         {/* Responsive SVG Footer Logo */}
