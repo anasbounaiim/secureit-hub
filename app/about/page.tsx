@@ -28,9 +28,11 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-[1.7]">
-          A security-driven Network Security stack focused on secure connectivity,
-          proxy environments, VPN reliability and production-grade stability
-          across distributed infrastructures (600+ stores).
+          Network Security Engineer focused on secure connectivity, stable infrastructures and reliable remote operations.
+
+Experience across Belgian production environments and distributed infrastructures spanning 600+ retail locations in Belgium and Luxembourg, working daily on live systems with security-critical connectivity and strict uptime requirements.
+
+Specialized in P2 incident troubleshooting, with a strong focus on connectivity diagnostics, proxy environments (Zscaler), and network path analysis.
         </p>
 
       </header>
@@ -62,20 +64,15 @@ export default function AboutPage() {
 
               <div className="space-y-2">
                 <p>
-                  Network Engineer operating hybrid infrastructures with focus on VPN connectivity, firewall operations and reliable network paths.
-                </p>
-                <p>
-                  Background built around clear troubleshooting, structured analysis and service continuity.
-                </p>
-                <p>
-                  Certified <span className="text-emerald-300">CCNP Security – SVPN</span>, <span className="text-emerald-300">CCNA</span> and <span className="text-emerald-300">Linux+</span>.
-                </p>
-                <p>
-                  Ubuntu used as primary operating system, with Kali Linux in a virtual environment for protocol testing and structured security learning.
-                </p>
-                <p>
-                  Clarity in communication and stable network design guide my daily work.
-                </p>
+                  Network Security Engineer operating hybrid infrastructures with focus on VPN connectivity, firewall operations, proxy flows and reliable network paths.
+
+Background built around structured troubleshooting, clear analysis and service continuity in production environments.
+
+Certified CCNP Security – SVPN, CCNA and Linux+.
+
+Ubuntu used as primary operating system, with Kali Linux in a controlled environment for protocol testing and practical security validation.
+
+Clear communication, operational discipline and stable network design guide daily work.</p>
               </div>
             </div>
           </div>
@@ -90,11 +87,11 @@ export default function AboutPage() {
 
             <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200 leading-relaxed">
               <p>
-                Hands-on work with Cisco, Fortinet, Zscaler (ZIA / ZPA), VPN technologies, Infoblox and F5.
-              </p>
-              <p>
-                These platforms are used to maintain connectivity, visibility, segmentation and secure access across distributed infrastructures.
-              </p>
+                Hands-on experience with Cisco, Fortinet, Zscaler (ZIA / ZPA), VPN technologies, Infoblox and F5.
+
+These platforms are used to maintain connectivity, enforce security policies, ensure traffic visibility and control access across distributed infrastructures.
+
+Strong focus on real-world troubleshooting scenarios, especially for connectivity and proxy-related incidents.</p>
             </div>
           </div>
 
@@ -110,8 +107,10 @@ export default function AboutPage() {
               <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200 leading-relaxed">
                 <p>Remote-ready and reliability focused.</p>
                 <p>
-                  I document what matters, simplify where it improves stability and automate when it increases operational consistency.
-                </p>
+                  
+Remote-ready and reliability-focused.
+
+I document what matters, simplify where it improves stability and automate where it increases operational consistency and reduces incident resolution time.</p>
                 <p>
                   Multilingual: <span className="text-emerald-300">French · Dutch · Arabic · English</span>
                 </p>
@@ -173,7 +172,7 @@ quick links linkedin.com/in/mohammed-a-780b47195`}
                 <li>secure_connectivity_operations</li>
                 <li>firewall_policy_control</li>
                 <li>vpn_reliability</li>
-                <li>incident_resolution</li>
+                <li>p2_incident_troubleshooting</li>
                 <li>service_continuity</li>
               </ul>
             </div>

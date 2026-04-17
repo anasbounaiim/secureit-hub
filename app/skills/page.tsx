@@ -26,9 +26,7 @@ export default function SkillsPage() {
         </h1>
 
         <p className="text-sm md:text-base text-gray-400 max-w-3xl leading-[1.7]">
-          A security-driven Network Security stack focused on secure connectivity,
-          proxy environments, VPN reliability and production-grade stability
-          across distributed infrastructures (600+ stores).
+A security-driven Network Security stack focused on secure connectivity, proxy environments, VPN reliability and production-grade stability across distributed infrastructures (600+ stores).
         </p>
       </header>
 
