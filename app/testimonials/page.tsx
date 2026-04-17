@@ -315,8 +315,7 @@ const recommendations: Recommendation[] = [
     date: "24 janvier 2026,",
     relationship: "Sumit a travaillé avec Mohammed, mais dans des équipes différentes",
     text:
-      "Mohammed is an exceptional professional and truly a gem for his team. His problem-solving skills are outstanding, and he consistently approaches every challenge with a positive attitude. He is proactive, reliable, and always ready to help others without hesitation. Mohammed quickly understands complex issues, finds practical solutions, and delivers quality work on time. His calm nature, dedication to learning, and commitment towards team success make him a great asset to any organization. I strongly recommend Mohammed and am confident he will excel in any role he takes up."}
-,
+      "Mohammed is an exceptional professional and truly a gem for his team. His problem-solving skills are outstanding, and he consistently approaches every challenge with a positive attitude. He is proactive, reliable, and always ready to help others without hesitation. Mohammed quickly understands complex issues, finds practical solutions, and delivers quality work on time. His calm nature, dedication to learning, and commitment towards team success make him a great asset to any organization. I strongly recommend Mohammed and am confident he will excel in any role he takes up."},
 
 {
   index: 24,
@@ -328,9 +327,7 @@ const recommendations: Recommendation[] = [
   date: "27 février 2026",
   relationship: "Justine a travaillé avec Mohammed mais dans des équipes différentes",
   text:
-    "I had the pleasure of working with Mohammed, and I can confidently say he is a fantastic colleague. He is always ready to help, no matter the situation, and consistently brings a positive and supportive attitude to the team.What truly sets him apart is not only his expertise, but his constant willingness to share his knowledge. No matter how busy he is, he’s always there to help, explain, guide, and support the team with patience and clarity.Reliable, proactive, and genuinely supportive, he is someone you can always count on. I highly recommend him to any team looking for a dedicated and collaborative professional.Thanks for everything !"}
-
-    ,
+    "I had the pleasure of working with Mohammed, and I can confidently say he is a fantastic colleague. He is always ready to help, no matter the situation, and consistently brings a positive and supportive attitude to the team.What truly sets him apart is not only his expertise, but his constant willingness to share his knowledge. No matter how busy he is, he’s always there to help, explain, guide, and support the team with patience and clarity.Reliable, proactive, and genuinely supportive, he is someone you can always count on. I highly recommend him to any team looking for a dedicated and collaborative professional.Thanks for everything !"},
 
     {
       index: 25,
@@ -342,8 +339,7 @@ const recommendations: Recommendation[] = [
       date: "3 mars 2026",
       relationship: "Sandra a travaillé avec Mohammed mais dans des équipes différentes",
       text:
-        "I have the pleasure of working with Mohammed, who is a dedicated, reliable, and highly professional individual.He consistently demonstrates strong organizational skills, works efficiently, and approaches challenges with a positive attitude.Mohammed is a great team player and a valuable asset to any team. I highly recommend him." }
-,
+        "I have the pleasure of working with Mohammed, who is a dedicated, reliable, and highly professional individual.He consistently demonstrates strong organizational skills, works efficiently, and approaches challenges with a positive attitude.Mohammed is a great team player and a valuable asset to any team. I highly recommend him." },
         {
           index: 26,
           name: "Moradiellos Yessica",
@@ -380,8 +376,6 @@ const recommendations: Recommendation[] = [
           date: "1 avril 2026",
           relationship: "Juliette a travaillé avec Mohammed, mais dans des équipes différentes",
           text: "I had the pleasure of working with Mohammed, who provided outstanding IT support during our collaboration. He is highly skilled, responsive, and always willing to go the extra mile to solve complex technical issues. Whether it was troubleshooting urgent problems or implementing long-term solutions, Mohammed consistently demonstrated professionalism, efficiency, and a deep understanding of IT systems. What truly sets him apart is his ability to explain technical concepts in a clear and approachable way, making it easy for non-technical colleagues to understand and feel confident. I would highly recommend Mohammed to any organization looking for a reliable and talented IT professional."},
-
-          ,
         {
           index: 29,
           name: "Alexander Rottiers",
