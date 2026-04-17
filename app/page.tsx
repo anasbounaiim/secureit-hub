@@ -88,7 +88,7 @@ export default function HomePage() {
                     className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:scale-110 transition-transform duration-300"
                     size={30}
                   />
-                  REMOTE EXECUTION.
+                  CONNECTED INFRASTRUCTURES.
                 </h2>
 
                 <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 md:hover:translate-x-1 transition-transform duration-300 group">
@@ -96,7 +96,7 @@ export default function HomePage() {
                     className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:rotate-6 transition-transform duration-300"
                     size={30}
                   />
-                  BUILT FOR IMPACT.
+                  BUILT FOR RESILIENCE.
                 </h3>
               </div>
             </div>
@@ -117,24 +117,29 @@ export default function HomePage() {
 
               <p>
                 My focus is on secure connectivity, firewall operations, VPN
-                stability and controlled remote execution under strict uptime
+                stability and real-time incident resolution under strict uptime
                 constraints.
               </p>
 
               <p>
-                Background built across{" "}
-                <span className="text-emerald-300/90">
-                  Belgian production infrastructures
-                </span>{" "}
-                and fully remote operations. Structured, pragmatic and
-                reliability-driven engineering with security as a constant
-                foundation.
+                Specialized in P2 incident troubleshooting, I analyze and
+                resolve connectivity and proxy-related issues (Zscaler, VPN
+                paths, firewall flows) with speed and precision, minimizing
+                escalation.
+              </p>
+
+              <p>
+                Background built across large-scale Belgian production
+                infrastructures and fully remote operations. Structured,
+                pragmatic and reliability-driven engineering with security as a
+                constant foundation.
               </p>
 
               <p>
                 Current mission:{" "}
                 <span className="text-emerald-300/90">Ahold Delhaize</span> –
-                hybrid infrastructure with high availability requirements and
+                hybrid infrastructure across 600+ stores in Belgium and
+                Luxembourg, with high availability requirements and
                 security-critical connectivity.
               </p>
 
@@ -148,7 +153,7 @@ export default function HomePage() {
             {/* SHORT HIGHLIGHTS BAR — already matches, kept */}
             <div className="flex flex-wrap gap-2.5 sm:gap-3 text-[10px] sm:text-[11px] md:text-xs">
               <span className="px-3 py-1 rounded-full border border-emerald-500/60 bg-emerald-500/10 text-emerald-300 uppercase tracking-[0.15em] hover:bg-emerald-500/20 hover:border-emerald-500 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all duration-300 cursor-default">
-                Network &amp; Security Engineer
+                Network Security Engineer
               </span>
               <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-gray-200 uppercase tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
                 CCNP Security – SVPN
@@ -221,7 +226,8 @@ export default function HomePage() {
                     Primary Focus:&nbsp;
                   </span>
                   Secure connectivity operations, VPN reliability, firewall
-                  policy control, incident resolution and service continuity.
+                  policy control, P2 incident resolution and service continuity
+                  across distributed environments.
                 </p>
               </div>
 

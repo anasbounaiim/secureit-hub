@@ -2,11 +2,11 @@ import { FolderGit2, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Multi-Site Infrastructure Homelab",
-    period: "Active",
-    stack: ["Cisco", "Fortinet", "IPSec", "VPN", "Linux", "Monitoring"],
+    title: "Multi-Site Infrastructure Lab",
+    period: "Operational",
+    stack: ["Cisco", "Fortinet", "VPN", "Linux", "Monitoring"],
     description: [
-      "Multi-site lab environment replicating segmented networks, routed domains and secure inter-site connectivity.",
+      "Multi-site environment replicating segmented networks, routed domains and secure inter-site connectivity.",
       "",
       "Scope includes:",
       "- IPSec site-to-site tunnels",
@@ -15,19 +15,19 @@ const projects = [
       "- SNMP monitoring",
       "- Segmentation and traffic boundary validation",
       "",
-      "Purpose: simulate production behavior under controlled conditions and validate secure connectivity patterns.",
+      "Purpose: simulate real production behavior under controlled conditions and validate secure connectivity patterns at scale.",
       "",
       "Stack: Cisco · Fortinet · VPN · Linux · Monitoring",
-      "Path: ~/labs/multi_site_homelab_architecture",
+      "Path: ~/labs/multi_site_infrastructure_lab",
     ],
-    path: "~/labs/multi_site_homelab_architecture",
+    path: "~/labs/multi_site_infrastructure_lab",
   },
   {
     title: "Network Automation Toolkit",
-    period: "Iterating",
+    period: "Ongoing",
     stack: ["Python", "Automation", "CLI", "Structured Configs"],
     description: [
-      "Operational Python toolkit designed to improve reliability and consistency in network operations.",
+      "Operational Python toolkit designed to improve reliability, consistency and speed in network operations.",
       "",
       "Includes:",
       "- Automated configuration backups",
@@ -35,6 +35,11 @@ const projects = [
       "- Inventory parsing",
       "- CLI-driven bulk operations",
       "- Structured validation workflows",
+      "",
+      "Extended use:",
+      "- Store-level connectivity diagnostics",
+      "- Multi-node validation (routers, nodes, endpoints)",
+      "- Rapid P2 troubleshooting support",
       "",
       "Focus: repeatability, execution control and reduction of human error in operational tasks.",
       "",
@@ -45,7 +50,7 @@ const projects = [
   },
   {
     title: "Secure Remote Access Validation Lab",
-    period: "Active Lab",
+    period: "Operational",
     stack: ["Zscaler", "VPN", "Firewall", "Access Control"],
     description: [
       "Comparative testing of secure remote access architectures:",
@@ -60,7 +65,7 @@ const projects = [
       "- User experience vs security trade-offs",
       "- Access segmentation enforcement",
       "",
-      "Designed to analyze real-world remote connectivity patterns and hardening strategies.",
+      "Designed to analyze real-world remote connectivity patterns, proxy behavior and secure access strategies.",
       "",
       "Stack: Zscaler · VPN · Firewall · Access Control",
       "Path: ~/labs/secure_remote_access_validation_lab",
@@ -79,7 +84,7 @@ const projects = [
       "- Incident simulation",
       "- Structured troubleshooting workflows",
       "",
-      "Objective: strengthen observability discipline and incident analysis within network security operations.",
+      "Objective: strengthen observability discipline and improve P2 incident analysis across network security operations.",
       "",
       "Stack: Linux · Syslog · Traffic Capture · Automation",
       "Path: ~/labs/incident_response_playground",
@@ -88,7 +93,7 @@ const projects = [
   },
   {
     title: "Firewall Policy Optimization Study",
-    period: "In Progress",
+    period: "Validation Phase",
     stack: ["Fortinet", "AlgoSec", "Segmentation"],
     description: [
       "Structured review and refinement of firewall rulebases.",
@@ -126,18 +131,20 @@ export default function ProjectsPage() {
           <span>Security Labs & Projects</span>
         </h1>
 
-        {/* ✅ Updated intro (more natural) */}
         <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-3xl">
-          Infrastructure labs and operational tooling built to validate secure
-          connectivity, firewall behavior and network stability.
+          Infrastructure labs and operational tooling designed to validate secure
+          connectivity, firewall behavior and network stability across
+          production-like environments.
           <br />
           <br />
           These environments simulate real-world constraints such as
-          segmentation, VPN reliability, logging visibility and controlled change
-          validation.
+          segmentation, VPN reliability, proxy behavior (Zscaler), logging
+          visibility and controlled change validation.
           <br />
           <br />
-          They serve as validation platforms rather than theoretical exercises.
+          They serve as validation platforms aligned with real operational
+          challenges, especially in P2 incident troubleshooting and connectivity
+          diagnostics.
         </p>
       </header>
 
@@ -249,11 +256,8 @@ export default function ProjectsPage() {
                 <span className="text-emerald-500">➜</span> summary
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-                <li>• homelab_mode: enterprise_validation_platform</li>
-                <li>
-                  • focus: secure_connectivity · policy_enforcement · automation ·
-                  observability
-                </li>
+                <li>• lab_mode: validation_platform</li>
+                <li>• focus: secure_connectivity · proxy_behavior · policy_enforcement · automation · observability</li>
                 <li>• environment: multi-site_vpn + segmented_network_domains</li>
                 <li>• repository: github.com/SecureIT-Hub</li>
               </ul>
@@ -265,7 +269,7 @@ export default function ProjectsPage() {
                 <span className="text-emerald-500">➜</span> project_types
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-                <li>enterprise_lab_validation</li>
+                <li>lab_validation</li>
                 <li>network_automation_tooling</li>
                 <li>secure_remote_access_analysis</li>
                 <li>incident_response_simulation</li>
@@ -280,8 +284,8 @@ export default function ProjectsPage() {
               </p>
               <pre className="text-[11px] md:text-[12px] text-emerald-100/90 leading-relaxed whitespace-pre">
 {`stack = {
-  network:    [ "Cisco", "Fortinet", "IPSec" ],
-  security:   [ "Zscaler", "Firewall", "Segmentation" ],
+  network: [ "Cisco", "Fortinet", "IPSec" ],
+  security: [ "Zscaler", "Firewall", "Segmentation" ],
   observability: [ "Syslog", "Monitoring", "Traffic Analysis" ],
   automation: [ "Python", "CLI", "Structured Workflows" ]
 }`}
@@ -294,10 +298,10 @@ export default function ProjectsPage() {
                 <span className="text-emerald-500">➜</span> lab_status
               </p>
               <ul className="space-y-0.5 text-[11px] md:text-[12px] text-emerald-100/90">
-                <li>• enterprise_homelab: operational</li>
-                <li>• automation_toolkit: iterating</li>
+                <li>• multi_site_lab: operational</li>
+                <li>• automation_toolkit: ongoing</li>
                 <li>• incident_playground: scenario_ready</li>
-                <li>• firewall_study: refinement_phase</li>
+                <li>• firewall_study: validation_phase</li>
               </ul>
             </div>
           </div>

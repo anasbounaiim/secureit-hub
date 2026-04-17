@@ -268,6 +268,7 @@ export default function ContactPage() {
           <p>
             ➜ focus: secure_connectivity · proxy_environments · vpn_operations · firewall_enforcement · p2_incident_resolution
           </p>
+          <p>Operating under SecureIT Hub (SRL)</p>
         </div>
       </div>
     </section>

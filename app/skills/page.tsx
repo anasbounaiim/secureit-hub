@@ -25,13 +25,10 @@ export default function SkillsPage() {
           Technical Skills &amp; Expertise
         </h1>
 
-        {/* ✅ Updated per client request */}
         <p className="text-sm md:text-base text-gray-400 max-w-3xl leading-[1.7]">
-          A security-driven Network &amp; Systems stack focused on{" "}
-          <span className="text-emerald-300">secure connectivity</span>,{" "}
-          <span className="text-emerald-300">VPN reliability</span> and{" "}
-          <span className="text-emerald-300">production-grade stability</span>{" "}
-          across <span className="text-emerald-300">distributed infrastructures</span>.
+          A security-driven Network Security stack focused on secure connectivity,
+          proxy environments, VPN reliability and production-grade stability
+          across distributed infrastructures (600+ stores).
         </p>
       </header>
 
@@ -72,8 +69,8 @@ export default function SkillsPage() {
                 <p>VLANs · STP · EtherChannel</p>
                 <p>HSRP / VRRP</p>
                 <p className="pt-1">Production WAN / LAN environments</p>
-                <p>VPN troubleshooting in production contexts</p>
-                <p>Multi-site network operations</p>
+                <p>Multi-site network operations (large-scale retail environments)</p>
+                <p>Real-time connectivity troubleshooting & network path analysis</p>
               </div>
 
               <div className="flex flex-wrap gap-2 pt-1">
@@ -123,16 +120,12 @@ export default function SkillsPage() {
                     Fortinet FortiGate (policy control, NAT, IPSec VPN, IPS)
                   </span>
                 </p>
-                <p>Zscaler ZIA / ZPA</p>
+                <p>Zscaler (ZIA / ZPA) — proxy-based secure access, traffic control and cloud security enforcement</p>
                 <p>IPSec &amp; SSL VPN (CCNP Security – SVPN level)</p>
-
-                <p className="pt-1">Firewall rule lifecycle management</p>
-                <p>Network segmentation enforcement</p>
+                <p className="pt-1">Firewall policy lifecycle & segmentation</p>
                 <p>Secure remote-access environments</p>
-
-                <p className="pt-1">Zero Trust access control principles</p>
-                <p>Security posture validation</p>
-                <p>Incident impact analysis</p>
+                <p>Zero Trust access control principles</p>
+                <p>Incident impact analysis (connectivity & proxy)</p>
               </div>
 
               <div className="flex flex-wrap gap-2 pt-1">
@@ -164,14 +157,11 @@ export default function SkillsPage() {
               <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
                 <p>
                   <span className="text-emerald-300">
-                    Linux administration (Ubuntu – primary OS)
+                    Linux (Ubuntu – primary OS)
                   </span>
                 </p>
-                <p>Systemd &amp; service management</p>
-                <p>Monitoring, SNMP &amp; Syslog analysis</p>
-                <p>Bash &amp; operational scripting</p>
-                <p className="pt-1">VMware virtualization environments</p>
-                <p>Proxmox lab infrastructure</p>
+                <p>Monitoring (SNMP, Syslog) & log-based troubleshooting</p>
+                <p>VMware & Proxmox environments</p>
               </div>
 
               <div className="flex flex-wrap gap-2 pt-1">
@@ -201,16 +191,13 @@ export default function SkillsPage() {
               <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
                 <p>
                   <span className="text-emerald-300">
-                    Python for network automation &amp; validation
+                    Python for network automation, validation and troubleshooting
                   </span>
                 </p>
-                <p>Configuration backup automation</p>
-                <p>Drift detection &amp; configuration validation</p>
-                <p>Ansible (network task foundations)</p>
-                <p>YAML / JSON structured configurations</p>
-                <p>REST APIs</p>
-                <p>Configuration templating</p>
-                <p>Git / GitHub workflow integration</p>
+                <p>Connectivity diagnostics & multi-node validation</p>
+                <p>Configuration backup & drift detection</p>
+                <p>Ansible (foundations)</p>
+                <p>YAML / JSON · REST APIs · Git / GitHub</p>
               </div>
 
               <div className="flex flex-wrap gap-2 pt-1">
@@ -228,11 +215,11 @@ export default function SkillsPage() {
             </div>
           </div>
 
-          {/* ALSO EXPERIENCED WITH */}
+          {/* SUPPORTING TECHNOLOGIES */}
           <div className="rounded-2xl border border-white/10 bg-black/70 p-4 sm:p-5 space-y-3">
             <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-emerald-300">
               <Server size={14} />
-              <span>Also experienced with</span>
+              <span>Supporting technologies</span>
             </div>
 
             <ul className="grid grid-cols-2 md:grid-cols-4 gap-2 text-[12px] text-gray-200">
@@ -240,10 +227,10 @@ export default function SkillsPage() {
                 "AlgoSec",
                 "Infoblox",
                 "Citrix",
-                "Palo Alto (operational basics)",
-                "Nmap",
+                "Palo Alto (basics)",
                 "Wireshark",
-                "Syslog traffic analysis",
+                "Nmap",
+                "Syslog analysis",
               ].map((item) => (
                 <li
                   key={item}
