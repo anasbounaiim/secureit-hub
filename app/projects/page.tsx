@@ -1,24 +1,44 @@
-import { FolderGit2, ExternalLink } from "lucide-react";
+﻿import { FolderGit2, ExternalLink } from "lucide-react";
 
-const projects = [
+type ExtraSection = {
+  title: string;
+  items: string | string[];
+};
+
+type Project = {
+  title: string;
+  period: string;
+  stack: string[];
+  intro: string;
+  scope: string[];
+  scopeLabel?: string;
+  purpose: string;
+  extraSections?: ExtraSection[];
+  path: string;
+};
+
+const projects: Project[] = [
   {
     title: "Multi-Site Infrastructure Lab",
     period: "Operational",
     stack: ["Cisco", "Fortinet", "VPN", "Linux", "Monitoring"],
-    description: [
+    intro:
       "Multi-site environment replicating segmented networks, routed domains and secure inter-site connectivity.",
-      "",
-      "Scope includes:",
-      "- IPSec site-to-site tunnels",
-      "- Policy-driven firewall enforcement",
-      "- Centralized logging & visibility",
-      "- SNMP monitoring",
-      "- Segmentation and traffic boundary validation",
-      "",
+    scope: [
+      "IPSec site-to-site tunnels",
+      "Policy-driven firewall enforcement",
+      "Centralized logging & visibility",
+      "SNMP monitoring",
+      "Segmentation and traffic boundary validation",
+    ],
+    scopeLabel: "Scope includes:",
+    purpose:
       "Purpose: simulate real production behavior under controlled conditions and validate secure connectivity patterns at scale.",
-      "",
-      "Stack: Cisco · Fortinet · VPN · Linux · Monitoring",
-      "Path: ~/labs/multi_site_infrastructure_lab",
+    extraSections: [
+      {
+        title: "Stack",
+        items: "Cisco · Fortinet · VPN · Linux · Monitoring",
+      },
     ],
     path: "~/labs/multi_site_infrastructure_lab",
   },
@@ -26,25 +46,34 @@ const projects = [
     title: "Network Automation Toolkit",
     period: "Ongoing",
     stack: ["Python", "Automation", "CLI", "Structured Configs"],
-    description: [
+    intro:
       "Operational Python toolkit designed to improve reliability, consistency and speed in network operations.",
-      "",
-      "Includes:",
-      "- Automated configuration backups",
-      "- Compliance & drift detection",
-      "- Inventory parsing",
-      "- CLI-driven bulk operations",
-      "- Structured validation workflows",
-      "",
-      "Extended use:",
-      "- Store-level connectivity diagnostics",
-      "- Multi-node validation (routers, nodes, endpoints)",
-      "- Rapid P2 troubleshooting support",
-      "",
+    scope: [],
+    purpose:
       "Focus: repeatability, execution control and reduction of human error in operational tasks.",
-      "",
-      "Stack: Python · Automation · CLI · Structured Configs",
-      "Path: ~/labs/network_automation_toolkit",
+    extraSections: [
+      {
+        title: "Includes",
+        items: [
+          "Automated configuration backups",
+          "Compliance & drift detection",
+          "Inventory parsing",
+          "CLI-driven bulk operations",
+          "Structured validation workflows",
+        ],
+      },
+      {
+        title: "Extended use",
+        items: [
+          "Store-level connectivity diagnostics",
+          "Multi-node validation (routers, nodes, endpoints)",
+          "Rapid P2 troubleshooting support",
+        ],
+      },
+      {
+        title: "Stack",
+        items: "Python · Automation · CLI · Structured Configs",
+      },
     ],
     path: "~/labs/network_automation_toolkit",
   },
@@ -52,23 +81,25 @@ const projects = [
     title: "Secure Remote Access Validation Lab",
     period: "Operational",
     stack: ["Zscaler", "VPN", "Firewall", "Access Control"],
-    description: [
-      "Comparative testing of secure remote access architectures:",
-      "- Zscaler ZIA / ZPA",
-      "- IPSec VPN",
-      "- SSL VPN",
-      "",
-      "Validation focus:",
-      "- Policy behavior",
-      "- Authentication flows",
-      "- Traffic inspection paths",
-      "- User experience vs security trade-offs",
-      "- Access segmentation enforcement",
-      "",
+    intro: "Comparative testing of secure remote access architectures:",
+    scope: ["Zscaler ZIA / ZPA", "IPSec VPN", "SSL VPN"],
+    purpose:
       "Designed to analyze real-world remote connectivity patterns, proxy behavior and secure access strategies.",
-      "",
-      "Stack: Zscaler · VPN · Firewall · Access Control",
-      "Path: ~/labs/secure_remote_access_validation_lab",
+    extraSections: [
+      {
+        title: "Validation focus",
+        items: [
+          "Policy behavior",
+          "Authentication flows",
+          "Traffic inspection paths",
+          "User experience vs security trade-offs",
+          "Access segmentation enforcement",
+        ],
+      },
+      {
+        title: "Stack",
+        items: "Zscaler · VPN · Firewall · Access Control",
+      },
     ],
     path: "~/labs/secure_remote_access_validation_lab",
   },
@@ -76,18 +107,21 @@ const projects = [
     title: "Incident Response & Log Analysis Playground",
     period: "Scenario Ready",
     stack: ["Linux", "Syslog", "Traffic Capture", "Automation"],
-    description: [
-      "Controlled environment for:",
-      "- Log correlation",
-      "- Syslog analysis",
-      "- Packet capture & replay",
-      "- Incident simulation",
-      "- Structured troubleshooting workflows",
-      "",
+    intro: "Controlled environment for:",
+    scope: [
+      "Log correlation",
+      "Syslog analysis",
+      "Packet capture & replay",
+      "Incident simulation",
+      "Structured troubleshooting workflows",
+    ],
+    purpose:
       "Objective: strengthen observability discipline and improve P2 incident analysis across network security operations.",
-      "",
-      "Stack: Linux · Syslog · Traffic Capture · Automation",
-      "Path: ~/labs/incident_response_playground",
+    extraSections: [
+      {
+        title: "Stack",
+        items: "Linux · Syslog · Traffic Capture · Automation",
+      },
     ],
     path: "~/labs/incident_response_playground",
   },
@@ -95,24 +129,52 @@ const projects = [
     title: "Firewall Policy Optimization Study",
     period: "Validation Phase",
     stack: ["Fortinet", "AlgoSec", "Segmentation"],
-    description: [
-      "Structured review and refinement of firewall rulebases.",
-      "",
-      "Focus areas:",
-      "- Rule cleanup & lifecycle management",
-      "- NAT optimization",
-      "- Segmentation reinforcement",
-      "- Policy overlap detection",
-      "- Change impact validation",
-      "",
+    intro: "Structured review and refinement of firewall rulebases.",
+    scope: [
+      "Rule cleanup & lifecycle management",
+      "NAT optimization",
+      "Segmentation reinforcement",
+      "Policy overlap detection",
+      "Change impact validation",
+    ],
+    scopeLabel: "Focus areas:",
+    purpose:
       "Designed to improve clarity, performance and security posture in firewall environments.",
-      "",
-      "Stack: Fortinet · AlgoSec · Segmentation",
-      "Path: ~/labs/firewall_policy_optimization",
+    extraSections: [
+      {
+        title: "Stack",
+        items: "Fortinet · AlgoSec · Segmentation",
+      },
     ],
     path: "~/labs/firewall_policy_optimization",
   },
 ];
+
+const formatProjectDescription = (project: Project) => {
+  const lines: string[] = [project.intro];
+
+  if (project.scope.length > 0) {
+    if (project.scopeLabel) {
+      lines.push("", project.scopeLabel, ...project.scope.map((item) => `- ${item}`));
+    } else {
+      lines.push(...project.scope.map((item) => `- ${item}`));
+    }
+  }
+
+  if (project.purpose) {
+    lines.push("", project.purpose);
+  }
+
+  project.extraSections?.forEach((section) => {
+    if (typeof section.items === "string") {
+      lines.push("", `${section.title}: ${section.items}`);
+    } else {
+      lines.push("", `${section.title}:`, ...section.items);
+    }
+  });
+
+  return lines.join("\n");
+};
 
 export default function ProjectsPage() {
   return (
@@ -184,7 +246,7 @@ export default function ProjectsPage() {
 
                 {/* DESCRIPTION AS TERMINAL BLOCK */}
                 <div className="font-mono text-[11px] md:text-[12px] text-emerald-100/90 bg-black/70 border border-emerald-500/20 rounded-lg px-3 py-2 leading-relaxed whitespace-pre-line">
-                  {project.description.join("\n")}
+                  {formatProjectDescription(project)}
                 </div>
 
                 {/* Stack tags */}
