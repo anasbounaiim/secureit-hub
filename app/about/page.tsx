@@ -27,13 +27,24 @@ export default function AboutPage() {
           About Me
         </h1>
 
-        <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-[1.7]">
-          Network Security Engineer focused on secure connectivity, stable infrastructures and reliable remote operations.
-
-Experience across Belgian production environments and distributed infrastructures spanning 600+ retail locations in Belgium and Luxembourg, working daily on live systems with security-critical connectivity and strict uptime requirements.
-
-Specialized in P2 incident troubleshooting, with a strong focus on connectivity diagnostics, proxy environments (Zscaler), and network path analysis.
-        </p>
+        <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-3xl">
+  <span className="text-white font-medium">
+    Network Security Engineer
+  </span>{" "}
+  focused on secure connectivity, stable infrastructures and reliable remote operations.
+  {" "}
+  Experience across Belgian production environments and distributed infrastructures spanning{" "}
+  <span className="text-white font-medium">
+    600+ retail locations
+  </span>{" "}
+  in Belgium and Luxembourg, working daily on live systems with security-critical connectivity and strict uptime requirements.
+  {" "}
+  Specialized in{" "}
+  <span className="text-emerald-400 font-medium">
+    P2 incident troubleshooting
+  </span>
+  , with a strong focus on connectivity diagnostics, proxy environments (Zscaler), and network path analysis.
+</p>
 
       </header>
 
@@ -63,17 +74,34 @@ Specialized in P2 incident troubleshooting, with a strong focus on connectivity 
               </div>
 
               <div className="space-y-2">
-                <p>
-                  Network Security Engineer operating hybrid infrastructures with focus on VPN connectivity, firewall operations, proxy flows and reliable network paths.
+                <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-3xl">
+  <span className="text-white font-medium">
+    Network Security Engineer
+  </span>{" "}
+  operating hybrid infrastructures with focus on VPN connectivity, firewall operations, proxy flows and reliable network paths.
 
-Background built around structured troubleshooting, clear analysis and service continuity in production environments.
+  {" "}
+  Background built around structured troubleshooting, clear analysis and service continuity in production environments.
 
-Certified CCNP Security – SVPN, CCNA and Linux+.
+  {" "}
+  Certified{" "}
+  <span className="text-emerald-400 font-medium">
+    CCNP Security – SVPN, CCNA and Linux+
+  </span>.
 
-Ubuntu used as primary operating system, with Kali Linux in a controlled environment for protocol testing and practical security validation.
+  {" "}
+  <span className="text-white font-medium">
+    Ubuntu
+  </span>{" "}
+  used as primary operating system, with Kali Linux in a controlled environment for protocol testing and practical security validation.
 
-Clear communication, operational discipline and stable network design guide daily work.</p>
-              </div>
+  {" "}
+  <span className="text-emerald-400 font-medium">
+    Clear communication, operational discipline and stable network design
+  </span>{" "}
+  guide daily work.
+</p>
+</div>
             </div>
           </div>
 
