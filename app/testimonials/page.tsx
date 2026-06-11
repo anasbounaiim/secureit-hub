@@ -386,7 +386,6 @@ const recommendations: Recommendation[] = [
           date: "9 avril 2026",
           relationship: "Alexander a travaillé avec Mohammed, mais dans des équipes différentes",
           text: "I had the opportunity to work with Mohammed during a critical overnight incident affecting Zebra PDA devices in our Ninove distribution center. Mohammed quickly performed a structured technical analysis and was able to clearly demonstrate that the issue was not network related by validating connectivity, DNS resolution and backend reachability. His calm approach, clear communication and strong troubleshooting skills helped to quickly direct the investigation towards the correct application team, which contributed to a fast resolution of the incident. Mohammed is a reliable and knowledgeable network and security engineer who shows strong ownership during production incidents. I would definitely recommend him for any network operations or security related role."},
-,
 {
           index: 30,
           name: "Kevin Kune",
