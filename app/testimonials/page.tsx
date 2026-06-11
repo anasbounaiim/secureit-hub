@@ -386,6 +386,48 @@ const recommendations: Recommendation[] = [
           date: "9 avril 2026",
           relationship: "Alexander a travaillé avec Mohammed, mais dans des équipes différentes",
           text: "I had the opportunity to work with Mohammed during a critical overnight incident affecting Zebra PDA devices in our Ninove distribution center. Mohammed quickly performed a structured technical analysis and was able to clearly demonstrate that the issue was not network related by validating connectivity, DNS resolution and backend reachability. His calm approach, clear communication and strong troubleshooting skills helped to quickly direct the investigation towards the correct application team, which contributed to a fast resolution of the incident. Mohammed is a reliable and knowledgeable network and security engineer who shows strong ownership during production incidents. I would definitely recommend him for any network operations or security related role."},
+,
+{
+          index: 30,
+          name: "Kevin Kune",
+          headline: "Marketing Manager - Delhaize Luxembourg",
+          profileUrl: "https://www.linkedin.com/in/kevinkune/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (30).png",
+          date: "18 avril 2026",
+          relationship: "Kevin a travaillé avec Mohammed, mais dans des équipes différentes",
+          text: "Mohammed has been a key support in ensuring smooth and reliable operations across our environments. He consistently demonstrates a strong ability to quickly understand issues, communicate clearly, and provide effective solutions, even in high-pressure situations."},
+
+          {
+          index: 31,
+          name: "Savita Ghavari",
+          headline: "__",
+          profileUrl: "https://www.linkedin.com/in/savita-ghavari-a6299233b/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (31).png",
+          date: "23 avril 2026",
+          relationship: "Savita a travaillé avec Mohammed, mais dans des entreprises différentes",
+          text: "I had the opportunity to work with Mohammed in the Ahold Delhaize environment, where reliable network and connectivity support is critical for operations.Mohammed is a highly skilled Network Security Engineer with a strong ability to quickly understand issues and provide effective solutions. He has a very structured and analytical approach, which makes him particularly efficient when dealing with complex connectivity or infrastructure challenges."}
+          ,{
+          index: 32,
+          name: "Melanie Vommaro",
+          headline: "#Retail #Delhaize #Luxembourg",
+          profileUrl: "https://www.linkedin.com/in/melanie-vommaro-a2b5159a/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (32).png",
+          date: "23 mai 2026",
+          relationship: "Melanie a travaillé avec Mohammed dans la même équipe",
+          text: "I had the pleasure of working with Mohammed in a professional context where reliable IT and network support was critical for store operations.Mohammed has consistently been a trusted point of contact for any network or connectivity-related issues, always responding quickly and with a strong sense of responsibility. His ability to understand problems, communicate clearly, and provide effective solutions makes a real difference, especially in high-pressure retail environments.What stands out the most is his reliability and his commitment to ensuring that operations continue smoothly without disruption. He is proactive, approachable, and always focused on delivering practical and efficient results.I highly recommend Mohammed to any organization looking for a skilled and dependable Network Security Engineer."},
+          {
+          index: 33,
+          name: "Dina El Maimouni",
+          headline: "Promotions Assistant at Delhaize Group",
+          profileUrl: "https://www.linkedin.com/in/dina-el-maimouni-aa9299146/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (33).png",
+          date: "11 juin 2026",
+          relationship: "Dina a travaillé avec Mohammed, mais dans des équipes différentes",
+          text: "Although we do not work together directly, I have had the opportunity to interact with Mohammed on several occasions and have always appreciated his support. He is incredibly responsive, knowledgeable, and proactive in finding solutions. What particularly stands out is his willingness to help and his constant availability whenever support is needed. No matter the issue, he is always ready to assist with a positive attitude and a genuine commitment to finding an effective solution. His professionalism, dedication, and customer-oriented approach make him a pleasure to work with. I highly recommend him for his reliability, expertise, and outstanding support skills."}
 
 
           ];
