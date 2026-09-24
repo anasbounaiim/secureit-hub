@@ -60,8 +60,7 @@ export default function ContactPage() {
         </h1>
 
         <p className="text-sm md:text-base text-gray-400 max-w-2xl leading-relaxed">
-          For secure connectivity projects, VPN environments, firewall operations
-          or remote collaboration within production infrastructures.
+          For Network Security consulting assignments, secure connectivity projects or production troubleshooting, contact me by email or use the form below.
         </p>
       </header>
 
@@ -116,7 +115,7 @@ export default function ContactPage() {
                 Phone
               </span>
             </div>
-            <p className="text-emerald-200">+32 479 13 01 45</p>
+            <a href="tel:+32479130145" className="text-emerald-200 hover:text-emerald-100 hover:underline">+32 479 13 01 45</a>
           </div>
         </div>
 
@@ -176,10 +175,11 @@ export default function ContactPage() {
           <form className="grid gap-6 md:grid-cols-2" onSubmit={handleSubmit}>
             {/* Name */}
             <div className="flex flex-col gap-1 md:col-span-1">
-              <label className="text-[11px] text-gray-500 uppercase tracking-[0.2em]">
+              <label htmlFor="contact-name" className="text-[11px] text-gray-500 uppercase tracking-[0.2em]">
                 Name
               </label>
               <input
+                id="contact-name"
                 type="text"
                 name="name"
                 placeholder="Your name"
@@ -190,10 +190,11 @@ export default function ContactPage() {
 
             {/* Email */}
             <div className="flex flex-col gap-1 md:col-span-1">
-              <label className="text-[11px] text-gray-500 uppercase tracking-[0.2em]">
+              <label htmlFor="contact-email" className="text-[11px] text-gray-500 uppercase tracking-[0.2em]">
                 Email
               </label>
               <input
+                id="contact-email"
                 type="email"
                 name="email"
                 placeholder="you@example.com"
@@ -204,10 +205,11 @@ export default function ContactPage() {
 
             {/* Message */}
             <div className="flex flex-col gap-1 md:col-span-2">
-              <label className="text-[11px] text-gray-500 uppercase tracking-[0.2em]">
+              <label htmlFor="contact-message" className="text-[11px] text-gray-500 uppercase tracking-[0.2em]">
                 Message
               </label>
               <textarea
+                id="contact-message"
                 rows={4}
                 name="message"
                 placeholder="Your message…"
@@ -259,7 +261,6 @@ export default function ContactPage() {
         </div>
 
         <div className="p-4 space-y-1.5">
-          <p>secureit-hub :: contact</p>
           <p>➜ email: contact@secureit-hub.com</p>
           <p>➜ phone: +32 479 13 01 45</p>
           <p>➜ linkedin: linkedin.com/in/mohammed-a-780b47195</p>

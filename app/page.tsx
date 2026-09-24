@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
   ShieldCheck,
   Server,
@@ -70,12 +71,12 @@ export default function HomePage() {
         </div>
 
         {/* HERO + INTRO */}
-        <div className="grid gap-10 md:gap-12 lg:gap-14 md:grid-cols-[minmax(0,2fr)_minmax(0,1.35fr)] items-start">
+        <div className="grid gap-10 md:gap-12 xl:gap-14 xl:grid-cols-[minmax(0,2fr)_minmax(20rem,1.35fr)] items-start">
           {/* LEFT – HERO TITLES & MAIN TEXT */}
           <div className="space-y-7 md:space-y-8">
             <div className="space-y-2 md:space-y-3">
               <div className="space-y-1.5 md:space-y-2">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 md:hover:translate-x-1 transition-transform duration-300 group">
+                <h1 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold text-white flex items-start gap-3 md:hover:translate-x-1 transition-transform duration-300 group">
                   <ShieldCheck
                     className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:rotate-6 transition-transform duration-300"
                     size={30}
@@ -83,7 +84,7 @@ export default function HomePage() {
                   SECURE SYSTEMS.
                 </h1>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 md:hover:translate-x-1 transition-transform duration-300 group">
+                <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold text-white flex items-start gap-3 break-words md:hover:translate-x-1 transition-transform duration-300 group">
                   <Network
                     className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:scale-110 transition-transform duration-300"
                     size={30}
@@ -91,7 +92,7 @@ export default function HomePage() {
                   CONNECTED INFRASTRUCTURES.
                 </h2>
 
-                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white flex items-center gap-3 md:hover:translate-x-1 transition-transform duration-300 group">
+                <h3 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold text-white flex items-start gap-3 md:hover:translate-x-1 transition-transform duration-300 group">
                   <Zap
                     className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:rotate-6 transition-transform duration-300"
                     size={30}
@@ -103,44 +104,12 @@ export default function HomePage() {
 
             {/* HERO COPY — updated to match client wording */}
             <div className="space-y-3.5 text-[0.95rem] sm:text-[1rem] text-gray-300 max-w-[780px] leading-[1.6]">
-              <p>
-                I operate secure and resilient network infrastructures leveraging{" "}
-                <span className="text-emerald-300/90">
-                  Cisco, Fortinet, Zscaler and Linux
-                </span>{" "}
-                platforms within{" "}
-                <span className="text-emerald-300/90">
-                  production environments
-                </span>
-                .
-              </p>
+              <p>I work with European teams to maintain secure connectivity and reliable network operations across distributed infrastructures, using Cisco, Fortinet, Zscaler and Linux.</p>
+
+              <p>My focus is on IPSec VPN, secure remote access, firewall operations and production troubleshooting. I investigate issues across network and infrastructure layers, coordinate with the relevant teams and providers, and help restore business-critical services.</p>
 
               <p>
-                My focus is on secure connectivity, firewall operations, VPN
-                stability and real-time incident resolution under strict uptime
-                constraints.
-              </p>
-
-              <p>
-                Specialized in P2 incident troubleshooting, I analyze and
-                resolve connectivity and proxy-related issues (Zscaler, VPN
-                paths, firewall flows) with speed and precision, minimizing
-                escalation.
-              </p>
-
-              <p>
-                Background built across large-scale Belgian production
-                infrastructures and fully remote operations. Structured,
-                pragmatic and reliability-driven engineering with security as a
-                constant foundation.
-              </p>
-
-              <p>
-                Current mission:{" "}
-                <span className="text-emerald-300/90">Ahold Delhaize</span> –
-                hybrid infrastructure across 600+ stores in Belgium and
-                Luxembourg, with high availability requirements and
-                security-critical connectivity.
+                Current mission: Ahold Delhaize via Econocom — distributed infrastructures across 600+ stores in Belgium and Luxembourg.
               </p>
 
               <p className="leading-relaxed">
@@ -150,16 +119,20 @@ export default function HomePage() {
               </p>
             </div>
 
+            <Link href="/contact" className="inline-flex rounded-md border border-emerald-500/60 bg-emerald-500/10 px-4 py-2.5 text-xs uppercase tracking-[0.2em] text-emerald-300 transition hover:border-emerald-400 hover:bg-emerald-500/20">
+              Discuss a mission
+            </Link>
+
             {/* SHORT HIGHLIGHTS BAR — already matches, kept */}
             <div className="flex flex-wrap gap-2.5 sm:gap-3 text-[10px] sm:text-[11px] md:text-xs">
               <span className="px-3 py-1 rounded-full border border-emerald-500/60 bg-emerald-500/10 text-emerald-300 uppercase tracking-[0.15em] hover:bg-emerald-500/20 hover:border-emerald-500 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all duration-300 cursor-default">
-                Network Security Engineer
+                Network Security Consultant
               </span>
               <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-gray-200 uppercase tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
                 CCNP Security – SVPN
               </span>
               <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-gray-200 uppercase tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
-                10+ years in production environments
+                10+ years of operational experience
               </span>
               <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-gray-200 uppercase tracking-[0.15em] hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-default">
                 Belgium · Full Remote Ready
@@ -210,24 +183,22 @@ export default function HomePage() {
                   <span className="text-emerald-400 font-semibold">
                     Role:&nbsp;
                   </span>
-                  Systems / Network Engineer
+                  Network Security Consultant
                 </p>
 
                 <p className="hover:text-white transition-colors duration-200">
                   <span className="text-emerald-400 font-semibold">
                     Mission:&nbsp;
                   </span>
-                  Ahold Delhaize (Belgium &amp; remote) – hybrid infrastructure
-                  with strict uptime and security enforcement requirements.
+                  Ahold Delhaize via Econocom — Belgium and Luxembourg.
                 </p>
 
                 <p className="hover:text-white transition-colors duration-200">
                   <span className="text-emerald-400 font-semibold">
                     Primary Focus:&nbsp;
                   </span>
-                  Secure connectivity operations, VPN reliability, firewall
-                  policy control, P2 incident resolution and service continuity
-                  across distributed environments.
+                  Secure connectivity, IPSec VPN, Zscaler ZIA / ZPA, firewall
+                  operations and production troubleshooting.
                 </p>
               </div>
 
@@ -242,7 +213,8 @@ export default function HomePage() {
                     "Cisco routing & switching (production networks)",
                     "Fortinet FortiGate (policy enforcement, NAT, VPN, IPS)",
                     "Zscaler ZIA / ZPA",
-                    "IPSec & SSL VPN (CCNP Security – SVPN level)",
+                    "IPSec & SSL VPN",
+                    "CyberArk PAM operations",
                     "Linux (Ubuntu servers & operational tooling)",
                     "VMware / virtualization",
                     "Infoblox · F5 · Citrix",
@@ -336,7 +308,7 @@ export default function HomePage() {
         <div className="space-y-4">
           <div className="relative">
             <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-400/80">
-              // at a glance
+              {"// at a glance"}
             </p>
             <div className="absolute -bottom-1 left-0 w-16 h-[1px] bg-gradient-to-r from-emerald-400/60 to-transparent" />
           </div>
@@ -344,7 +316,7 @@ export default function HomePage() {
           <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                label: "Network Security Engineer",
+                label: "Network Security Consultant",
                 value: "Role",
                 desc: "Secure connectivity · VPN stability · Firewall operations.",
               },
@@ -354,9 +326,9 @@ export default function HomePage() {
                 desc: "Large-scale VPN and secure remote-access environments.",
               },
               {
-                label: "Production environments",
+                label: "Operational experience",
                 value: "10+ years",
-                desc: "Uptime discipline, operational stability and service continuity.",
+                desc: "Experience across security systems, critical incident response and IT infrastructure operations.",
               },
               {
                 label: "Belgium · Full Remote Ready",

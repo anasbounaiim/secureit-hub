@@ -87,7 +87,10 @@ export default function Sidebar() {
       {/* MOBILE MENU */}
       <div className="md:hidden fixed right-4 top-4 z-50">
         <button
+          type="button"
           onClick={() => setMobileOpen((prev) => !prev)}
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileOpen}
           className="
             w-10 h-10 flex items-center justify-center
             rounded-full bg-black/95 border border-emerald-500/30 

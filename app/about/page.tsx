@@ -28,23 +28,8 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-3xl">
-  <span className="text-white font-medium">
-    Network Security Engineer
-  </span>{" "}
-  focused on secure connectivity, stable infrastructures and reliable remote operations.
-  {" "}
-  Experience across Belgian production environments and distributed infrastructures spanning{" "}
-  <span className="text-white font-medium">
-    600+ retail locations
-  </span>{" "}
-  in Belgium and Luxembourg, working daily on live systems with security-critical connectivity and strict uptime requirements.
-  {" "}
-  Specialized in{" "}
-  <span className="text-emerald-400 font-medium">
-    P2 incident troubleshooting
-  </span>
-  , with a strong focus on connectivity diagnostics, proxy environments (Zscaler), and network path analysis.
-</p>
+          I’m Mohammed Arbaoui, a Network Security Consultant working with European teams in distributed production environments. My current mission at Ahold Delhaize via Econocom covers infrastructures spanning 600+ retail locations in Belgium and Luxembourg. I focus on secure connectivity, network troubleshooting and service continuity.
+        </p>
 
       </header>
 
@@ -75,33 +60,9 @@ export default function AboutPage() {
 
               <div className="space-y-2">
                 <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-3xl">
-  <span className="text-white font-medium">
-    Network Security Engineer
-  </span>{" "}
-  operating hybrid infrastructures with focus on VPN connectivity, firewall operations, proxy flows and reliable network paths.
-
-  {" "}
-  Background built around structured troubleshooting, clear analysis and service continuity in production environments.
-
-  {" "}
-  Certified{" "}
-  <span className="text-emerald-400 font-medium">
-    CCNP Security – SVPN, CCNA and Linux+
-  </span>.
-
-  {" "}
-  <span className="text-white font-medium">
-    Ubuntu
-  </span>{" "}
-  used as primary operating system, with Kali Linux in a controlled environment for protocol testing and practical security validation.
-
-  {" "}
-  <span className="text-emerald-400 font-medium">
-    Clear communication, operational discipline and stable network design
-  </span>{" "}
-  guide daily work.
-</p>
-</div>
+                  My background combines over ten years of operational experience across security systems, critical incident response and IT infrastructure. I hold the Cisco CCNP Security certification, with a specialization in VPN technologies, alongside CompTIA Linux+. My approach combines structured analysis, clear communication and practical troubleshooting under production constraints.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -133,7 +94,6 @@ Strong focus on real-world troubleshooting scenarios, especially for connectivit
               </div>
 
               <div className="p-4 space-y-3 text-[12px] md:text-[13px] text-gray-200 leading-relaxed">
-                <p>Remote-ready and reliability focused.</p>
                 <p>
                   
 Remote-ready and reliability-focused.
@@ -154,8 +114,10 @@ I document what matters, simplify where it improves stability and automate where
               </div>
 
               <div className="p-4 space-y-2.5 text-[12px] md:text-[13px] text-gray-200">
-                <p className="font-semibold text-emerald-200">Cisco CCNP Security – SVPN</p>
-                <p className="font-semibold text-emerald-200">Cisco CCNA</p>
+                <p className="font-semibold text-emerald-200">Cisco CCNP Security</p>
+                <p className="font-semibold text-emerald-200">Cisco Certified Specialist – Network Security VPN</p>
+                <p className="font-semibold text-emerald-200">Cisco Certified Specialist – Security Core</p>
+                <p className="font-semibold text-emerald-200">Cisco CCNA — earned in 2022</p>
                 <p className="font-semibold text-emerald-200">CompTIA Linux+</p>
                 <p className="font-semibold text-emerald-200">Fortinet Certified Fundamentals in Cybersecurity</p>
               </div>
@@ -182,7 +144,7 @@ I document what matters, simplify where it improves stability and automate where
                 <span className="text-emerald-500">➜</span> snapshot
               </p>
               <p className="text-[11px] md:text-[12px] text-emerald-100/90 whitespace-pre-line leading-relaxed">
-                {`role Network Security Engineer
+                {`role Network Security Consultant
 stack Cisco Fortinet VPN Zscaler Linux
 mode full remote
 focus secure_connectivity · proxy_environments · vpn_operations · firewall_enforcement · p2_incident_resolution

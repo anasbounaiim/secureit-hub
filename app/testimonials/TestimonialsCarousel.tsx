@@ -47,7 +47,10 @@ export default function TestimonialsCarousel({
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    if (current >= slides.length) setCurrent(0);
+    if (current >= slides.length) {
+      const timer = setTimeout(() => setCurrent(0), 0);
+      return () => clearTimeout(timer);
+    }
   }, [slides.length, current]);
 
   const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length);
@@ -59,7 +62,10 @@ export default function TestimonialsCarousel({
   const onTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
     if (!startX.current) return;
     const dx = e.changedTouches[0].clientX - startX.current;
-    if (Math.abs(dx) > 50) (dx > 0 ? prev() : next());
+    if (Math.abs(dx) > 50) {
+      if (dx > 0) prev();
+      else next();
+    }
     startX.current = null;
   };
 
@@ -123,9 +129,11 @@ export default function TestimonialsCarousel({
                         <p className="text-emerald-300 text-sm md:text-base font-semibold mb-0.5">
                           &gt; {t.name}
                         </p>
-                        <p className="text-[11px] md:text-xs text-emerald-400/80 line-clamp-2 leading-relaxed">
-                          // {t.headline}
-                        </p>
+                        {t.headline && (
+                          <p className="text-[11px] md:text-xs text-emerald-400/80 line-clamp-2 leading-relaxed">
+                            {`// ${t.headline}`}
+                          </p>
+                        )}
                       </div>
                     </div>
 

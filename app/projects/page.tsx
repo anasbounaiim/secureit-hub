@@ -194,19 +194,7 @@ export default function ProjectsPage() {
         </h1>
 
         <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-3xl">
-          Infrastructure labs and operational tooling designed to validate secure
-          connectivity, firewall behavior and network stability across
-          production-like environments.
-          <br />
-          <br />
-          These environments simulate real-world constraints such as
-          segmentation, VPN reliability, proxy behavior (Zscaler), logging
-          visibility and controlled change validation.
-          <br />
-          <br />
-          They serve as validation platforms aligned with real operational
-          challenges, especially in P2 incident troubleshooting and connectivity
-          diagnostics.
+          Laboratory environments and operational tooling for testing network segmentation, VPN connectivity, firewall policies and troubleshooting workflows. These projects explore production scenarios in controlled environments.
         </p>
       </header>
 

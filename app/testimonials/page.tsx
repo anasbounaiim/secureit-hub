@@ -1,7 +1,7 @@
 // app/testimonials/page.tsx
 import type { Metadata } from "next";
 import TestimonialsCarousel from "./TestimonialsCarousel";
-import { MessageSquareQuote, Shield } from "lucide-react";
+import { MessageSquareQuote } from "lucide-react";
 
 
 export const metadata: Metadata = {
@@ -56,7 +56,6 @@ const recommendations: Recommendation[] = [
       "/linkedin_pfp/linkedin_pfp (14).png",
     date: "Le 14 octobre 2025,",
     text:
-      "Experienced Client Services Manager | Driving Results through Strategic Digital Initiatives\n\n" +
       "I had the pleasure of working directly with Mohammed during his time at Ahold Delhaize, and I can confidently say he is one of the most reliable and driven professionals I’ve worked with. Mohammed consistently demonstrated a strong sense of ownership, a sharp analytical mindset, and a collaborative spirit that made him an invaluable member of the team.\n\n" +
       "Beyond his technical and strategic capabilities, what stands out most is his eagerness to learn and grow. He actively sought feedback, embraced new responsibilities, and continuously pushed himself to exceed expectations.\n\n" +
       "I highly recommend Mohammed to any organization looking for a dedicated, thoughtful, and high-performing team member. He will undoubtedly be a strong asset wherever he goes.\n\n" 
@@ -327,7 +326,7 @@ const recommendations: Recommendation[] = [
   date: "27 février 2026",
   relationship: "Justine a travaillé avec Mohammed mais dans des équipes différentes",
   text:
-    "I had the pleasure of working with Mohammed, and I can confidently say he is a fantastic colleague. He is always ready to help, no matter the situation, and consistently brings a positive and supportive attitude to the team.What truly sets him apart is not only his expertise, but his constant willingness to share his knowledge. No matter how busy he is, he’s always there to help, explain, guide, and support the team with patience and clarity.Reliable, proactive, and genuinely supportive, he is someone you can always count on. I highly recommend him to any team looking for a dedicated and collaborative professional.Thanks for everything !"},
+    "I had the pleasure of working with Mohammed, and I can confidently say he is a fantastic colleague. He is always ready to help, no matter the situation, and consistently brings a positive and supportive attitude to the team. What truly sets him apart is not only his expertise, but his constant willingness to share his knowledge. No matter how busy he is, he’s always there to help, explain, guide, and support the team with patience and clarity. Reliable, proactive, and genuinely supportive, he is someone you can always count on. I highly recommend him to any team looking for a dedicated and collaborative professional. Thanks for everything !"},
 
     {
       index: 25,
@@ -339,7 +338,7 @@ const recommendations: Recommendation[] = [
       date: "3 mars 2026",
       relationship: "Sandra a travaillé avec Mohammed mais dans des équipes différentes",
       text:
-        "I have the pleasure of working with Mohammed, who is a dedicated, reliable, and highly professional individual.He consistently demonstrates strong organizational skills, works efficiently, and approaches challenges with a positive attitude.Mohammed is a great team player and a valuable asset to any team. I highly recommend him." },
+        "I have the pleasure of working with Mohammed, who is a dedicated, reliable, and highly professional individual. He consistently demonstrates strong organizational skills, works efficiently, and approaches challenges with a positive attitude. Mohammed is a great team player and a valuable asset to any team. I highly recommend him." },
         {
           index: 26,
           name: "Moradiellos Yessica",
@@ -400,13 +399,13 @@ const recommendations: Recommendation[] = [
           {
           index: 31,
           name: "Savita Ghavari",
-          headline: "__",
+          headline: "",
           profileUrl: "https://www.linkedin.com/in/savita-ghavari-a6299233b/",
           imageDataSavepageSrc:
             "/linkedin_pfp/linkedin_pfp (31).png",
           date: "23 avril 2026",
           relationship: "Savita a travaillé avec Mohammed, mais dans des entreprises différentes",
-          text: "I had the opportunity to work with Mohammed in the Ahold Delhaize environment, where reliable network and connectivity support is critical for operations.Mohammed is a highly skilled Network Security Engineer with a strong ability to quickly understand issues and provide effective solutions. He has a very structured and analytical approach, which makes him particularly efficient when dealing with complex connectivity or infrastructure challenges."}
+          text: "I had the opportunity to work with Mohammed in the Ahold Delhaize environment, where reliable network and connectivity support is critical for operations. Mohammed is a highly skilled Network Security Engineer with a strong ability to quickly understand issues and provide effective solutions. He has a very structured and analytical approach, which makes him particularly efficient when dealing with complex connectivity or infrastructure challenges."}
           ,{
           index: 32,
           name: "Melanie Vommaro",
@@ -416,7 +415,7 @@ const recommendations: Recommendation[] = [
             "/linkedin_pfp/linkedin_pfp (32).png",
           date: "23 mai 2026",
           relationship: "Melanie a travaillé avec Mohammed dans la même équipe",
-          text: "I had the pleasure of working with Mohammed in a professional context where reliable IT and network support was critical for store operations.Mohammed has consistently been a trusted point of contact for any network or connectivity-related issues, always responding quickly and with a strong sense of responsibility. His ability to understand problems, communicate clearly, and provide effective solutions makes a real difference, especially in high-pressure retail environments.What stands out the most is his reliability and his commitment to ensuring that operations continue smoothly without disruption. He is proactive, approachable, and always focused on delivering practical and efficient results.I highly recommend Mohammed to any organization looking for a skilled and dependable Network Security Engineer."},
+          text: "I had the pleasure of working with Mohammed in a professional context where reliable IT and network support was critical for store operations. Mohammed has consistently been a trusted point of contact for any network or connectivity-related issues, always responding quickly and with a strong sense of responsibility. His ability to understand problems, communicate clearly, and provide effective solutions makes a real difference, especially in high-pressure retail environments. What stands out the most is his reliability and his commitment to ensuring that operations continue smoothly without disruption. He is proactive, approachable, and always focused on delivering practical and efficient results. I highly recommend Mohammed to any organization looking for a skilled and dependable Network Security Engineer."},
           {
           index: 33,
           name: "Dina El Maimouni",
@@ -427,6 +426,27 @@ const recommendations: Recommendation[] = [
           date: "11 juin 2026",
           relationship: "Dina a travaillé avec Mohammed, mais dans des équipes différentes",
           text: "Although we do not work together directly, I have had the opportunity to interact with Mohammed on several occasions and have always appreciated his support. He is incredibly responsive, knowledgeable, and proactive in finding solutions. What particularly stands out is his willingness to help and his constant availability whenever support is needed. No matter the issue, he is always ready to assist with a positive attitude and a genuine commitment to finding an effective solution. His professionalism, dedication, and customer-oriented approach make him a pleasure to work with. I highly recommend him for his reliability, expertise, and outstanding support skills."}
+,
+{
+          index: 34,
+          name: "Bruno Guillot",
+          headline: "Specialist in Geographic Information Systems / Land Surveyor ",
+          profileUrl: "https://www.linkedin.com/in/bruno-guillot-195128146/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (34).png",
+          date: "7 septembre 2026",
+          relationship: "Mohammed était le supérieur de Bruno mais n’était pas le responsable direct de Bruno",
+          text: "Mohammed is the most proactive person I’m working with. He has especially great teaching skills, I’ve learned the most about Oneboxes with him. He is the best element in a network with several teams coming with different skills and targets to make each element comfort with the universe of his team."},
+          {
+          index: 35,
+          name: "Julien Houdin",
+          headline: "Team Manager chez Delhaize Luxembourg SA",
+          profileUrl: "https://www.linkedin.com/in/julienhoudin/",
+          imageDataSavepageSrc:
+            "/linkedin_pfp/linkedin_pfp (35).png",
+          date: "10 septembre 2026",
+          relationship: "Julien a travaillé avec Mohammed dans la même équipe",
+          text: "I’ve had the opportunity to work with Mohammed in the context of store operations, and what stands out most is his reliability, ownership and ability to see the bigger picture. He combines strong Network & Security expertise with a very pragmatic approach to incidents, always keeping the business impact in mind and focusing on the right priorities."}
 
 
           ];
@@ -453,43 +473,9 @@ export default function TestimonialsPage() {
             </h1>
           </div>
 
-          {/* Client-approved intro (3 paragraphs) */}
+          {/* Introduction */}
           <div className="max-w-2xl space-y-3 text-gray-300 text-[15px] leading-relaxed">
-            <p>
-              I receive consistent recognition from{" "}
-              <span className="text-emerald-300">
-                engineers, managers and cross-functional teams
-              </span>{" "}
-              I collaborate with in{" "}
-              <span className="text-emerald-400">production environments</span>.
-            </p>
-
-            <p>
-              Only{" "}
-              <span className="text-emerald-300">
-                publicly visible LinkedIn recommendations
-              </span>{" "}
-              are displayed here to ensure{" "}
-              <span className="text-emerald-400">
-                transparency, compliance and clarity
-              </span>
-              .
-            </p>
-
-            <p>
-              These testimonials reflect the principles that guide my work:{" "}
-              <span className="text-emerald-300">structured execution</span>,{" "}
-              <span className="text-emerald-300">operational reliability</span>,{" "}
-              <span className="text-emerald-300">
-                disciplined troubleshooting
-              </span>{" "}
-              and <span className="text-emerald-400">clear communication</span>{" "}
-              within{" "}
-              <span className="text-emerald-400">
-                security-sensitive environments
-              </span>
-              .
-            </p>
+            <p>Public LinkedIn recommendations from engineers, managers and colleagues I have worked with. Their feedback covers technical troubleshooting, operational reliability and collaboration.</p>
           </div>
 
           {/* Small terminal prompt line */}

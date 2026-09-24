@@ -6,9 +6,9 @@ import Header from "./components/Header";
 import LoadingScreen from "./components/LoadingScreen"; // ⬅️ add this
 
 // app/layout.tsx
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://www.secureit-hub.com"),
-  title: "SecureIT Hub – Network Security Engineer",
+  title: "SecureIT Hub – Network Security Consultant",
   description: "Clean, security-driven network & systems engineering.",
 
   icons: {
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.secureit-hub.com",
-    title: "SecureIT Hub – Network Security Engineer",
+    title: "SecureIT Hub – Network Security Consultant",
     description:
       "Secure connectivity, VPN, firewalls and remote-friendly infrastructure.",
     images: [
@@ -33,7 +33,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "SecureIT Hub – Network Security Engineer",
+    title: "SecureIT Hub – Network Security Consultant",
     description: "Secure networking & system engineering expertise.",
     images: ["/og-secureit-hub.png"],
   },
@@ -56,7 +56,7 @@ export default function RootLayout({
         <Sidebar />
 
         {/* Main content area */}
-        <main className="flex-1 px-12 py-10 md:ml-56 lg:ml-44 lg:pr-72 lg:pl-40 lg:py-10">
+        <main className="flex-1 px-4 py-8 sm:px-8 md:ml-24 md:px-10 lg:ml-32 lg:px-12 lg:py-10 xl:ml-44 xl:pr-24 xl:pl-28 2xl:pr-72 2xl:pl-40">
           {/* Logo Header */}
           <Header />
 

@@ -4,18 +4,26 @@ import { useEffect, useState } from "react";
 
 export default function LoadingScreen() {
   const [progress, setProgress] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    const hasLoaded = sessionStorage.getItem("secureit-hub-loaded");
+    if (hasLoaded) return;
+
+    sessionStorage.setItem("secureit-hub-loaded", "true");
+    const showTimer = setTimeout(() => setVisible(true), 0);
     const interval = setInterval(() => {
-      setProgress((p) => Math.min(p + 3, 100));  // never > 100
-    }, 70);
-    return () => clearInterval(interval);
+      setProgress((p) => Math.min(p + 10, 100));
+    }, 40);
+    return () => {
+      clearTimeout(showTimer);
+      clearInterval(interval);
+    };
   }, []);
 
   useEffect(() => {
     if (progress >= 100) {
-      const timer = setTimeout(() => setVisible(false), 300);
+      const timer = setTimeout(() => setVisible(false), 150);
       return () => clearTimeout(timer);
     }
   }, [progress]);
@@ -35,10 +43,9 @@ export default function LoadingScreen() {
       style={{ color: emerald }}
     >
       <div
-        className="px-8 py-6 border"
+        className="mx-4 w-[calc(100%-2rem)] max-w-md px-4 py-6 sm:px-8 border"
         style={{
           borderColor: emerald,
-          minWidth: "400px",
           boxShadow: `0 0 20px ${emerald}40`,
         }}
       >

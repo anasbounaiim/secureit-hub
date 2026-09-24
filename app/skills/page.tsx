@@ -26,7 +26,7 @@ export default function SkillsPage() {
         </h1>
 
         <p className="text-sm md:text-base text-gray-400 max-w-3xl leading-[1.7]">
-A security-driven Network Security stack focused on secure connectivity, proxy environments, VPN reliability and production-grade stability across distributed infrastructures (600+ stores).
+Practical expertise in network security operations, secure connectivity and production troubleshooting across distributed retail infrastructures.
         </p>
       </header>
 
@@ -60,7 +60,7 @@ A security-driven Network Security stack focused on secure connectivity, proxy e
               <div className="space-y-1.5 text-sm md:text-[13px] text-gray-300 leading-relaxed">
                 <p>
                   <span className="text-emerald-300">
-                    Cisco Routing &amp; Switching (CCNP Security – SVPN, CCNA)
+                    Cisco Routing &amp; Switching
                   </span>
                 </p>
                 <p>BGP · OSPF · EIGRP</p>
@@ -118,8 +118,9 @@ A security-driven Network Security stack focused on secure connectivity, proxy e
                     Fortinet FortiGate (policy control, NAT, IPSec VPN, IPS)
                   </span>
                 </p>
-                <p>Zscaler (ZIA / ZPA) — proxy-based secure access, traffic control and cloud security enforcement</p>
-                <p>IPSec &amp; SSL VPN (CCNP Security – SVPN level)</p>
+                <p>Zscaler ZIA / ZPA — internet security and Zero Trust access to private applications</p>
+                <p>IPSec &amp; SSL VPN</p>
+                <p>CyberArk PAM operations — privileged access and session traceability</p>
                 <p className="pt-1">Firewall policy lifecycle & segmentation</p>
                 <p>Secure remote-access environments</p>
                 <p>Zero Trust access control principles</p>
