@@ -89,7 +89,7 @@ export default function HomePage() {
                     className="text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)] group-hover:scale-110 transition-transform duration-300"
                     size={30}
                   />
-                  CONNECTED INFRASTRUCTURES.
+                  CONNECTED NETWORKS.
                 </h2>
 
                 <h3 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold text-white flex items-start gap-3 md:hover:translate-x-1 transition-transform duration-300 group">

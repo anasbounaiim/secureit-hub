@@ -28,7 +28,7 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-3xl">
-          I’m Mohammed Arbaoui, a Network Security Consultant working with European teams in distributed production environments. My current mission at Ahold Delhaize via Econocom covers infrastructures spanning 600+ retail locations in Belgium and Luxembourg. I focus on secure connectivity, network troubleshooting and service continuity.
+          /// I’m a Network Security Consultant working with European teams in distributed production environments. My current mission at Ahold Delhaize via Econocom covers infrastructures spanning 600+ retail locations in Belgium and Luxembourg. I focus on secure connectivity, network troubleshooting and service continuity.
         </p>
 
       </header>
